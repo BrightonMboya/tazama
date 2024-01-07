@@ -9,7 +9,7 @@ import ContentSection, {
 } from "~/components/ContentSection";
 import { array } from "fast-web-kit";
 
-const honeyMooners = [
+export const honeyMooners = [
   {
     id: 1,
     src: "/assets/images/gallery/family-trip.webp",
@@ -56,7 +56,7 @@ export const homePageContentData: contentSectionData[] = [
   },
 ];
 
-const MemoryImage = ({ src }: { src: string }) => {
+export const MemoryImage = ({ src }: { src: string }) => {
   return (
     <div className="relative h-[200px] w-[80%] md:h-[300px] lg:w-[400px]">
       <Image src={src} layout="fill" className="rounded-sm object-cover" />
