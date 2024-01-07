@@ -1,0 +1,32 @@
+import { motion } from "framer-motion";
+import React from "react"
+
+type quoteSection = {
+    quote: string
+    subText?: string
+}
+
+const QuoteSection: React.FunctionComponent<quoteSection> = React.memo((props: quoteSection) => {
+    return (
+        <motion.div
+        initial={{
+            opacity: 0
+        }}
+        whileInView={{opacity: 1}}
+        transition={{
+            duration: 0.5
+        }}
+        className="w-full flex items-center flex-col justify-center bg-[#A87133] text-white text-center h-screen p-20 md:p-40">
+            <h1 className="text-3xl md:text-4xl mb-10">“{props.quote}”</h1>
+            {
+                props.subText
+                    ?
+                    <p className="text-lg md:text-2xl font-now">{props.subText}</p>
+                    : null
+            }
+        </motion.div>
+    );
+});
+
+
+export default QuoteSection
