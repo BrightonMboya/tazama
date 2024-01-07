@@ -1,5 +1,5 @@
 import { HomeContactUs } from "~/components/HomeContactUs";
-import { carouselData } from "~/del/data";
+import { carouselData } from "~/data/data";
 import { motion } from "framer-motion";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import React from "react";
@@ -129,8 +129,6 @@ export default function Page() {
         </div>
         <br />
         <div className="mt-10 lg:mt-[10px] ">
-          
-
           <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
             {honeyMooners.map((item) => (
               <MemoryImage src={item.src} key={item.id} />

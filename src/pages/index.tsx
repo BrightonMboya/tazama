@@ -1,5 +1,5 @@
 import { HomeContactUs } from "~/components/HomeContactUs";
-import { carouselData } from "~/del/data";
+import { carouselData } from "~/data/data";
 import { motion } from "framer-motion";
 import Carousel from "~/components/Carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";

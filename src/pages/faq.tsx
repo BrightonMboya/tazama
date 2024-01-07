@@ -2,7 +2,7 @@ import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
 import Accordion from "~/components/Accordion";
-import { accordionQns } from "~/del/data";
+import { accordionQns } from "~/data/data";
 
 const FAQPage = () => {
   React.useEffect(() => {
@@ -22,21 +22,25 @@ const FAQPage = () => {
           questions.
         </p>
 
-        <div className="mt-10 mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+        <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
           <aside className="w-full md:w-1/3">
             <h4 className="mb-4  text-2xl">Frequently Asked Qustions</h4>
-            <ul className="font-now flex flex-col items-start gap-2 md:gap-2">
+            <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
               <li
-                className={`font-now text-sm hover:underline focus:underline active:underline sm:text-base`}
+                className={`font-now cursor-pointer text-sm hover:text-primary hover:underline focus:underline active:underline sm:text-base ${
+                  category === "safari" ? "text-primary" : ""
+                }`}
                 onClick={() => setCategory("safari")}
               >
-                Frequently Asked Questions: Safaris
+                Safaris FAQs
               </li>
               <li
-                className={`font-now text-sm hover:underline sm:text-base`}
+                className={`font-now cursor-pointer text-sm hover:text-primary hover:underline sm:text-base ${
+                  category !== "safari" ? "text-primary" : ""
+                }`}
                 onClick={() => setCategory("kili")}
               >
-                Frequently Asked Questions: Kilimanjaro
+                Kilimanjaro FAQs
               </li>
             </ul>
           </aside>

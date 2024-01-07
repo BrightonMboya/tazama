@@ -9,8 +9,9 @@ const PrimaryHeader = (props: primaryHeader) => {
   return (
     <div className="relative h-screen">
       <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
+        
         <img
-          src="/assets/images/gallery/home.webp"
+          src={`/assets/images/gallery/${props.image}`}
           className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
         />
         <div className="container">
