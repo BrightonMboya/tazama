@@ -19,7 +19,7 @@ const navMainContent = [
   },
   {
     title: "Safari",
-    link: "/itenaries?itenary=safari",
+    link: "/safaris",
   },
   {
     title: "Beach Holiday",

@@ -425,7 +425,7 @@ export const safaris = [
   },
   {
     id: 3,
-    name: "Wildlife Adventures",
+    name: "Wildlife and Nature",
     img: "blog.webp",
     href: "/experiences/wildlife-adventures",
   },
