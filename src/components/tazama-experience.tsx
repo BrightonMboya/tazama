@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "~/components/ui/carousel";
 
+
 const experience = [
   {
     id: 1,
@@ -36,18 +37,16 @@ const experience = [
     title: "The big title about sth",
     caption: `Specialising in once-in-a-lifetime trips, we exist to ensure that
               your time away is perfect and has a positive impact. We believe
-              it’s time to linger longer and afford places the time they richly
-              deserve. We specialise in curating tailor-made luxury holidays
-              that are ten days or more, so you can slow down, really unravel`,
+              it’s timl`,
   },
 ];
 
 export function TazamaExperience() {
   return (
-    <Carousel className="w-full max-w-xs">
+    <Carousel className="w-full md:w-[600px] lg:w-[1000px] md:mt-10">
       <CarouselContent>
         {experience.map((item) => (
-          <CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card key={item.id}>
                 <CardContent className="flex aspect-square flex-col items-center justify-center p-6">
@@ -55,7 +54,7 @@ export function TazamaExperience() {
                     <h3 className="font-now text-3xl font-bold text-black ">
                       {item.title}
                     </h3>
-                    <p className="pt-5 text-base">{item.caption}</p>
+                    <p className="pt-5 text-base md:text-lg">{item.caption}</p>
                   </>
                 </CardContent>
               </Card>

@@ -28,6 +28,8 @@ const ContentSection: React.FunctionComponent<contentSectionData> = React.memo(
     // Applying the parallax custom hook to get a motion value for the y-axis
     const y = useParallax(scrollYProgress, 100);
 
+    console.log(`assets/images/gallery/${props.image}`, "hsasdjlakdjdsjhdbkdhsabkhdshja")
+
     // JSX returned by the ContentSection component
     return (
       // Fragment to return multiple elements without adding extra nodes to the DOM
@@ -42,6 +44,7 @@ const ContentSection: React.FunctionComponent<contentSectionData> = React.memo(
         flex-col-reverse
         items-center overflow-hidden
         sm:mt-52
+        lg:mt-0
         ${props.reverse ? "justify-between md:flex-row-reverse" : "md:flex-row"}
       `}
         >
@@ -52,7 +55,7 @@ const ContentSection: React.FunctionComponent<contentSectionData> = React.memo(
           >
             {/* Image element with dynamic source and class names */}
             <img
-              src={`assets/images/gallery/${props.image}`}
+              src={`/assets/images/gallery/${props.image}`}
               alt={props.title}
               className={`h-full w-full ${
                 props.reverse ? "ml-4 sm:ml-10" : "-ml-4 sm:-ml-10"
