@@ -5,6 +5,7 @@ import Carousel from "~/components/Carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";
 // import { routerProps } from "../../types";
 import React from "react";
+import Layout from "~/ui/Layout";
 
 import ContentSection, {
   contentSectionData,
@@ -123,3 +124,5 @@ export default function Page() {
     </>
   );
 }
+
+

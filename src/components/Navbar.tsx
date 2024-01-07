@@ -2,11 +2,59 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
-import { navMainContent, navSubContent } from "../data";
 import Link from "next/link";
 
+const navMainContent = [
+  {
+    title: "About Tazama",
+    link: "/about",
+  },
+  {
+    title: "Mount Kilimanjaro",
+    link: "/itenaries?itenary=mount-kilimanjaro",
+  },
+  {
+    title: "Mount Meru",
+    link: "/itenaries?itenary=mount-meru",
+  },
+  {
+    title: "Safari",
+    link: "/itenaries?itenary=safari",
+  },
+  {
+    title: "Beach Holiday",
+    link: "/itenaries?itenary=beach-holiday",
+  },
+  {
+    title: "Gorrila & Chimps Trekking",
+    link: "/itenaries?itenary=gorilla-and-chimps",
+  },
+];
 
-const Navbar: React.FunctionComponent = React.memo(() => {
+const navSubContent = [
+  {
+    title: "Blog",
+    link: "/blog",
+  },
+  {
+    title: "Positive Impact",
+    link: "/itenaries?itenary=",
+  },
+  {
+    title: "FAQ",
+    link: "/faq",
+  },
+  {
+    title: "Special Offers",
+    link: "/offer",
+  },
+  {
+    title: "Photos and Videos",
+    link: "/gallery",
+  },
+]
+
+const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [onExit, setOnExit] = useState<object>({});
@@ -51,7 +99,7 @@ const Navbar: React.FunctionComponent = React.memo(() => {
   }
 
   return (
-    <nav className="flex justify-between items-center py-4 px-4 md:px-8 fixed w-full top-0 left-0 gap-4 z-20">
+    <nav className="fixed left-0 top-0 z-20 flex w-full items-center justify-between gap-4 px-4 py-4 md:px-8">
       <Link href="/" onClick={() => setNav(false)}>
         <img
           className="w-20 sm:w-32 md:w-40"
@@ -72,19 +120,19 @@ const Navbar: React.FunctionComponent = React.memo(() => {
           data-tf-auto-close
           data-tf-transitive-search-params
           data-tf-medium="snippet"
-          className="py-2 px-4 text-xs md:text-base font-base bg-[#A87133] hover:bg-[#946632] rounded-md text-center text-white font-now"
+          className="font-base font-now rounded-md bg-[#A87133] px-4 py-2 text-center text-xs text-white hover:bg-[#946632] md:text-base"
         >
           Plan my trip
         </button>
 
-        <button
-          className={`hidden md:flex gap-2 md:gap-3 items-center py-1 px-2 md:py-2 md:px-4 transition ease-in-out duration-200 ${
+        {/* <button
+          className={`hidden items-center gap-2 px-2 py-1 transition duration-200 ease-in-out md:flex md:gap-3 md:px-4 md:py-2 ${
             isScrolled ? "text-[#484848]" : "text-white"
           }`}
           onClick={toggleSearchModal}
         >
           <AiOutlineSearch /> <span className="font-now">Search</span>
-        </button>
+        </button> */}
 
         <AnimatePresence>
           {searchModal ? (
@@ -98,29 +146,29 @@ const Navbar: React.FunctionComponent = React.memo(() => {
                 height: "100vh",
               }}
               exit={onExit}
-              className={`bg-[#000000be] absolute w-full h-screen top-0 left-0`}
+              className={`absolute left-0 top-0 h-screen w-full bg-[#000000be]`}
             >
               <button
-                className="absolute right-4 top-4 md:top-0 md:right-8 flex gap-2 text-white md:gap-3 items-center py-1 px-4 md:py-6 md:px-4"
+                className="absolute right-4 top-4 flex items-center gap-2 px-4 py-1 text-white md:right-8 md:top-0 md:gap-3 md:px-4 md:py-6"
                 onClick={toggleSearchModal}
               >
                 <span className="font-now">Close</span>
                 <AiOutlineClose />
               </button>
 
-              <div className="border border-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-2xl w-full py-2 px-4">
-                <div className="w-full flex flex-col sm:flex-row font-now gap-4">
+              <div className="absolute left-1/2 top-1/2 w-full max-w-2xl -translate-x-1/2 -translate-y-1/2 border border-white px-4 py-2">
+                <div className="font-now flex w-full flex-col gap-4 sm:flex-row">
                   <input
                     type="search"
                     placeholder="Your search here..."
-                    className="appearance-none relative  block w-full font-now px-3 py-3 border-2 border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-[#A87133] bg-gray-300 focus:bg-white focus:border-2 focus:border-[#A87133] sm:text-sm placeholder-font-now"
+                    className="font-now placeholder-font-now  relative block w-full appearance-none border-2 border-gray-300 bg-gray-300 px-3 py-3 text-gray-900 placeholder-gray-500 focus:border-2 focus:border-[#A87133] focus:bg-white focus:outline-none focus:ring-[#A87133] sm:text-sm"
                   />
-                  <button className="bg-[#A87133] hover:bg-[#a87133be] py-2 px-4 text-white font-semibold">
+                  <button className="bg-[#A87133] px-4 py-2 font-semibold text-white hover:bg-[#a87133be]">
                     Seacrch
                   </button>
                 </div>
                 <hr className="my-4" />
-                <div className="flex flex-col gap-4 max-h-64 overflow-y-scroll search-scroll-bar">
+                <div className="search-scroll-bar flex max-h-64 flex-col gap-4 overflow-y-scroll">
                   <div className="bg-gray-900 px-4 py-4 text-white">
                     <p className="font-now line-clamp-2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -136,7 +184,7 @@ const Navbar: React.FunctionComponent = React.memo(() => {
         </AnimatePresence>
 
         <button
-          className={`flex gap-2 md:gap-3 items-center py-1 px-2 md:py-2 md:px-4 transition ease-in-out duration-200 ${
+          className={`flex items-center gap-2 px-2 py-1 transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 ${
             isScrolled ? "text-[#484848]" : "text-white"
           } menu-trigger`}
           onClick={toggleNav}
@@ -158,22 +206,22 @@ const Navbar: React.FunctionComponent = React.memo(() => {
               height: "100vh",
             }}
             exit={onExit}
-            className={`bg-[#A87133] absolute w-full h-screen top-0 left-0 px-8 py-4`}
+            className={`absolute left-0 top-0 h-screen w-full bg-[#A87133] px-8 py-4`}
           >
             <div className="flex items-center justify-between">
               <Link href="/" onClick={() => setNav(false)}>
                 <img
-                  className="w-24 sm:w-32 md:w-40 tazama"
+                  className="tazama w-24 sm:w-32 md:w-40"
                   src="assets/images/logos/tazama-white.svg"
                   alt=""
                 />
               </Link>
-              <div className="flex items-center gap-1 sm:gap-2  text-white">
-                <button className="flex gap-2 md:gap-3 items-center py-1 px-2 md:py-2 md:px-4">
+              <div className="flex items-center gap-1 text-white  sm:gap-2">
+                <button className="flex items-center gap-2 px-2 py-1 md:gap-3 md:px-4 md:py-2">
                   <AiOutlineSearch /> <span className="font-now">Search</span>
                 </button>
                 <button
-                  className="flex gap-2 md:gap-3 items-center py-1 px-2 md:py-2 md:px-4"
+                  className="flex items-center gap-2 px-2 py-1 md:gap-3 md:px-4 md:py-2"
                   onClick={toggleNav}
                 >
                   <span className="font-now">Close</span>
@@ -191,7 +239,7 @@ const Navbar: React.FunctionComponent = React.memo(() => {
                   delay: 0.4,
                 },
               }}
-              className="w-full px-12 mt-4 flex flex-col md:flex-row items-start justify-center sm:justify-evenly gap-10 mx-auto absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-white"
+              className="absolute left-1/2 top-1/2 mx-auto mt-4 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center gap-10 px-12 text-white sm:justify-evenly md:flex-row"
             >
               <motion.div
                 initial={{
@@ -205,7 +253,7 @@ const Navbar: React.FunctionComponent = React.memo(() => {
                     duration: 1,
                   },
                 }}
-                className="text-xl sm:text-3xl flex flex-col space-y-4 md:space-y-8"
+                className="flex flex-col space-y-4 text-xl sm:text-3xl md:space-y-8"
               >
                 {navMainContent.map((mainLink, index) => (
                   <motion.span
@@ -240,7 +288,7 @@ const Navbar: React.FunctionComponent = React.memo(() => {
                   },
                 }}
               >
-                <div className="text-xs sm:text-lg flex flex-col gap-y-2 mb-8">
+                <div className="mb-8 flex flex-col gap-y-2 text-xs sm:text-lg">
                   {navSubContent.map((subLink, index) => (
                     <motion.span
                       key={index}
@@ -256,7 +304,7 @@ const Navbar: React.FunctionComponent = React.memo(() => {
                       <Link
                         href={subLink.link}
                         onClick={() => setNav(false)}
-                        className="cursor-pointer hover:underline pb-1 w-fit font-now"
+                        className="font-now w-fit cursor-pointer pb-1 hover:underline"
                       >
                         {subLink.title}
                       </Link>
@@ -265,7 +313,7 @@ const Navbar: React.FunctionComponent = React.memo(() => {
                 </div>
 
                 <Link
-                  className="font-now border border-white rounded-md px-6 py-2 hover:text-[#A87133] hover:bg-white transition ease-in duration-150"
+                  className="font-now rounded-md border border-white px-6 py-2 transition duration-150 ease-in hover:bg-white hover:text-[#A87133]"
                   href="/contact"
                   onClick={() => setNav(false)}
                 >
@@ -278,6 +326,6 @@ const Navbar: React.FunctionComponent = React.memo(() => {
       </AnimatePresence>
     </nav>
   );
-});
+};
 
 export default Navbar;
