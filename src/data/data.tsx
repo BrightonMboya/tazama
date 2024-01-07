@@ -410,6 +410,33 @@ export const specialOffers: specialOffersProperties[] = [
   },
 ];
 
+export const safaris = [
+  {
+    id: 1,
+    name: "HoneyMoon Safaris",
+    img: "honey-moon-trip.webp",
+    href: "/experiences/honeymooners",
+  },
+  {
+    id: 2,
+    name: "Family Safaris",
+    img: "family-trip.webp",
+    href: "/experiences/family-safaris",
+  },
+  {
+    id: 3,
+    name: "Wildlife Adventures",
+    img: "blog.webp",
+    href: "/experiences/wildlife-adventures",
+  },
+  {
+    id: 4,
+    name: "Adventure Seekers",
+    img: "about.webp",
+    href: "/experiences/adventure-seekers",
+  },
+];
+
 export const itenaries: itenaryProperties[] = [
   {
     id: "safari",
