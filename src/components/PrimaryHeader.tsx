@@ -2,6 +2,7 @@ type primaryHeader = {
   title: string;
   image: string;
   subTitle?: string;
+
 };
 
 const PrimaryHeader = (props: primaryHeader) => {
@@ -16,6 +17,8 @@ const PrimaryHeader = (props: primaryHeader) => {
           <p className="font-base absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-6xl sm:px-12 lg:w-2/3 xl:text-7xl">
             {props.title}
           </p>
+
+         
           {props.subTitle && (
             <p className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center text-sm text-white">
               {props.subTitle}

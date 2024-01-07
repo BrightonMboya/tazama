@@ -5,7 +5,7 @@ import Carousel from "~/components/Carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";
 // import { routerProps } from "../../types";
 import React from "react";
-import Layout from "~/ui/Layout";
+import Layout from "~/components/ui/Layout";
 
 import ContentSection, {
   contentSectionData,
@@ -40,8 +40,8 @@ export default function Page() {
         image="home.webp"
         title="Your Next Adventure Awaits"
         subTitle="connect, celebrate & create memories"
-      /> 
-     
+      />
+
       <div className="sm:mb-52">
         {array
           .sort(homePageContentData, "asc", "rank")
@@ -124,5 +124,3 @@ export default function Page() {
     </>
   );
 }
-
-
