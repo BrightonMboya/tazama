@@ -46,7 +46,7 @@ const navSubContent = [
   },
   {
     title: "Special Offers",
-    link: "/offer",
+    link: "/safaris/special-offers",
   },
   {
     title: "Photos and Videos",
