@@ -1,5 +1,4 @@
 import React from "react";
-import { setPageTitle } from "~/helpers";
 import Accordion from "~/components/Accordion";
 import { familyItinerary } from "~/data/family-itenaries";
 import { Button } from "../ui/button";
@@ -8,9 +7,6 @@ import Link from "next/link";
 
 
 const Page = () => {
-  React.useEffect(() => {
-    setPageTitle("Frequently Asked Questions");
-  }, []);
 
   const [category, setCategory] = React.useState("itenary");
 

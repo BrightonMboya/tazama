@@ -1,11 +1,12 @@
 import React from "react";
 import Accordion from "~/components/Accordion";
-import { honeyMooners } from "~/data/honeyMooners";
-import { Button } from "../ui/button";
+import { classicSafaris } from "~/data/classic-safaris";
 import Image from "next/legacy/image";
 import Link from "next/link";
 
 const Page = () => {
+ 
+
   const [category, setCategory] = React.useState("itenary");
 
   return (
@@ -19,16 +20,25 @@ const Page = () => {
           <aside className="w-full md:w-1/3">
             <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
               <li>
-                <Button className="font-now text-white ">
-                  Request Custom Itinerary
-                </Button>
+                <button
+                  data-tf-popup="yy0ZJs6g"
+                  data-tf-opacity="100"
+                  data-tf-size="100"
+                  data-tf-iframe-props="title=My branded typeform"
+                  data-tf-auto-close
+                  data-tf-transitive-search-params
+                  data-tf-medium="snippet"
+                  className="font-base font-now rounded-md bg-[#A87133] px-4 py-2 text-center text-xs text-white hover:bg-[#946632] md:text-base"
+                >
+                  Request Custom Itenary
+                </button>
               </li>
 
               <li className="relative h-[300px] w-[300px] bg-zinc-900">
                 <Link href="https://wetu.com/Itinerary/Landing/EC03E682-B66F-4924-AB41-549AF4117281">
                   <>
                     <Image
-                      src="/assets/images/gallery/honey-moon-trip.webp"
+                      src="/assets/images/gallery/discovery.webp"
                       layout="fill"
                       className="object-cover  opacity-30"
                     />
@@ -42,7 +52,7 @@ const Page = () => {
             </ul>
           </aside>
           <section className="flex w-full flex-col space-y-3 md:w-2/3">
-            {honeyMooners.map((item, index) => {
+            {classicSafaris.map((item, index) => {
               if (item.category === category)
                 return (
                   <div key={index}>
