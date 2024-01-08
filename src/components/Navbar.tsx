@@ -11,11 +11,11 @@ const navMainContent = [
   },
   {
     title: "Mount Kilimanjaro",
-    link: "/itenaries?itenary=mount-kilimanjaro",
+    link: "/safaris/kilimanjaro",
   },
   {
     title: "Mount Meru",
-    link: "/itenaries?itenary=mount-meru",
+    link: "/safaris/mount-meru",
   },
   {
     title: "Safari",
