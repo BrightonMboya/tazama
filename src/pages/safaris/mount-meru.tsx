@@ -5,12 +5,12 @@ import Image from "next/legacy/image";
 
 const Page = () => {
   useEffect(() => {
-    setPageTitle("Mt Kilimanjaro");
+    setPageTitle("Mt Meru");
   }, []);
 
   return (
     <>
-      <PrimaryHeader image={`mount-kilimanjaro.webp`} title="Mt Kilimanjaro" />
+      <PrimaryHeader image={`mount-meru.webp`} title="Mt Meru" />
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">

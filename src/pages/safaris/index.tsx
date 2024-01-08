@@ -1,16 +1,12 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import PrimaryHeader from "../../components/PrimaryHeader";
 import { setPageTitle } from "../../helpers";
-import Card from "../../components/Card";
-import { itenaries, safaris } from "~/data/data";
+import { safaris } from "~/data/data";
 import { motion } from "framer-motion";
-import { string } from "fast-web-kit";
 import Link from "next/link";
 import Image from "next/legacy/image";
 
-const ItenaryPage = () => {
-  const [currentItenary, setItenary] = useState("");
-
+const Page = () => {
   useEffect(() => {
     setPageTitle("Itenaries");
   }, []);
@@ -55,7 +51,7 @@ const ItenaryPage = () => {
             >
               <Link href={safari.href} className="relative cursor-pointer">
                 <>
-                  <div className="relative w-full h-[200px]">
+                  <div className="relative h-[200px] w-full">
                     <Image
                       src={`/assets/images/gallery/${safari.img}`}
                       alt=""
@@ -76,4 +72,4 @@ const ItenaryPage = () => {
   );
 };
 
-export default ItenaryPage;
+export default Page;

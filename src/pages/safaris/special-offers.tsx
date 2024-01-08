@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import PrimaryHeader from "../../components/PrimaryHeader";
 import { setPageTitle } from "../../helpers";
 import { safaris } from "~/data/data";
@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/legacy/image";
 
-const ItenaryPage = () => {
-  const [currentItenary, setItenary] = useState("");
+const Page = () => {
+
 
   useEffect(() => {
     setPageTitle("Tazama Special Offers");
@@ -74,4 +74,4 @@ const ItenaryPage = () => {
   );
 };
 
-export default ItenaryPage;
+export default Page;
