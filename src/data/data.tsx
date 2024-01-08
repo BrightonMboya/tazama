@@ -435,6 +435,31 @@ export const safaris = [
     img: "about.webp",
     href: "/experiences/adventure-seekers",
   },
+
+  {
+    id: 6,
+    name: "Classic Safaris",
+    img: "discovery.webp",
+    href: "/experiences/classic-safaris",
+  },
+  {
+    id: 7,
+    name: "Offbeaten Path",
+    img: "chimps.webp",
+    href: "",
+  },
+  {
+    id: 8,
+    name: "Best of Tanzania",
+    img: "gorilla-and-chimps.webp",
+    href: "",
+  },
+  {
+    id: 9,
+    name: "Migration Safaris",
+    img: "lioness.webp",
+    href: "",
+  },
 ];
 
 export const itenaries: itenaryProperties[] = [

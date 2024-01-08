@@ -1,13 +1,9 @@
-import { HomeContactUs } from "~/components/HomeContactUs";
-import { carouselData } from "~/data/data";
-import { motion } from "framer-motion";
-import PrimaryHeader from "~/components/PrimaryHeader";
 import React from "react";
+import PrimaryHeader from "~/components/PrimaryHeader";
+import { setPageTitle } from "~/helpers";
+import FamilyItinerary from "~/components/itenaries/family"
+import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
-import ContentSection, {
-  contentSectionData,
-} from "~/components/ContentSection";
-import { array } from "fast-web-kit";
 
 const honeyMooners = [
   {
@@ -35,26 +31,6 @@ const honeyMooners = [
     src: "/assets/images/gallery/discovery.webp",
   },
 ];
-export const homePageContentData: contentSectionData[] = [
-  {
-    rank: 1,
-    reverse: true,
-    image: "classic-safaris.webp",
-    actionTitle: "Our Story",
-    title: " We are Tazama – a new luxury travel company",
-    description: `Our outstanding guides and staff are experts who ensure your trip is seamless from start to finish. We offer authentic safaris, giving you up an up-close glimpse of these incredible ecosystems at the pace you'd prefer.\n
-        We partner with outfitters that share our passion of environmentally sustainable business practices and commit to buying local, organic and women-owned where possible.\n
-        Whether it's on the slopes of Kilimanjaro or the plains of the Serengeti, we promise to deliver an experience that is authentic, adventurous, and awe-inspiring! We can't wait to share our home with you.`,
-  },
-  {
-    rank: 2,
-    reverse: false,
-    image: "honey-moon-trip.webp",
-    title: "LOCALLY OWNED & OPERATED",
-    description:
-      "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",
-  },
-];
 
 const MemoryImage = ({ src }: { src: string }) => {
   return (
@@ -63,71 +39,98 @@ const MemoryImage = ({ src }: { src: string }) => {
     </div>
   );
 };
-export default function Page() {
+const AboutPage = () => {
+  React.useEffect(() => {
+    setPageTitle("Family Safaris");
+  }, []);
+
   return (
     <>
-      <PrimaryHeader
-        image="home.webp"
-        title="Your Next Adventure Awaits"
-        subTitle="connect, celebrate & create memories"
-      />
+      <PrimaryHeader image="discovery.webp" title="Family Safaris" />
 
-      <div className="sm:mb-52">
-        {array
-          .sort(homePageContentData, "asc", "rank")
-          .map((content: contentSectionData, index: number) => (
-            <section className=" sm:-mb-72 " key={index}>
-              <ContentSection
-                rank={content.rank}
-                title={content.title}
-                image={content.image}
-                action={content.action}
-                reverse={content.reverse}
-                actionTitle={content.actionTitle}
-                description={content.description}
-              />
-            </section>
-          ))}
+      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+        <div className="">
+          <h3 className="text-4xl text-[#A87133]">Family Safaris</h3>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Welcome to a family safari experience with Tazama Africa Safaris,
+            where every journey is an enriching chapter in your family's
+            storybook of adventures. We specialize in creating safaris that are
+            not just vacations, but vibrant, educational, and unforgettable
+            experiences that bond families closer together.
+          </p>
+
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Imagine a safari where each day is a new adventure, tailored to
+            entertain and educate both you and your children. Our itineraries,
+            available in mid-range and luxury tiers, are designed with family
+            needs in mind. Whether you prefer the rustic charm of the wilderness
+            or the indulgence of luxury accommodations, we have something for
+            every family. Post-safari, we also offer an optional beach holiday,
+            perfect for unwinding and reflecting on your wildlife adventures.
+          </p>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Each family safari is a mosaic of prolific game viewing in some of
+            Africa's most concentrated wildlife areas and heartwarming cultural
+            exchanges. Your children will be thrilled to engage with local Masai
+            tribes, learning to craft traditional bows, dance to the rhythms of
+            ancient songs, and even try their hand at preparing local dishes.
+            These experiences are not only fun but are gateways to understanding
+            and appreciating different cultures
+          </p>
+        </div>
+        <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
+          <div className="relative h-[400px] w-full lg:w-[50%] ">
+            <Image
+              src="/assets/images/gallery/discovery.webp"
+              className="object-cover"
+              layout="fill"
+              alt="cover-img"
+            />
+          </div>
+
+          <div className="relative h-[400px] w-full lg:w-[50%]">
+            <Image
+              src="/assets/images/gallery/group-departure.webp"
+              className="object-cover"
+              layout="fill"
+              alt="cover-img"
+            />
+          </div>
+        </div>
       </div>
 
-      <div className="mx-auto max-w-[82rem] px-4 xl:px-8">
-        <div className="mx-auto mb-8 w-full px-4 py-4 text-[#757371] sm:w-2/3">
-          <motion.h3
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.4,
-              },
-            }}
-            className="mb-4 text-center text-4xl lg:text-5xl"
-          >
-            Authentic & timeless adventures
-          </motion.h3>
-          <motion.p
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.4,
-                delay: 0.2,
-              },
-            }}
-            className="text-center"
-          >
-            Start exploring some of sample itineraries and see where an
-            adventure with Tazama Africa can take you.
-          </motion.p>
+      <div className="mx-auto mt-10 max-w-7xl px-4">
+        <div className="">
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Our accommodations have been carefully chosen for their exceptional
+            family-friendly reputations. In these welcoming camps, your family
+            will find comfort and a chance to bond over shared experiences.
+            Understanding the challenges of traveling with children, we
+            recommend, for families with younger kids, flying directly into
+            several of the game reserves. This approach minimizes travel time
+            and maximizes comfort, allowing you and your family to enjoy every
+            moment of your safari.
+            <br />
+            <br />
+            Are you ready to embark on a family adventure that combines the
+            thrill of wildlife, the warmth of cultural encounters, and the
+            comfort of thoughtfully selected accommodations? Reach out to us at
+            Tazama Africa Safaris, and let's tailor a safari that will turn into
+            a cherished family memory. Your African family adventure, full of
+            learning and laughter, awaits!
+            <br />
+            <br />
+          </p>
         </div>
-        <br />
+      </div>
+
+      <FamilyItinerary />
+
+      <QuoteSection
+        subText="- Leonie Trubshoe, Australia"
+        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
+      />
+      <div className="mt-10 flex flex-col items-center justify-center">
         <div className="mt-10 lg:mt-[10px] ">
           <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
             {honeyMooners.map((item) => (
@@ -136,7 +139,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <HomeContactUs />
     </>
   );
-}
+};
+
+export default AboutPage;

@@ -8,7 +8,7 @@ import Image from "next/legacy/image";
 
 const Page = () => {
   useEffect(() => {
-    setPageTitle("Itenaries");
+    setPageTitle("Safaris");
   }, []);
 
   return (

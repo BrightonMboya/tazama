@@ -42,7 +42,7 @@ const MemoryImage = ({ src }: { src: string }) => {
 };
 const AboutPage = () => {
   React.useEffect(() => {
-    setPageTitle("About");
+    setPageTitle("HoneyMoon Safaris");
   }, []);
 
   return (
