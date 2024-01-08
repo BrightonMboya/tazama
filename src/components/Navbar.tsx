@@ -34,7 +34,7 @@ const navMainContent = [
 const navSubContent = [
   {
     title: "Blog",
-    link: "/blog",
+    link: "/blogs",
   },
   {
     title: "Positive Impact",
