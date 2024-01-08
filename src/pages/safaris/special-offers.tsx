@@ -1,10 +1,8 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import PrimaryHeader from "../../components/PrimaryHeader";
 import { setPageTitle } from "../../helpers";
-import Card from "../../components/Card";
-import { itenaries, safaris } from "~/data/data";
+import { safaris } from "~/data/data";
 import { motion } from "framer-motion";
-import { string } from "fast-web-kit";
 import Link from "next/link";
 import Image from "next/legacy/image";
 
@@ -12,7 +10,7 @@ const ItenaryPage = () => {
   const [currentItenary, setItenary] = useState("");
 
   useEffect(() => {
-    setPageTitle("Itenaries");
+    setPageTitle("Tazama Special Offers");
   }, []);
 
   return (
