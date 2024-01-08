@@ -31,7 +31,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({ slides }) => {
     return null;
   }
 
-  console.log(slides, "jjajajajaj")
+
 
   return (
     <div className="relative flex flex-col items-center justify-center">

@@ -67,8 +67,8 @@ export default function Page() {
   return (
     <>
       <PrimaryHeader
-        image="home.webp"
-        title="Your Next Adventure Awaits"
+        image="honey-moon-trip.webp"
+        title="HoneyMooners"
         subTitle="connect, celebrate & create memories"
       />
 

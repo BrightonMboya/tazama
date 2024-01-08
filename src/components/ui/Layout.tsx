@@ -1,26 +1,20 @@
 import Navbar from "~/components/Navbar";
 import { Footer } from "~/components/Footer";
-import ScrollToTop from "~/components/ScrollToTop";
 import Head from "./Head";
 
 import * as React from "react";
 
-
 type Props = {
   children: React.ReactNode;
-
- 
 };
 
-export default function Layout({children}: Props) {
+export default function Layout({ children }: Props) {
   return (
     <>
-        <Head />
-        <Navbar />
-      <main>
-        {children}
-      </main>
-        <Footer />
+      <Head />
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
     </>
   );
 }
