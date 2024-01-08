@@ -38,7 +38,7 @@ const navSubContent = [
   },
   {
     title: "Positive Impact",
-    link: "/itenaries?itenary=",
+    link: "/blogs/positive-impact",
   },
   {
     title: "FAQ",

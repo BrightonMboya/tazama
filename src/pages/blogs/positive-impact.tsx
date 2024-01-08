@@ -1,19 +1,16 @@
 import React, { useEffect } from "react";
-import PrimaryHeader from "../../components/PrimaryHeader";
-import { setPageTitle } from "../../helpers";
+import PrimaryHeader from "~/components/PrimaryHeader";
+import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
-
-import { motion } from "framer-motion";
-import Link from "next/link";
 
 const ItenaryPage = () => {
   useEffect(() => {
-    setPageTitle("Blogs");
+    setPageTitle("Positive Impact");
   }, []);
 
   return (
     <>
-      <PrimaryHeader image={`zanzibar.jpg`} title=" This is the Blog Title." />
+      <PrimaryHeader image={`zanzibar.jpg`} title="Our Positive Impact" />
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">
