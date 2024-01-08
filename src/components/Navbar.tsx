@@ -23,11 +23,11 @@ const navMainContent = [
   },
   {
     title: "Beach Holiday",
-    link: "/itenaries?itenary=beach-holiday",
+    link: "/safaris/zanzibar",
   },
   {
     title: "Gorrila & Chimps Trekking",
-    link: "/itenaries?itenary=gorilla-and-chimps",
+    link: "/safaris/gorilla-trekking",
   },
 ];
 
@@ -52,7 +52,7 @@ const navSubContent = [
     title: "Photos and Videos",
     link: "/gallery",
   },
-]
+];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
