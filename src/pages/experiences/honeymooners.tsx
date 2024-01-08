@@ -1,15 +1,12 @@
-import { HomeContactUs } from "~/components/HomeContactUs";
-import { carouselData } from "~/data/data";
-import { motion } from "framer-motion";
-import PrimaryHeader from "~/components/PrimaryHeader";
 import React from "react";
-import Image from "next/legacy/image";
-import ContentSection, {
-  contentSectionData,
-} from "~/components/ContentSection";
-import { array } from "fast-web-kit";
+import PrimaryHeader from "~/components/PrimaryHeader";
+import { setPageTitle } from "~/helpers";
+import HoneyMooners from "~/components/itenaries/honeymooners"
 
-export const honeyMooners = [
+import QuoteSection from "~/components/QuoteSection";
+import Image from "next/legacy/image";
+
+const honeyMooners = [
   {
     id: 1,
     src: "/assets/images/gallery/family-trip.webp",
@@ -35,99 +32,105 @@ export const honeyMooners = [
     src: "/assets/images/gallery/discovery.webp",
   },
 ];
-export const homePageContentData: contentSectionData[] = [
-  {
-    rank: 1,
-    reverse: true,
-    image: "classic-safaris.webp",
-    actionTitle: "Our Story",
-    title: " We are Tazama – a new luxury travel company",
-    description: `Our outstanding guides and staff are experts who ensure your trip is seamless from start to finish. We offer authentic safaris, giving you up an up-close glimpse of these incredible ecosystems at the pace you'd prefer.\n
-        We partner with outfitters that share our passion of environmentally sustainable business practices and commit to buying local, organic and women-owned where possible.\n
-        Whether it's on the slopes of Kilimanjaro or the plains of the Serengeti, we promise to deliver an experience that is authentic, adventurous, and awe-inspiring! We can't wait to share our home with you.`,
-  },
-  {
-    rank: 2,
-    reverse: false,
-    image: "honey-moon-trip.webp",
-    title: "LOCALLY OWNED & OPERATED",
-    description:
-      "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",
-  },
-];
 
-export const MemoryImage = ({ src }: { src: string }) => {
+const MemoryImage = ({ src }: { src: string }) => {
   return (
     <div className="relative h-[200px] w-[80%] md:h-[300px] lg:w-[400px]">
       <Image src={src} layout="fill" className="rounded-sm object-cover" />
     </div>
   );
 };
-export default function Page() {
+const AboutPage = () => {
+  React.useEffect(() => {
+    setPageTitle("About");
+  }, []);
+
   return (
     <>
-      <PrimaryHeader
-        image="honey-moon-trip.webp"
-        title="HoneyMooners"
-        subTitle="connect, celebrate & create memories"
-      />
+      <PrimaryHeader image="honey-moon-trip.webp" title="Honeymooners" />
 
-      <div className="sm:mb-52">
-        {array
-          .sort(homePageContentData, "asc", "rank")
-          .map((content: contentSectionData, index: number) => (
-            <section className=" sm:-mb-72 " key={index}>
-              <ContentSection
-                rank={content.rank}
-                title={content.title}
-                image={content.image}
-                action={content.action}
-                reverse={content.reverse}
-                actionTitle={content.actionTitle}
-                description={content.description}
-              />
-            </section>
-          ))}
+   
+      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+        <div className="">
+          <h3 className="text-4xl text-[#A87133]">HoneyMoon Safaris</h3>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Welcome to your first adventure as a newlywed couple with Tazama
+            Africa Safaris. Imagine a honeymoon that not only celebrates your
+            love but also immerses you in the heartbeat of Africa, where wild
+            nature meets serene island bliss. We're dedicated to weaving these
+            elements into a tapestry of unforgettable memories for you.
+          </p>
+
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Your journey begins with the raw beauty of Tanzania's wildlife. The
+            untamed expanse of the Serengeti and the wildlife-rich Ngorongoro
+            Crater offer a front-row seat to nature's grandeur. Picture
+            yourselves sharing the thrill of watching a pride of lions lounging
+            in the morning sun or elephants gracefully traversing the savannah.
+            These moments in the wild create a bond with nature that mirrors the
+            deep connection you share as a couple.
+          </p>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Transitioning from the thrilling safaris, your adventure mellows
+            into the tranquil embrace of Zanzibar's enchanting beaches. Here,
+            the pace slows, and the romantic ambience of secluded resorts sets
+            the tone for your island retreat. Explore the historic alleys of
+            Stone Town, indulge in the island's unique blend of cultures and
+            cuisines, and bask in the warmth of sun-kissed shores. Your days can
+            end with a private beach dinner under the stars or a serene sunset
+            cruise, adding a touch of romance to each moment.
+          </p>
+        </div>
+        <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
+          <div className="relative h-[400px] w-full lg:w-[50%] ">
+            <Image
+              src="/assets/images/gallery/honey-moon-trip.webp"
+              className="object-cover"
+              layout="fill"
+              alt="cover-img"
+            />
+          </div>
+
+          <div className="relative h-[400px] w-full lg:w-[50%]">
+            <Image
+              src="/assets/images/gallery/classic-safaris.webp"
+              className="object-cover"
+              layout="fill"
+              alt="cover-img"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div className="mx-auto mt-10 max-w-7xl px-4">
+        <div className="">
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            We understand that every couple is unique, and so should be their
+            honeymoon experience. That's why we tailor each journey to fit your
+            dreams. Whether you desire more time amidst the wild, crave endless
+            days by the ocean, or a balanced mix of both, our team is here to
+            craft your perfect honeymoon. Your preferences and dreams guide our
+            planning, ensuring your honeymoon is as individual as your love
+            story.
+            <br />
+            <br />
+            Ready to turn your dream honeymoon into reality? Get in touch with
+            us, and let's start planning your unforgettable African safari and
+            serene Zanzibar retreat. Your adventure of a lifetime awaits, and
+            we're excited to be a part of it.
+            <br />
+            <br />
+          </p>
+        </div>
       </div>
 
-      <div className="mx-auto max-w-[82rem] px-4 xl:px-8">
-        <div className="mx-auto mb-8 w-full px-4 py-4 text-[#757371] sm:w-2/3">
-          <motion.h3
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.4,
-              },
-            }}
-            className="mb-4 text-center text-4xl lg:text-5xl"
-          >
-            Authentic & timeless adventures
-          </motion.h3>
-          <motion.p
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.4,
-                delay: 0.2,
-              },
-            }}
-            className="text-center"
-          >
-            Start exploring some of sample itineraries and see where an
-            adventure with Tazama Africa can take you.
-          </motion.p>
-        </div>
-        <br />
+      <HoneyMooners/>
+
+      <QuoteSection
+        subText="- Leonie Trubshoe, Australia"
+        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
+      />
+      <div className="flex flex-col items-center justify-center mt-10">
         <div className="mt-10 lg:mt-[10px] ">
           <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
             {honeyMooners.map((item) => (
@@ -136,7 +139,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <HomeContactUs />
     </>
   );
-}
+};
+
+export default AboutPage;

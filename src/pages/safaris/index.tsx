@@ -15,19 +15,22 @@ const Page = () => {
     <>
       <PrimaryHeader
         image={`maasai.webp`}
-        title="Tazama Unique Tailored Safaris"
+        title="Unique Tailored Safaris
+"
       />
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div id="offers" className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">
-            Our Personal Tailored experiences
+            Explore the Heartbeat of the Wild.
           </h3>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
-            Welcome to our diverse collection of meticulously crafted
-            itineraries, each designed to offer you a unique and unforgettable
-            travel experience. Our itineraries are thoughtfully curated to
-            showcase the beauty, culture, and adventure awaiting you at every
-            destination.
+            Dive deep into the wonders of the African landscape, where every
+            safari is a unique narrative. Below, you'll find an array of curated
+            safari experiences tailored to fulfill the dreams of every traveler.
+            From the intimate moments of a honeymoon safari and the bonding
+            adventures of family excursions to the immersive experiences for
+            wildlife and nature enthusiasts, there's a story waiting to be
+            lived. Choose your journey.
           </p>
           <hr className="mt-4 border" />
         </div>
