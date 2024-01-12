@@ -4,8 +4,7 @@ export const config = {
   runtime: "edge",
 };
 
-//@ts-ignore
-export default async function handler(req) {
+export default async function handler(req: { url: string | URL; }) {
   // const defaultOgImage = `${SUPABASE_BASE_URL}/OG/zambia.png`;
   const defaultOgImage =
     "https://images.unsplash.com/photo-1515205244153-fce4e5d8bc49?q=80&w=3052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
