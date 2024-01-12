@@ -446,7 +446,7 @@ export const safaris = [
     id: 7,
     name: "Offbeaten Path",
     img: "chimps.webp",
-    href: "",
+    href: "/experiences/off-beaten-path",
   },
   {
     id: 8,
