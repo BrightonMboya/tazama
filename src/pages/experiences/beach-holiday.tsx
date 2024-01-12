@@ -41,39 +41,39 @@ const MemoryImage = ({ src }: { src: string }) => {
 };
 const AboutPage = () => {
   React.useEffect(() => {
-    setPageTitle("Adventure Seekers");
+    setPageTitle("Beach Holidays");
   }, []);
 
   return (
     <>
-      <PrimaryHeader image="classic-safaris.webp" title="Adventure Seekers" />
+      <PrimaryHeader image="classic-safaris.webp" title="Beach Holidays" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">
-          <h3 className="text-4xl text-[#A87133]">Adventure Seekers</h3>
+          <h3 className="text-4xl text-[#A87133]">Beach Holiday</h3>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
-            Step into a world where every day is an exhilarating new chapter
-            with Tazama Africa Safaris, your gateway to Africa's untamed beauty
-            and thrilling adventures. Our safaris are designed for those who
-            crave the pulse of adventure and the joy of discovery.
+            Discover the allure of Africa's stunning coastlines with Tazama
+            Africa Safaris, where the rhythm of the waves and the tranquility of
+            pristine beaches create the perfect setting for relaxation and
+            rejuvenation. Our beach holidays are designed for those who seek a
+            blissful escape to some of the most beautiful shores in the world.
           </p>
 
           <p className="mb-3 mt-5 text-xl text-[#757371]">
-            Your journey with us is a tapestry of diverse experiences. Imagine
-            tracking the Big Five during a wildlife safari in the heart of the
-            Serengeti, feeling your heart race as you witness nature's raw
-            power. Venture to the Ngorongoro Crater, where each turn reveals
-            another aspect of the wilderness waiting to be explored. Our
-            itineraries are carefully crafted to satisfy your thirst for
-            adventure, blending wildlife encounters with rich cultural
-            immersions.
+            Envision yourself lounging on the sun-kissed beaches of Zanzibar,
+            where the gentle lapping of azure waters complements the peaceful
+            ambiance. Or perhaps, find your paradise along the secluded bays of
+            Mozambique, where the ocean's hues merge seamlessly with the sky.
+            Each destination is a treasure trove of serenity, offering a unique
+            beach experience.
           </p>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
-            The adventure extends beyond the typical safari. Feel the rush of
-            adrenaline as you partake in activities like hot air ballooning over
-            vast savannas, trekking through lush landscapes, or navigating the
-            rapids of mighty rivers. Each activity is an opportunity to
-            challenge yourself and create memories that last a lifetime.
+            Our beach holidays go beyond the typical seaside retreat. They are
+            an invitation to explore and engage with the vibrant cultures and
+            rich histories of Africa's coastal regions. From the historic Stone
+            Town in Zanzibar to the vibrant local markets and charming fishing
+            villages, each location offers a glimpse into the soul of coastal
+            Africa.
           </p>
         </div>
         <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
@@ -100,24 +100,24 @@ const AboutPage = () => {
       <div className="mx-auto mt-10 max-w-7xl px-4">
         <div className="">
           <p className="mb-3 mt-5 text-xl text-[#757371]">
-            For those intrigued by culture, we offer immersive experiences that
-            bring you face-to-face with local traditions and lifestyles.
-            Participate in authentic cultural exchanges, learning from the
-            communities that have lived in harmony with the African wilderness
-            for centuries.
+            We understand that a beach holiday is as much about the experiences
+            as it is about the setting. That's why we offer a range of
+            activities to enhance your stay. Indulge in a rejuvenating spa
+            treatment, embark on a scuba diving adventure to explore vibrant
+            coral reefs, or simply enjoy a romantic sunset dhow cruise.
             <br />
             <br />
-            At Tazama Africa Safaris, we understand that adventure is personal.
-            That's why we tailor each itinerary to your preferences, ensuring
-            your safari adventure is as unique as you are. Whether you're a solo
-            traveler seeking solitude and thrill or an adventure-seeking couple
-            looking to explore new horizons together, we're here to make your
-            dream safari a reality.
+            For those seeking a more active beach holiday, we offer water
+            sports, deep-sea fishing, and snorkeling adventures. Each activity
+            is an opportunity to make the most of the stunning coastal
+            environment, whether you're seeking thrill or tranquility.
             <br />
             <br />
-            Dive into the adventure of a lifetime with Tazama Africa Safaris.
-            Contact us today, and let's craft your personalized journey into
-            Africa's heart of adventure.
+            Let us craft your perfect beach holiday, a balance of relaxation and
+            adventure amidst Africa's breathtaking coastal landscapes. Get in
+            touch with Tazama Africa Safaris, and let's start planning your
+            escape to the shores of Africa, where endless blue skies and golden
+            sands await.
           </p>
         </div>
       </div>

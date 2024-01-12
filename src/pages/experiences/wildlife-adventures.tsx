@@ -124,7 +124,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <FamilyItinerary />
+      {/* <FamilyItinerary /> */}
 
       <QuoteSection
         subText="- Leonie Trubshoe, Australia"

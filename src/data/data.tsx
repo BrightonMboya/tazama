@@ -460,6 +460,12 @@ export const safaris = [
     img: "lioness.webp",
     href: "",
   },
+  {
+    id: 10,
+    name: 'Beach Holiday',
+    img: "zanzibar.jpg",
+    href: "/experiences/beach-holiday"
+  }
 ];
 
 export const itenaries: itenaryProperties[] = [
