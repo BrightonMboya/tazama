@@ -458,7 +458,7 @@ export const safaris = [
     id: 9,
     name: "Migration Safaris",
     img: "lioness.webp",
-    href: "",
+    href: "/experiences/migration-safaris",
   },
   {
     id: 10,
