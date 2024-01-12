@@ -1,7 +1,7 @@
 import { HomeContactUs } from "~/components/HomeContactUs";
 import { carouselData } from "~/data/data";
 import { motion } from "framer-motion";
-import Carousel from "~/components/Carousel";
+import SafariCarousel from "~/components/safari-carousel"
 import PrimaryHeader from "~/components/PrimaryHeader";
 // import { routerProps } from "../../types";
 import React from "react";
@@ -100,7 +100,12 @@ export default function Page() {
           </motion.p>
         </div>
         <br />
-        <div className="flex flex-col gap-y-16">
+        <section className="flex flex-col items-center justify-center">
+
+      
+        <SafariCarousel/>
+        </section>
+        {/* <div className="flex flex-col gap-y-16">
           {carouselData.sort().map((data, index) => (
             <motion.div
               initial={{
@@ -118,7 +123,7 @@ export default function Page() {
               <Carousel slides={data.images} />
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
       <HomeContactUs />
     </>
