@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 
 const navMainContent = [
@@ -217,9 +217,6 @@ const Navbar = () => {
                 />
               </Link>
               <div className="flex items-center gap-1 text-white  sm:gap-2">
-                <button className="flex items-center gap-2 px-2 py-1 md:gap-3 md:px-4 md:py-2">
-                  <AiOutlineSearch /> <span className="font-now">Search</span>
-                </button>
                 <button
                   className="flex items-center gap-2 px-2 py-1 md:gap-3 md:px-4 md:py-2"
                   onClick={toggleNav}
