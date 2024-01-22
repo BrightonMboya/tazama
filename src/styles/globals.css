@@ -22,9 +22,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   font-family: Mate;
-}
+} */
 
 body {
   background-color: #f5f1eb;

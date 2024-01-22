@@ -16,7 +16,7 @@ const QuoteSection = (props: quoteSection) => {
       transition={{
         duration: 0.5,
       }}
-      className="flex h-[400px] w-full flex-col items-center justify-center bg-[#A87133] p-20 text-center text-white "
+      className="font-mate flex h-[400px] w-full flex-col items-center justify-center bg-[#A87133] p-20 text-center text-white "
     >
       <h1 className="mb-10 text-3xl md:text-4xl">“{props.quote}”</h1>
       {props.subText ? (
