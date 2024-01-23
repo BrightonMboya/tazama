@@ -7,3 +7,5 @@ Disallow: /api/*
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+Sitemap: https://www.tazamaafricasafari.com/sitemap.xml
