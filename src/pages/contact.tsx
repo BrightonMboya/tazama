@@ -105,6 +105,11 @@ const ContactPage = () => {
             ></input>
             <input
               type="hidden"
+              name="_cc"
+              value="info@tazamaafricasafari.com"
+            ></input>
+            <input
+              type="hidden"
               name="_next"
               value="https://www.tazamaafricasafari.com/"
             ></input>
