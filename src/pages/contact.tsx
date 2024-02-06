@@ -54,7 +54,7 @@ const ContactPage = () => {
           </p>
 
           <form
-            action="https://formsubmit.co/jaff@tazamasafaris.com"
+            action="https://formsubmit.co/jaff@tazamasafari.com"
             method="POST"
             className="mx-auto mt-8 flex w-full flex-col gap-8"
           >
