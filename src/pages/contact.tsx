@@ -1,16 +1,8 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import {
-  emailJSPublicKey,
-  emailJSServiceId,
-  emailJSTemplateId,
-  setPageTitle,
-} from "~/helpers";
-import { contactGuestTypeOptions, contactPrefixOptions } from "~/data/data";
+import { setPageTitle } from "~/helpers";
 import { Input } from "~/components/Form";
 import Loader from "~/components/Loader";
-import emailjs from "@emailjs/browser";
-import { string } from "fast-web-kit";
 
 const ContactPage = () => {
   React.useEffect(() => {
@@ -20,51 +12,9 @@ const ContactPage = () => {
 
   const [loading, setLoading] = React.useState<boolean>(false);
   const [email, setEmail] = React.useState<string>("");
-  const [prefix, setPrefix] = React.useState<string>("");
+  const [fullNames, setFullNames] = React.useState("");
+
   const [message, setMessage] = React.useState<string>("");
-  const [lastName, setLastName] = React.useState<string>("");
-  const [firstName, setFirstName] = React.useState<string>("");
-  const [guestType, setGuestType] = React.useState<string>("");
-  const [phoneNumber, setPhoneNumber] = React.useState<string>("");
-
-  const validateForm = async (
-    event: React.ChangeEvent<HTMLFormElement>,
-  ): Promise<void> => {
-    try {
-      setLoading(true);
-      event.preventDefault();
-
-      emailjs.init(emailJSPublicKey);
-      const emailSent = await emailjs.send(
-        emailJSServiceId,
-        emailJSTemplateId,
-        {
-          prefix,
-          message,
-          phone: phoneNumber,
-          last_name: lastName,
-          first_name: firstName,
-          email: email.toLowerCase(),
-          guest_type: string.capitalize(guestType),
-          full_name: string.capitalize(`${firstName} ${lastName}`),
-        },
-      );
-
-      if (emailSent.status === 200) {
-        setEmail("");
-        setPrefix("");
-        setMessage("");
-        setLastName("");
-        setFirstName("");
-        setGuestType("");
-        setPhoneNumber("");
-      }
-    } catch (error) {
-      console.log((error as Error).message);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <>
@@ -104,57 +54,20 @@ const ContactPage = () => {
           </p>
 
           <form
-            action="#"
+            action="https://formsubmit.co/jaff@tazamasafaris.com"
+            method="POST"
             className="mx-auto mt-8 flex w-full flex-col gap-8"
-            onSubmit={validateForm}
           >
-            <div className="flex w-full flex-col gap-2">
-              <label htmlFor="prefix" className="font-now text-[#484848]">
-                Prefix*
-              </label>
-              <select
-                name="prefix"
-                id="prefix"
-                className="font-now form-select cursor-pointer rounded-lg border-none px-4 py-3 shadow-sm focus:ring-[#A87133]"
-                value={prefix}
-                onChange={(e) => setPrefix(e.target.value)}
-                required
-              >
-                <option
-                  value={""}
-                  className="font-now hover:bg-pink-200"
-                  label="Select prefix"
-                />
-                {/* @ts-ignore */}
-                {contactPrefixOptions.map((option, index) => (
-                  <option
-                    key={index}
-                    value={option.option}
-                    className="font-now hover:bg-pink-200"
-                  >
-                    {option.option}
-                  </option>
-                ))}
-              </select>
-            </div>
             <Input
               required
               type="text"
-              name="firstName"
-              value={firstName}
-              label="First Name*"
-              placeholder="Enter your first name"
-              onChange={(e) => setFirstName(e.target.value)}
+              name="fullName"
+              value={fullNames}
+              label="Full Names*"
+              placeholder="Enter your full Names"
+              onChange={(e) => setFullNames(e.target.value)}
             />
-            <Input
-              required
-              type="text"
-              name="lastName"
-              value={lastName}
-              label="last Name*"
-              placeholder="Enter your last name"
-              onChange={(e) => setLastName(e.target.value)}
-            />
+
             <Input
               required
               type="email"
@@ -164,15 +77,7 @@ const ContactPage = () => {
               placeholder="Enter your email address"
               onChange={(e) => setEmail(e.target.value)}
             />
-            <Input
-              required
-              type="number"
-              name="phoneNumber"
-              value={phoneNumber}
-              label="Phone Number*"
-              placeholder="Enter your phone number"
-              onChange={(e) => setPhoneNumber(e.target.value)}
-            />
+
             <div className="flex w-full flex-col gap-2">
               <label htmlFor="message" className="font-now text-[#484848]">
                 Message*
@@ -181,33 +86,29 @@ const ContactPage = () => {
                 className="font-now h-36 rounded-lg border-none px-4 py-3 shadow-sm placeholder:text-gray-300 focus:ring-[#A87133]"
                 placeholder="Write your message here"
                 required
+                name="Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
 
-            <div className="flex w-full flex-col gap-2">
-              <label htmlFor="type" className="font-now text-[#484848]">
-                I am a
-              </label>
-              {/* @ts-ignore */}
-              {contactGuestTypeOptions.map((GuestType, index) => (
-                <div className="flex items-center gap-2" key={index}>
-                  <input
-                    id="guestType"
-                    type="checkbox"
-                    name="guestType"
-                    value={GuestType.htmlName}
-                    checked={GuestType.htmlName === guestType}
-                    className="cursor-pointer rounded-full checked:bg-[#A87133]"
-                    onChange={(e) => setGuestType(e.target.value)}
-                  />
-                  <label htmlFor={GuestType.htmlName} className="font-now">
-                    {GuestType.name}
-                  </label>
-                </div>
-              ))}
-            </div>
+            {/* Hidden components necessary for submititng the form to the email */}
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Tazama Trip Inquiry"
+            ></input>
+            <input
+              type="hidden"
+              name="_cc"
+              value="james@tazamasafaris.com"
+            ></input>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://www.tazamaafricasafari.com/"
+            ></input>
+
             <button
               type="submit"
               className="font-now w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
