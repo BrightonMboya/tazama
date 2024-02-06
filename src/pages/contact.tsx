@@ -54,7 +54,7 @@ const ContactPage = () => {
           </p>
 
           <form
-            action="https://formsubmit.co/jaff@tazamasafari.com"
+            action="https://formsubmit.co/jaff@tazamaafricasafari.com"
             method="POST"
             className="mx-auto mt-8 flex w-full flex-col gap-8"
           >
@@ -101,7 +101,7 @@ const ContactPage = () => {
             <input
               type="hidden"
               name="_cc"
-              value="james@tazamasafaris.com"
+              value="james@tazamaafricasafari.com"
             ></input>
             <input
               type="hidden"
