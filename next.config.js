@@ -3,6 +3,20 @@
  * for Docker builds.
  */
 await import("./src/env.js");
+import * as nextMDX from "@next/mdx";
+
+const withMDX = nextMDX.default({
+  extension: /\.mdx?$/,
+  options: {
+    // If you use remark-gfm, you'll need to use next.config.mjs
+    // as the package is ESM only
+    // https://github.com/remarkjs/remark-gfm#install
+    remarkPlugins: [],
+    rehypePlugins: [],
+    // If you use `MDXProvider`, uncomment the following line.
+    // providerImportSource: "@mdx-js/react",
+  },
+});
 
 /** @type {import("next").NextConfig} */
 const config = {
@@ -20,6 +34,7 @@ const config = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
-export default config;
+export default withMDX(config);

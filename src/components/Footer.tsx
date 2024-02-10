@@ -30,7 +30,7 @@ export const Footer = () => {
             </li>
             {/* List items for various footer links with hover effects */}
             <li className="text-[#969492] hover:underline">
-              <Link href="/terms-and-conditions">Terms & Conditions</Link>
+              <Link href="/terms">Terms & Conditions</Link>
             </li>
             <li className="text-[#969492] hover:underline">
               <Link href="/testimonials">Testimonials</Link>
