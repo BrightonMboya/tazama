@@ -13,20 +13,23 @@ const Page = () => {
       <PrimaryHeader image={`beach-holiday.webp`} title="Zanzibar" />
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div className="mb-10 py-8">
-          <h3 className="text-4xl text-[#A87133]">
-            After sunset – the magic of twilight in the bush
-          </h3>
+          <h3 className="text-4xl text-[#A87133]">An Archipelago in the Indian ocean</h3>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
+            Welcome to the epitome of serenity and adventure, where the
+            crystalline waters of the Indian Ocean caress the shores of
+            Tanzania's untouched beaches. Our beach holiday page serves as your
+            exclusive gateway to the enchanting islands of Zanzibar, including
+            the secluded havens of Mafia, Pemba, and Unguja. Each destination
+            promises an unparalleled fusion of opulence and excitement, steeped
+            in a tapestry of rich culture and captivating history.
           </p>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
+            Zanzibar, renowned as the spice island, has beckoned explorers,
+            mariners, and merchants for centuries, its shores laden with the
+            intoxicating aromas of cloves, nutmeg, and cinnamon. Today, the
+            Zanzibar Archipelago remains a sanctuary of indulgence, where
+            traditional dhows gracefully glide across the horizon amidst a
+            backdrop of timeless beauty.
           </p>
 
           <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
@@ -48,114 +51,6 @@ const Page = () => {
               />
             </div>
           </div>
-        </div>
-
-        <div className="py-8">
-          <h3 className="text-4xl text-[#A87133]">Sundowners in nature</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-
-          <div className="mt-5 flex flex-col items-center justify-center space-y-5">
-            <div className="relative h-[400px] w-full ">
-              <Image
-                src="/assets/images/gallery/about.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
-              />
-            </div>
-          </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-        </div>
-
-        <div className="mb-10 py-8">
-          <h3 className="text-4xl text-[#A87133]">
-            After sunset – the magic of twilight in the bush
-          </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-
-          <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
-            <div className="relative h-[400px] w-full ">
-              <Image
-                src="/assets/images/gallery/honey-moon-trip.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
-              />
-            </div>
-
-            <div className="relative h-[400px] w-full">
-              <Image
-                src="/assets/images/gallery/classic-safaris.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
-              />
-            </div>
-          </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
         </div>
       </div>
     </>

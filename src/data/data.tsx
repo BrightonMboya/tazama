@@ -415,38 +415,38 @@ export const safaris = [
     id: 1,
     name: "HoneyMoon Safaris",
     img: "honey-moon-trip.webp",
-    href: "/experiences/honeymooners",
+    href: "/safaris/honeymooners",
   },
   {
     id: 2,
     name: "Family Safaris",
     img: "family-trip.webp",
-    href: "/experiences/family-safaris",
+    href: "/safaris/family-safaris",
   },
   {
     id: 3,
     name: "Wildlife and Nature",
     img: "blog.webp",
-    href: "/experiences/wildlife-adventures",
+    href: "/safaris/wildlife-adventures",
   },
   {
     id: 4,
     name: "Adventure Seekers",
     img: "about.webp",
-    href: "/experiences/adventure-seekers",
+    href: "/safaris/adventure-seekers",
   },
 
   {
     id: 6,
     name: "Classic Safaris",
     img: "discovery.webp",
-    href: "/experiences/classic-safaris",
+    href: "/safaris/classic-safaris",
   },
   {
     id: 7,
     name: "Offbeaten Path",
     img: "chimps.webp",
-    href: "/experiences/off-beaten-path",
+    href: "/safaris/off-beaten-path",
   },
   {
     id: 8,
@@ -458,13 +458,13 @@ export const safaris = [
     id: 9,
     name: "Migration Safaris",
     img: "lioness.webp",
-    href: "/experiences/migration-safaris",
+    href: "/safaris/migration-safaris",
   },
   {
     id: 10,
     name: 'Beach Holiday',
     img: "zanzibar.jpg",
-    href: "/experiences/beach-holiday"
+    href: "/safaris/zanzibar"
   }
 ];
 
