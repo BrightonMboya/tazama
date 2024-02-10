@@ -29,7 +29,7 @@ export const homePageContentData: contentSectionData[] = [
     reverse: false,
     image: "maasai.webp",
     title: "LOCALLY OWNED & OPERATED",
-    action: "/blogs/tailorMade",
+    action: "/safaris/tailorMade",
     actionTitle: "Learn More",
     description:
       "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",

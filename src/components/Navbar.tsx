@@ -32,14 +32,14 @@ const navMainContent = [
 ];
 
 const navSubContent = [
-  {
-    title: "Blog",
-    link: "/blogs",
-  },
-  {
-    title: "Positive Impact",
-    link: "/blogs/positive-impact",
-  },
+  // {
+  //   title: "Blog",
+  //   link: "/blogs",
+  // },
+  // {
+  //   title: "Positive Impact",
+  //   link: "/blogs/positive-impact",
+  // },
   {
     title: "FAQ",
     link: "/faq",
@@ -125,14 +125,7 @@ const Navbar = () => {
           Plan my trip
         </button>
 
-        {/* <button
-          className={`hidden items-center gap-2 px-2 py-1 transition duration-200 ease-in-out md:flex md:gap-3 md:px-4 md:py-2 ${
-            isScrolled ? "text-[#484848]" : "text-white"
-          }`}
-          onClick={toggleSearchModal}
-        >
-          <AiOutlineSearch /> <span className="font-now">Search</span>
-        </button> */}
+     
 
         <AnimatePresence>
           {searchModal ? (
@@ -156,29 +149,7 @@ const Navbar = () => {
                 <AiOutlineClose />
               </button>
 
-              <div className="absolute left-1/2 top-1/2 w-full max-w-2xl -translate-x-1/2 -translate-y-1/2 border border-white px-4 py-2">
-                <div className="font-now flex w-full flex-col gap-4 sm:flex-row">
-                  <input
-                    type="search"
-                    placeholder="Your search here..."
-                    className="font-now placeholder-font-now  relative block w-full appearance-none border-2 border-gray-300 bg-gray-300 px-3 py-3 text-gray-900 placeholder-gray-500 focus:border-2 focus:border-[#A87133] focus:bg-white focus:outline-none focus:ring-[#A87133] sm:text-sm"
-                  />
-                  <button className="bg-[#A87133] px-4 py-2 font-semibold text-white hover:bg-[#a87133be]">
-                    Seacrch
-                  </button>
-                </div>
-                <hr className="my-4" />
-                <div className="search-scroll-bar flex max-h-64 flex-col gap-4 overflow-y-scroll">
-                  <div className="bg-gray-900 px-4 py-4 text-white">
-                    <p className="font-now line-clamp-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Qui nemo similique at quos a atque repellendus corporis
-                      aut porro facilis nihil quia perspiciatis velit
-                      consectetur sapiente, debitis fugit eligendi tenetur!
-                    </p>
-                  </div>
-                </div>
-              </div>
+             
             </motion.div>
           ) : null}
         </AnimatePresence>
@@ -285,7 +256,7 @@ const Navbar = () => {
                   },
                 }}
               >
-                <div className="mb-8 flex flex-col gap-y-2 text-xs sm:text-lg">
+                <div className="mb-8 flex flex-col gap-y-2 font-sans">
                   {navSubContent.map((subLink, index) => (
                     <motion.span
                       key={index}
@@ -301,7 +272,7 @@ const Navbar = () => {
                       <Link
                         href={subLink.link}
                         onClick={() => setNav(false)}
-                        className="font-now w-fit cursor-pointer pb-1 hover:underline"
+                        className="w-fit cursor-pointer pb-1 hover:underline text-lg"
                       >
                         {subLink.title}
                       </Link>

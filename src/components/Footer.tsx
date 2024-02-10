@@ -32,9 +32,9 @@ export const Footer = () => {
             <li className="text-[#969492] hover:underline">
               <Link href="/terms">Terms & Conditions</Link>
             </li>
-            <li className="text-[#969492] hover:underline">
+            {/* <li className="text-[#969492] hover:underline">
               <Link href="/testimonials">Testimonials</Link>
-            </li>
+            </li> */}
             <li className="text-[#969492] hover:underline">
               <Link href="/contact">Contact</Link>
             </li>
