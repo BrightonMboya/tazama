@@ -5,6 +5,7 @@ import {
   FaTiktok,
   FaWhatsapp,
   FaYoutube,
+  FaTripadvisor,
 } from "react-icons/fa";
 import { applicationName } from "../helpers";
 import Link from "next/link";
@@ -43,6 +44,12 @@ export const Footer = () => {
           {/* Container for social media icons with a gap between them */}
           <div className="flex w-fit gap-x-4">
             {/* Anchor tags linking to respective social media platforms, each opening in a new tab */}
+            <a
+              href="https://www.tripadvisor.com/Attraction_Review-g6940195-d13368802-Reviews-Tazama_Africa_Tours_and_Safari-Arusha_National_Park_Arusha_Region.html"
+              target="_blank"
+            >
+              <FaTripadvisor className="cursor-pointer text-2xl text-[#35E0A1]" />
+            </a>
             <a href="https://wa.me/+255745100011" target="_blank">
               <FaWhatsapp className="cursor-pointer text-2xl text-[#25D366]" />
             </a>
