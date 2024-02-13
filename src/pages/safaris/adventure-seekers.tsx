@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import TwoDayTripItienary from "~/components/itenaries/adventureSeekers/twoDayTrip"
+import { TwoDayTripItienary } from "~/components/itenaries/adventureSeekers/twoDayTrip";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 
@@ -122,7 +122,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-     <TwoDayTripItienary/>
+      <TwoDayTripItienary />
 
       <QuoteSection
         subText="- Leonie Trubshoe, Australia"
