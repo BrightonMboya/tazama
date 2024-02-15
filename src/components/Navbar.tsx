@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/legacy/image";
 
 const navMainContent = [
   {
@@ -56,20 +57,9 @@ const navSubContent = [
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+
   const [onExit, setOnExit] = useState<object>({});
   const [searchModal, setSearchModal] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 750) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -99,36 +89,65 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed left-0 top-0 z-20 flex w-full items-center justify-between gap-4 px-4 py-4 md:px-8">
-      <Link href="/" onClick={() => setNav(false)}>
-        <img
-          className="w-20 sm:w-32 md:w-40"
-          src={`${
-            isScrolled
-              ? "assets/images/logos/tazama-gold.svg"
-              : "assets/images/logos/tazama-white.svg"
-          }`}
-          alt=""
-        />
-      </Link>
-      <div className="flex items-center gap-1 sm:gap-2">
-        <button
-          data-tf-popup="yy0ZJs6g"
-          data-tf-opacity="100"
-          data-tf-size="100"
-          data-tf-iframe-props="title=My branded typeform"
-          data-tf-auto-close
-          data-tf-transitive-search-params
-          data-tf-medium="snippet"
-          className="font-base font-now rounded-md bg-[#A87133] px-4 py-2 text-center text-xs text-white hover:bg-[#946632] md:text-base"
-        >
-          Plan my trip
-        </button>
+    <section>
+      <nav className="fixed left-0 top-0 z-20 flex w-full items-center justify-between gap-4 px-4 py-4 md:px-8">
+        <Link href="/" onClick={() => setNav(false)}>
+          <img
+            className="w-20 sm:w-32 md:w-40"
+            src="assets/images/logos/tazama-gold.svg"
+            alt=""
+          />
+        </Link>
+        <div className="flex items-center gap-1 sm:gap-2">
+          <button
+            data-tf-popup="yy0ZJs6g"
+            data-tf-opacity="100"
+            data-tf-size="100"
+            data-tf-iframe-props="title=My branded typeform"
+            data-tf-auto-close
+            data-tf-transitive-search-params
+            data-tf-medium="snippet"
+            className="font-base font-now rounded-md bg-[#A87133] px-4 py-2 text-center text-xs text-white hover:bg-[#946632] md:text-base"
+          >
+            Plan my trip
+          </button>
 
-     
+          <AnimatePresence>
+            {searchModal ? (
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  height: 0,
+                }}
+                animate={{
+                  opacity: 1,
+                  height: "100vh",
+                }}
+                exit={onExit}
+                className={`absolute left-0 top-0 h-screen w-full bg-[#000000]`}
+              >
+                <button
+                  className="absolute right-4 top-4 flex items-center gap-2 px-4 py-1 text-white md:right-8 md:top-0 md:gap-3 md:px-4 md:py-6"
+                  onClick={toggleSearchModal}
+                >
+                  <span className="font-now">Close</span>
+                  <AiOutlineClose />
+                </button>
+              </motion.div>
+            ) : null}
+          </AnimatePresence>
+
+          <button
+            className={`menu-trigger rounded-md text-white flex items-center gap-2 bg-[#A87133] px-2 py-1 transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2`}
+            onClick={toggleNav}
+          >
+            <span className="font-now menu-trigger">Menu</span>
+            <AiOutlineMenu className="menu-trigger" />
+          </button>
+        </div>
 
         <AnimatePresence>
-          {searchModal ? (
+          {nav ? (
             <motion.div
               initial={{
                 opacity: 0,
@@ -139,160 +158,123 @@ const Navbar = () => {
                 height: "100vh",
               }}
               exit={onExit}
-              className={`absolute left-0 top-0 h-screen w-full bg-[#000000be]`}
+              className={`absolute left-0 top-0 h-screen w-full bg-[#A87133] px-8 py-4`}
             >
-              <button
-                className="absolute right-4 top-4 flex items-center gap-2 px-4 py-1 text-white md:right-8 md:top-0 md:gap-3 md:px-4 md:py-6"
-                onClick={toggleSearchModal}
-              >
-                <span className="font-now">Close</span>
-                <AiOutlineClose />
-              </button>
-
-             
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
-
-        <button
-          className={`flex items-center gap-2 px-2 py-1 transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 ${
-            isScrolled ? "text-[#484848]" : "text-white"
-          } menu-trigger`}
-          onClick={toggleNav}
-        >
-          <span className="font-now menu-trigger">Menu</span>
-          <AiOutlineMenu className="menu-trigger" />
-        </button>
-      </div>
-
-      <AnimatePresence>
-        {nav ? (
-          <motion.div
-            initial={{
-              opacity: 0,
-              height: 0,
-            }}
-            animate={{
-              opacity: 1,
-              height: "100vh",
-            }}
-            exit={onExit}
-            className={`absolute left-0 top-0 h-screen w-full bg-[#A87133] px-8 py-4`}
-          >
-            <div className="flex items-center justify-between">
-              <Link href="/" onClick={() => setNav(false)}>
-                <img
-                  className="tazama w-24 sm:w-32 md:w-40"
-                  src="assets/images/logos/tazama-white.svg"
-                  alt=""
-                />
-              </Link>
-              <div className="flex items-center gap-1 text-white  sm:gap-2">
-                <button
-                  className="flex items-center gap-2 px-2 py-1 md:gap-3 md:px-4 md:py-2"
-                  onClick={toggleNav}
-                >
-                  <span className="font-now">Close</span>
-                  <AiOutlineClose />
-                </button>
-              </div>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: 1,
-                transition: {
-                  duration: 0.4,
-                  delay: 0.4,
-                },
-              }}
-              className="absolute left-1/2 top-1/2 mx-auto mt-4 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center gap-10 px-12 text-white sm:justify-evenly md:flex-row"
-            >
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  translateX: -20,
-                }}
-                animate={{
-                  opacity: 1,
-                  translateX: 0,
-                  transition: {
-                    duration: 1,
-                  },
-                }}
-                className="flex flex-col space-y-4 text-xl sm:text-3xl md:space-y-8"
-              >
-                {navMainContent.map((mainLink, index) => (
-                  <motion.span
-                    initial={{ x: -20 }}
-                    animate={{
-                      x: 0,
-                      transition: {
-                        duration: 0.5,
-                        delay: 0.15 * index,
-                      },
-                    }}
-                    key={index}
+              <div className="flex items-center justify-between">
+                <Link href="/" onClick={() => setNav(false)}>
+                  <img
+                    className="tazama w-24 sm:w-32 md:w-40"
+                    src="assets/images/logos/tazama-white.svg"
+                    alt=""
+                  />
+                </Link>
+                <div className="flex items-center gap-1 text-white  sm:gap-2">
+                  <button
+                    className="flex items-center gap-2 px-2 py-1 md:gap-3 md:px-4 md:py-2"
+                    onClick={toggleNav}
                   >
-                    <Link
-                      href={mainLink.link}
-                      className="hover:text-[#e0e0e0]"
-                      onClick={() => setNav(false)}
-                    >
-                      {mainLink.title}
-                    </Link>
-                  </motion.span>
-                ))}
-              </motion.div>
+                    <span className="font-now">Close</span>
+                    <AiOutlineClose />
+                  </button>
+                </div>
+              </div>
+
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
-                  x: 0,
                   transition: {
-                    duration: 0.75,
-                    delay: 0.8,
+                    duration: 0.4,
+                    delay: 0.4,
                   },
                 }}
+                className="absolute left-1/2 top-1/2 mx-auto mt-4 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center gap-10 px-12 text-white sm:justify-evenly md:flex-row"
               >
-                <div className="mb-8 flex flex-col gap-y-2 font-sans">
-                  {navSubContent.map((subLink, index) => (
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    translateX: -20,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    translateX: 0,
+                    transition: {
+                      duration: 1,
+                    },
+                  }}
+                  className="flex flex-col space-y-4 text-xl sm:text-3xl md:space-y-8"
+                >
+                  {navMainContent.map((mainLink, index) => (
                     <motion.span
-                      key={index}
                       initial={{ x: -20 }}
                       animate={{
                         x: 0,
                         transition: {
-                          duration: 0.75,
-                          delay: 0.2 * index,
+                          duration: 0.5,
+                          delay: 0.15 * index,
                         },
                       }}
+                      key={index}
                     >
                       <Link
-                        href={subLink.link}
+                        href={mainLink.link}
+                        className="hover:text-[#e0e0e0]"
                         onClick={() => setNav(false)}
-                        className="w-fit cursor-pointer pb-1 hover:underline text-lg"
                       >
-                        {subLink.title}
+                        {mainLink.title}
                       </Link>
                     </motion.span>
                   ))}
-                </div>
-
-                <Link
-                  className="font-now rounded-md border border-white px-6 py-2 transition duration-150 ease-in hover:bg-white hover:text-[#A87133]"
-                  href="/contact"
-                  onClick={() => setNav(false)}
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{
+                    opacity: 1,
+                    x: 0,
+                    transition: {
+                      duration: 0.75,
+                      delay: 0.8,
+                    },
+                  }}
                 >
-                  Contact Us
-                </Link>
+                  <div className="mb-8 flex flex-col gap-y-2 font-sans">
+                    {navSubContent.map((subLink, index) => (
+                      <motion.span
+                        key={index}
+                        initial={{ x: -20 }}
+                        animate={{
+                          x: 0,
+                          transition: {
+                            duration: 0.75,
+                            delay: 0.2 * index,
+                          },
+                        }}
+                      >
+                        <Link
+                          href={subLink.link}
+                          onClick={() => setNav(false)}
+                          className="w-fit cursor-pointer pb-1 text-lg hover:underline"
+                        >
+                          {subLink.title}
+                        </Link>
+                      </motion.span>
+                    ))}
+                  </div>
+
+                  <Link
+                    className="font-now rounded-md border border-white px-6 py-2 transition duration-150 ease-in hover:bg-white hover:text-[#A87133]"
+                    href="/contact"
+                    onClick={() => setNav(false)}
+                  >
+                    Contact Us
+                  </Link>
+                </motion.div>
               </motion.div>
             </motion.div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
-    </nav>
+          ) : null}
+        </AnimatePresence>
+      </nav>
+    </section>
   );
 };
 
