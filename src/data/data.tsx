@@ -40,13 +40,7 @@ export const carouselData: carousel[] = [
     rank: 1,
     heading: "Safari",
     images: [
-      // {
-      //     imageSource: "off-beaten.webp",
-      //     title: "Off Beaten Path",
-      //     rank: 5,
-      //     link: "/itenary",
-      //     description: "Tanzania, with three of Africa's natural wonders, offers unparalleled safari, beach, and trekking experiences. Its universal appeal captivates travelers seeking tranquility amidst unspoiled landscapes.",
-      // },
+      
       {
         rank: 1,
         imageSource: "classic-safaris.webp",
@@ -199,28 +193,6 @@ export const navSubContent: navLink[] = [
     title: "Photos and Videos",
     link: "/gallery",
   },
-
-  //   {
-  //     title: "Itenaries",
-  //     link: "/itenaries",
-  //   },
-];
-
-export const contactPrefixOptions: selectOptions[] = [
-  { option: "Mr." },
-  { option: "Ms." },
-  { option: "Mrs." },
-  { option: "Dr." },
-  { option: "Prof." },
-  { option: "Other" },
-];
-
-export const contactGuestTypeOptions: checkBoxOptions[] = [
-  { htmlName: "guest", name: "Guest" },
-  { htmlName: "travel-agent", name: "Travel Agent" },
-  { htmlName: "journalist", name: "Journalist" },
-  { htmlName: "supplier", name: "Supplier" },
-  { htmlName: "other", name: "Other" },
 ];
 
 export const accordionQns: accordionQn[] = [
@@ -400,15 +372,6 @@ export const accordionQns: accordionQn[] = [
   },
 ];
 
-export const specialOffers: specialOffersProperties[] = [
-  {
-    img: "special-offer.jpg",
-    link: "https://wetu.com/Itinerary/Landing/a0618581-0fdc-4ea1-abd7-94d3e6964294",
-    mainHeading: "7 Days Lemosho & 5 Days Migration Safari",
-    subHeading: "Arusha, Tanzania",
-    offer: "12 nights adventure in Tanzania",
-  },
-];
 
 export const safaris = [
   {
@@ -467,92 +430,3 @@ export const safaris = [
     href: "/safaris/zanzibar"
   }
 ];
-
-export const itenaries: itenaryProperties[] = [
-  {
-    id: "safari",
-    img: "safari.webp",
-    data: [
-      {
-        name: "Classic Safari",
-        link: "https://wetu.com/Itinerary/Landing/ba846c15-7182-4c70-ae4c-1c5b7993d227",
-        img: "safari.webp",
-      },
-      {
-        name: "Honeymoon Safari",
-        link: "https://wetu.com/Itinerary/Landing/EC03E682-B66F-4924-AB41-549AF4117281",
-        img: "honey-moon-trip.webp",
-      },
-      {
-        name: "Migration Safari",
-        link: "https://wetu.com/Itinerary/Landing/71C3583B-C750-4106-88D0-69CD318944E8",
-        img: "migration.webp",
-      },
-      {
-        name: "Family Safari",
-        link: "https://wetu.com/Itinerary/Landing/CDAC8B29-A6FD-4D9E-A6B5-7F46A5F71491",
-        img: "family-trip.webp",
-      },
-    ],
-  },
-
-  {
-    id: "mount-kilimanjaro",
-    img: "mount-kilimanjaro.webp",
-    data: [
-      {
-        name: "Lemosho 7 Days",
-        link: "https://wetu.com/Itinerary/Landing/43bceafb-2dbd-4a7a-9d23-0b8310320667",
-        img: "lemosho.jpg",
-      },
-      {
-        name: "Lemosho 8 Days",
-        link: "https://wetu.com/Itinerary/Landing/43bceafb-2dbd-4a7a-9d23-0b8310320667",
-        img: "lemosho-8days.jpg",
-      },
-      {
-        name: "Machame 7 Days ",
-        link: "https://wetu.com/Itinerary/Landing/f08552fb-5387-43fd-a10a-18d0a0187d05",
-        img: "machame.jpg",
-      },
-      {
-        name: "Machame Route 6 Days ",
-        link: "https://wetu.com/Itinerary/Landing/E061DE49-581D-459D-8649-770F6B539A81",
-        img: "machame-6days.jpg",
-      },
-    ],
-  },
-  {
-    id: "mount-meru",
-    img: "mount-meru.webp",
-    data: [
-      {
-        name: "3 Days in Mount Meru",
-        link: "https://wetu.com/Itinerary/Landing/8dd22e68-c2c2-4729-9a69-e754d79a82c1",
-        img: "meru-3days.jpg",
-      },
-      {
-        name: "4 Days in Mount Meru",
-        link: "https://wetu.com/Itinerary/Landing/e8c02648-a330-4626-bbda-1a8d47d3bb95",
-        img: "meru-4days.jpg",
-      },
-    ],
-  },
-];
-
-// {
-//     name: "Off the beaten path",
-//     link: "/itenary",
-//     img: "off-beaten.webp"
-// },
-// {
-//     name: "Best of Tanzania",
-//     link: "https://wetu.com/Itinerary/Landing/C6738985-02E8-4E75-B435-B3AD945DD79C",
-//     img: "off-beaten.webp"
-// },
-
-// {
-//     name: "Lemosho 8 days",
-//     link: "/itenary",
-//     img: "group-departure.webp"
-// }

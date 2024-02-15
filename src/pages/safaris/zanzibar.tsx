@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
+import { EightDayTrips, NineDayTrip, TenDayTrips, TwelveDayTrip, FourteenDayTrip } from "~/components/itenaries/zanzibar";
 
 const Page = () => {
   useEffect(() => {
@@ -51,6 +52,11 @@ const Page = () => {
               />
             </div>
           </div>
+            <EightDayTrips/>
+            <NineDayTrip/>
+            <TenDayTrips/>
+            <TwelveDayTrip/>
+            <FourteenDayTrip/>
         </div>
       </div>
     </>

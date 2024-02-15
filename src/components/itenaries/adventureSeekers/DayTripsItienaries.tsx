@@ -6,7 +6,7 @@ import {
   fourDayTrip,
   fiveDayTrip,
   sixDayTrip,
-  sevenDayTrip
+  sevenDayTrip,
 } from "~/data/adventure-seekers";
 import { Button } from "~/components/ui/button";
 import Link from "next/link";
@@ -40,7 +40,6 @@ export const TwoDayTripItienary = () => {
                   <Accordion question={item.qn} answer={item.ans} />
                 </div>
               );
-              return null;
             })}
           </section>
         </div>
@@ -75,7 +74,6 @@ export const ThreeDayTrip = () => {
                 <Accordion question={item.qn} answer={item.ans} />
               </div>
             );
-            return null;
           })}
         </section>
       </div>
@@ -114,7 +112,6 @@ export const FourDayTrip = () => {
                 />
               </div>
             );
-            return null;
           })}
         </section>
       </div>
@@ -153,7 +150,6 @@ export const FiveDayTrip = () => {
                 />
               </div>
             );
-            return null;
           })}
         </section>
       </div>
@@ -192,7 +188,6 @@ export const SixDayTrip = () => {
                 />
               </div>
             );
-            return null;
           })}
         </section>
       </div>
@@ -231,7 +226,6 @@ export const SevenDayTrip = () => {
                 />
               </div>
             );
-            return null;
           })}
         </section>
       </div>
