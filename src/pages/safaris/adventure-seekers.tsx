@@ -1,44 +1,17 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import { TwoDayTripItienary } from "~/components/itenaries/adventureSeekers/twoDayTrip";
+import {
+  TwoDayTripItienary,
+  ThreeDayTrip,
+  FourDayTrip,
+  FiveDayTrip,
+  SixDayTrip,
+  SevenDayTrip,
+} from "~/components/itenaries/adventureSeekers/DayTripsItienaries";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 
-const honeyMooners = [
-  {
-    id: 1,
-    src: "/assets/images/gallery/family-trip.webp",
-  },
-  {
-    id: 2,
-    src: "/assets/images/gallery/maasai.webp",
-  },
-  {
-    id: 3,
-    src: "/assets/images/gallery/blog.webp",
-  },
-  {
-    id: 4,
-    src: "/assets/images/gallery/offer.webp",
-  },
-  {
-    id: 5,
-    src: "/assets/images/gallery/classic-safaris.webp",
-  },
-  {
-    id: 6,
-    src: "/assets/images/gallery/discovery.webp",
-  },
-];
-
-const MemoryImage = ({ src }: { src: string }) => {
-  return (
-    <div className="relative h-[200px] w-[80%] md:h-[300px] lg:w-[400px]">
-      <Image src={src} layout="fill" className="rounded-sm object-cover" />
-    </div>
-  );
-};
 const AboutPage = () => {
   React.useEffect(() => {
     setPageTitle("Adventure Seekers");
@@ -123,20 +96,17 @@ const AboutPage = () => {
       </div>
 
       <TwoDayTripItienary />
+      <ThreeDayTrip />
+      <FourDayTrip />
 
       <QuoteSection
         subText="- Leonie Trubshoe, Australia"
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
       />
-      <div className="mt-10 flex flex-col items-center justify-center">
-        <div className="mt-10 lg:mt-[10px] ">
-          <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
-            {honeyMooners.map((item) => (
-              <MemoryImage src={item.src} key={item.id} />
-            ))}
-          </div>
-        </div>
-      </div>
+
+      <FiveDayTrip />
+      <SixDayTrip />
+      <SevenDayTrip />
     </>
   );
 };
