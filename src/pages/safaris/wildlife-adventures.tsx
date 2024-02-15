@@ -1,7 +1,6 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import FamilyItinerary from "~/components/itenaries/family";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 
@@ -121,15 +120,98 @@ const AboutPage = () => {
             out to us, and together, we'll tailor an adventure that brings you
             face-to-face with the wonders of Africa's wilderness.
           </p>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            You can choose any of the two safaris below or contact us and
+            request a tailored and memorable experience
+          </p>
         </div>
       </div>
 
-      {/* <FamilyItinerary /> */}
+     
 
-      <QuoteSection
-        subText="- Leonie Trubshoe, Australia"
-        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
-      />
+      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+        <div className="">
+          <h3 className="text-4xl text-[#A87133]">Tarangire National Park</h3>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            We will collect you from your hotel in Arusha and following a 2-3
+            hour drive, you will arrive at the Tarangire National Park. In this
+            region, Hemmingway often went on big game hunting safaris. After the
+            formation of the national parks in 1970, they turned the seasonal
+            marshes and the endless savannah that one sees today into, once
+            again, profitable hunting grounds. Today, however, cameras
+            thankfully have replaced the elephant guns. The Tarangire National
+            Park has the highest density of elephants in North Tanzania and you
+            can view these animals all year round in which the herds often can
+            reach an impressive number of 300 animals.
+          </p>
+
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            The Tarangire River has water all year round and during the dry
+            season, between July and October, many animals from the surrounding
+            areas come to the river for drinking. If you visit the park during
+            the dry season, you will witness an unforgettable natural wonder as
+            you can observe wonderful creatures such as lions, giraffes,
+            buffaloes, wildebeests, and zebras as well as various types of
+            antelopes and gazelles and with little luck, you can also spot a
+            python! This area is during the dry season also a haven for bird
+            watchers with over 550 different species including the Masai Ostrich
+            -the world's largest bird. Around lunchtime, you will stop at a
+            suitable picnic place before the afternoon is dedicated to more
+            wildlife watching. Before sunset, you will be taken to lake Manyara.
+          </p>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+        <div className="">
+          <h3 className="text-4xl text-[#A87133]">Lake Manyara trip</h3>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            On this Day trip, we will visit Lake Manyara National Park. Lake
+            Manyara National Park is a smaller, more varied park than the other
+            parks as it's much greener, forestry, and has a huge lake of course
+            which bears the same name. The lake takes up most of the space of
+            the national park. Next to that, the park gains fame through the
+            hippo pool, where many hippos spend their days and the diversity of
+            its landscapes. Not to forget about the thousands of Flamingos that
+            migrate here each year.
+          </p>
+
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            The day trip starts with an early morning departure from Arusha (or
+            Moshi). From here we drive straight to Lake Manyara National Park,
+            which will take about two and a half hours.
+            <br />
+            What to expect
+            <br />
+            You’ll be driving in a big 4×4 Landcruiser with a pop-up roof for
+            360-degree vision. During the day trip in Lake Manyara National
+            Park, you might encounter animals like hippo flamingo, giraffe,
+            zebra, wildebeest, warthog, impala, buffalo, baboons, blue velvet
+            monkeys, and on a lucky day you might even find a lion relaxing in a
+            tree. Of course, there’s many more wildlife waiting to be spotted!
+          </p>
+
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            Driving through the park is a nice and adventurous experience after
+            all the great plains and stretched-out landscapes. Here you might
+            come close to the animals, without you even knowing! So keep your
+            eyes and ears open!
+          </p>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            During the wet seasons (November/December and March to May), the
+            lake itself can cover up to 60% of the Park’s total area – a vast
+            231 km². During these months, the lake’s highly alkaline waters
+            attract a variety of migratory waterbirds, including the famous
+            flocks of pink flamingos.
+          </p>
+          <p className="mb-3 mt-5 text-xl text-[#757371]">
+            After our lunch break, we will head out for another safari and try
+            to find the animals that we might not have spotted yet, so we can
+            cross as many animal experiences as possible of our list. Af the end
+            of the day, we will get ready for the drive back to Arusha.{" "}
+          </p>
+        </div>
+      </div>
       <div className="mt-10 flex flex-col items-center justify-center">
         <div className="mt-10 lg:mt-[10px] ">
           <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
