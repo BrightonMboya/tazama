@@ -415,7 +415,7 @@ export const safaris = [
     id: 8,
     name: "Best of Tanzania",
     img: "gorilla-and-chimps.webp",
-    href: "",
+    href: "/safaris/arushaNationalPark",
   },
   {
     id: 9,
