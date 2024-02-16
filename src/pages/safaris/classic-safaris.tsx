@@ -4,40 +4,9 @@ import { setPageTitle } from "~/helpers";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 import ClassicSafaris from "~/components/itenaries/classic-safaris"
-const honeyMooners = [
-  {
-    id: 1,
-    src: "/assets/images/gallery/family-trip.webp",
-  },
-  {
-    id: 2,
-    src: "/assets/images/gallery/maasai.webp",
-  },
-  {
-    id: 3,
-    src: "/assets/images/gallery/blog.webp",
-  },
-  {
-    id: 4,
-    src: "/assets/images/gallery/offer.webp",
-  },
-  {
-    id: 5,
-    src: "/assets/images/gallery/classic-safaris.webp",
-  },
-  {
-    id: 6,
-    src: "/assets/images/gallery/discovery.webp",
-  },
-];
+import { honeyMooners, MemoryImage } from "./honeymooners";
 
-const MemoryImage = ({ src }: { src: string }) => {
-  return (
-    <div className="relative h-[200px] w-[80%] md:h-[300px] lg:w-[400px]">
-      <Image src={src} layout="fill" className="rounded-sm object-cover" />
-    </div>
-  );
-};
+
 const AboutPage = () => {
   React.useEffect(() => {
     setPageTitle("Classic Safaris");

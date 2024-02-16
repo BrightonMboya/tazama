@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
-import { EightDayTrips, NineDayTrip, TenDayTrips, TwelveDayTrip, FourteenDayTrip } from "~/components/itenaries/zanzibar";
+
+import QuoteSection from "~/components/QuoteSection";
+import { MemoryImage, honeyMooners } from "./honeymooners";
 
 const Page = () => {
   useEffect(() => {
@@ -14,7 +16,9 @@ const Page = () => {
       <PrimaryHeader image={`beach-holiday.webp`} title="Zanzibar" />
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div className="mb-10 py-8">
-          <h3 className="text-4xl text-[#A87133]">An Archipelago in the Indian ocean</h3>
+          <h3 className="text-4xl text-[#A87133]">
+            An Archipelago in the Indian ocean
+          </h3>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
             Welcome to the epitome of serenity and adventure, where the
             crystalline waters of the Indian Ocean caress the shores of
@@ -52,13 +56,23 @@ const Page = () => {
               />
             </div>
           </div>
-            <EightDayTrips/>
-            <NineDayTrip/>
-            <TenDayTrips/>
-            <TwelveDayTrip/>
-            <FourteenDayTrip/>
         </div>
       </div>
+    
+        <QuoteSection
+          subText="- Leonie Trubshoe, Australia"
+          quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
+        />
+        <div className="mt-10 flex flex-col items-center justify-center">
+          <div className="mt-10 lg:mt-[10px] ">
+            <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
+              {honeyMooners.map((item) => (
+                <MemoryImage src={item.src} key={item.id} />
+              ))}
+            </div>
+          </div>
+        </div>
+  
     </>
   );
 };

@@ -27,10 +27,10 @@ function DestinationImage({
         <Image
           src={imgSrc}
           alt="carousel Img"
-          className="object-cover opacity-50 "
+          className="object-cover opacity-30 "
           layout="fill"
         />
-        <p className="h-[300px] w-[300px] translate-y-[150px] text-center text-2xl text-white opacity-0 hover:opacity-100">
+        <p className="h-[300px] w-[300px] translate-y-[150px] text-center text-2xl text-white">
           {caption}
         </p>
       </div>

@@ -93,8 +93,8 @@ const Navbar = () => {
       <nav className="fixed left-0 top-0 z-20 flex w-full items-center justify-between gap-4 px-4 py-4 md:px-8">
         <Link href="/" onClick={() => setNav(false)}>
           <img
-            className="w-20 sm:w-32 md:w-40"
-            src="assets/images/logos/tazama-gold.svg"
+            className="w-20 sm:w-32 md:w-40 z-[9999]"
+            src="assets/images/logos/tazama-gold.png"
             alt=""
           />
         </Link>
@@ -164,7 +164,7 @@ const Navbar = () => {
                 <Link href="/" onClick={() => setNav(false)}>
                   <img
                     className="tazama w-24 sm:w-32 md:w-40"
-                    src="assets/images/logos/tazama-white.svg"
+                    src="assets/images/logos/tazama-white.png"
                     alt=""
                   />
                 </Link>

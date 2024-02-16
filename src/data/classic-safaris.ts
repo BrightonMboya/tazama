@@ -12,7 +12,7 @@ export const classicSafaris = [
   },
   {
     category: "itenary",
-    qn: "Day 2: Full day exploring Serengeti National Park",
+    qn: "Day 1: Full day exploring Serengeti National Park",
     ans: `
     Throughout each day of the safari, your guide will personalize the 
     schedule to suit your preferences, optimizing the best timings for
@@ -28,7 +28,7 @@ export const classicSafaris = [
   },
   {
     category: "itenary",
-    qn: "Day 3: Ngorongoro Crater",
+    qn: "Day 2: Ngorongoro Crater",
     ans: `
    Start the day with a morning game drive in the Serengeti before 
    departing for the fascinating Ngorongoro Crater. Spend the night atop 
@@ -39,7 +39,7 @@ export const classicSafaris = [
   },
   {
     category: "itenary",
-    qn: "Day 4: Ngorongoro Crater",
+    qn: "Day 3: Ngorongoro Crater",
     ans: `
   Begin your day early, as you descend into the Ngorongoro Crater 
   at dawn for an exhilarating half-day exploration. This compact 
@@ -55,7 +55,7 @@ export const classicSafaris = [
   },
   {
     category: "itenary",
-    qn: "Day 5: Tarangire National Park - Arusha or Kilimanjaro Airport",
+    qn: "Day 4: Tarangire National Park - Arusha or Kilimanjaro Airport",
     ans: `
   Enjoy a morning game drive in Tarangire National Park before returning 
   to Arusha or transferring to Kilimanjaro Airport for your departure, 

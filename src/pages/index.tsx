@@ -1,7 +1,7 @@
 import { HomeContactUs } from "~/components/HomeContactUs";
 import { carouselData } from "~/data/data";
 import { motion } from "framer-motion";
-import SafariCarousel from "~/components/safari-carousel"
+import SafariCarousel from "~/components/safari-carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";
 // import { routerProps } from "../../types";
 import React from "react";
@@ -29,8 +29,6 @@ export const homePageContentData: contentSectionData[] = [
     reverse: false,
     image: "maasai.webp",
     title: "LOCALLY OWNED & OPERATED",
-    action: "/safaris/tailorMade",
-    actionTitle: "Learn More",
     description:
       "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",
   },
@@ -103,9 +101,7 @@ export default function Page() {
         </div>
         <br />
         <section className="flex flex-col items-center justify-center">
-
-      
-        <SafariCarousel/>
+          <SafariCarousel />
         </section>
         {/* <div className="flex flex-col gap-y-16">
           {carouselData.sort().map((data, index) => (

@@ -6,7 +6,7 @@ import HoneyMooners from "~/components/itenaries/honeymooners"
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 
-const honeyMooners = [
+export const honeyMooners = [
   {
     id: 1,
     src: "/assets/images/gallery/family-trip.webp",
@@ -33,9 +33,9 @@ const honeyMooners = [
   },
 ];
 
-const MemoryImage = ({ src }: { src: string }) => {
+export const MemoryImage = ({ src }: { src: string }) => {
   return (
-    <div className="relative h-[200px] w-[80%] md:h-[300px] lg:w-[400px]">
+    <div className="relative h-[200px] w-[300px] md:w-[80%] md:h-[300px] lg:w-[400px]">
       <Image src={src} layout="fill" className="rounded-sm object-cover" />
     </div>
   );
