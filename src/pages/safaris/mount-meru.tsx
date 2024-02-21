@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
+import useFetchImages from "~/hooks/useFetchImages";
+import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
+import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
-const Page = () => {
+const Page = ({ images }: { images: ImageProps[] }) => {
   useEffect(() => {
     setPageTitle("Mount Meru");
   }, []);
@@ -33,26 +36,24 @@ const Page = () => {
 
           <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
             <div className="relative h-[400px] w-full lg:w-[50%] ">
-              <Image
-                src="/assets/images/gallery/honey-moon-trip.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[4]!.public_id}
+                format={images[4]!.format}
+                blurDataUrl={images[4]!.blurDataUrl!}
               />
             </div>
 
             <div className="relative h-[400px] w-full lg:w-[50%]">
-              <Image
-                src="/assets/images/gallery/classic-safaris.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[3]!.public_id}
+                format={images[3]!.format}
+                blurDataUrl={images[3]!.blurDataUrl!}
               />
             </div>
           </div>
         </div>
 
-        <div className="">
+        <div className="pb-10">
           {/* <h3 className="text-4xl text-[#A87133]">Sundowners in nature</h3> */}
           <p className="mb-3 text-xl text-[#757371]">
             Completed in either 3 or 4 days, the experience offers a diverse
@@ -61,97 +62,20 @@ const Page = () => {
             unique.
           </p>
         </div>
-        {/* 
-
-          <div className="mt-5 flex flex-col items-center justify-center space-y-5">
-            <div className="relative h-[400px] w-full ">
-              <Image
-                src="/assets/images/gallery/about.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
-              />
-            </div>
-          </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-        </div>
-
-        <div className="mb-10 py-8">
-          <h3 className="text-4xl text-[#A87133]">
-            After sunset – the magic of twilight in the bush
-          </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-
-          <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
-            <div className="relative h-[400px] w-full ">
-              <Image
-                src="/assets/images/gallery/honey-moon-trip.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
-              />
-            </div>
-
-            <div className="relative h-[400px] w-full">
-              <Image
-                src="/assets/images/gallery/classic-safaris.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
-              />
-            </div>
-          </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            There’s something about the end of the day, as the sun starts to
-            dip, when a magical atmosphere descends over the bush. The light
-            softens to a golden glow, scents and sounds seem to amplify and the
-            landscape comes to life.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
-            In addition to the gentle mood of this time of day, it is often also
-            the best time to observe wildlife in all its forms. As the heat
-            dissipates, many birds and animals (large and small) who have
-            sheltered out of sight, gradually emerge – to drink, graze or hunt.
-          </p>
-        </div> */}
+        {/* @ts-ignore */}
+        <Gallery images={images} />
       </div>
     </>
   );
 };
 
 export default Page;
+
+export async function getStaticProps() {
+  const images = await useFetchImages({ folderName: "meru" });
+  return {
+    props: {
+      images,
+    },
+  };
+}

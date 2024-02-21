@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import Image from "next/legacy/image";
+import useFetchImages from "~/hooks/useFetchImages";
+import  { ImageProps } from "~/lib/generateBlurPlaceHolder";
+import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
-const Page = () => {
+const Page = ({ images }: { images: ImageProps[] }) => {
+  //^?
   useEffect(() => {
     setPageTitle("Kilimanjaro");
   }, []);
@@ -51,20 +54,18 @@ const Page = () => {
 
           <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
             <div className="relative h-[400px] w-full lg:w-[50%] ">
-              <Image
-                src="/assets/images/gallery/honey-moon-trip.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[11]!.public_id}
+                format={images[11]!.format}
+                blurDataUrl={images[11]!.blurDataUrl!}
               />
             </div>
 
             <div className="relative h-[400px] w-full lg:w-[50%]">
-              <Image
-                src="/assets/images/gallery/classic-safaris.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[10]!.public_id}
+                format={images[10]!.format}
+                blurDataUrl={images[10]!.blurDataUrl!}
               />
             </div>
           </div>
@@ -104,11 +105,10 @@ const Page = () => {
           </p>
           <div className="mt-5 flex flex-col items-center justify-center space-y-5">
             <div className="relative h-[400px] w-full ">
-              <Image
-                src="/assets/images/gallery/about.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[13]!.public_id}
+                format={images[13]!.format}
+                blurDataUrl={images[13]!.blurDataUrl!}
               />
             </div>
           </div>
@@ -206,11 +206,10 @@ const Page = () => {
 
           <div className="mt-5 flex flex-col items-center justify-center space-y-5">
             <div className="relative h-[400px] w-full ">
-              <Image
-                src="/assets/images/gallery/about.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[9]!.public_id}
+                format={images[9]!.format}
+                blurDataUrl={images[9]!.blurDataUrl!}
               />
             </div>
           </div>
@@ -222,9 +221,47 @@ const Page = () => {
             never forget.
           </p>
         </div>
+        {/* @ts-ignore */}
+        <Gallery images={images} />
       </div>
     </>
   );
 };
 
 export default Page;
+export async function getStaticProps() {
+  // const results = await cloudinary.v2.search
+  //   .expression(`folder:kilimanjaro`)
+  //   .sort_by("public_id", "desc")
+  //   // .max_results(400)
+  //   .execute();
+  // let reducedResults: ImageProps[] = [];
+
+  // let i = 0;
+  // for (let result of results.resources) {
+  //   reducedResults.push({
+  //     id: i,
+  //     height: result.height,
+  //     width: result.width,
+  //     public_id: result.public_id,
+  //     format: result.format,
+  //   });
+  //   i++;
+  // }
+
+  // const blurImagePromises = results.resources.map((image: ImageProps) => {
+  //   return getBase64ImageUrl(image);
+  // });
+  // const imagesWithBlurDataUrls = await Promise.all(blurImagePromises);
+
+  // for (let i = 0; i < reducedResults.length; i++) {
+  //   reducedResults[i]!.blurDataUrl = imagesWithBlurDataUrls[i];
+  // }
+  const images = await useFetchImages({ folderName: "kilimanjaro" });
+
+  return {
+    props: {
+      images,
+    },
+  };
+}

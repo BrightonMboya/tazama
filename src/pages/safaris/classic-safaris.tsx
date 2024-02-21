@@ -4,10 +4,12 @@ import { setPageTitle } from "~/helpers";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 import ClassicSafaris from "~/components/itenaries/classic-safaris"
-import { honeyMooners, MemoryImage } from "./honeymooners";
+import useFetchImages from "~/hooks/useFetchImages";
+import { ImageProps } from "~/lib/generateBlurPlaceHolder";
+import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
 
-const AboutPage = () => {
+const Page = ({ images }: { images: ImageProps[] }) => {
   React.useEffect(() => {
     setPageTitle("Classic Safaris");
   }, []);
@@ -52,20 +54,18 @@ const AboutPage = () => {
         </div>
         <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
           <div className="relative h-[400px] w-full lg:w-[50%] ">
-            <Image
-              src="/assets/images/gallery/discovery.webp"
-              className="object-cover"
-              layout="fill"
-              alt="cover-img"
+            <CloudinaryImage
+              public_id={images[7]!.public_id}
+              format={images[7]!.format}
+              blurDataUrl={images[7]!.blurDataUrl!}
             />
           </div>
 
           <div className="relative h-[400px] w-full lg:w-[50%]">
-            <Image
-              src="/assets/images/gallery/group-departure.webp"
-              className="object-cover"
-              layout="fill"
-              alt="cover-img"
+            <CloudinaryImage
+              public_id={images[6]!.public_id}
+              format={images[6]!.format}
+              blurDataUrl={images[6]!.blurDataUrl!}
             />
           </div>
         </div>
@@ -99,15 +99,22 @@ const AboutPage = () => {
       />
       <div className="mt-10 flex flex-col items-center justify-center">
         <div className="mt-10 lg:mt-[10px] ">
-          <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
-            {honeyMooners.map((item) => (
-              <MemoryImage src={item.src} key={item.id} />
-            ))}
-          </div>
+          {/* @ts-ignore */}
+          <Gallery images={images} />
         </div>
       </div>
     </>
   );
 };
 
-export default AboutPage;
+export default Page;
+
+export async function getStaticProps() {
+  const images = await useFetchImages({ folderName: "family_safari" });
+  return {
+    props: {
+      images,
+    },
+  };
+}
+
