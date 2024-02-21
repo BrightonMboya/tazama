@@ -14,7 +14,7 @@ export default function GalleryImage({ images }: { images: Props[]}) {
         {images.map(({ blurDataUrl, public_id, format }) => (
           <Image
             alt="tazama gallery photos"
-            className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
+            className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110 object-cover"
             style={{ transform: "translate3d(0, 0, 0)" }}
             placeholder="blur"
             blurDataURL={blurDataUrl}

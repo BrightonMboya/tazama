@@ -1,10 +1,13 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import HoneyMooners from "~/components/itenaries/honeymooners"
+import HoneyMooners from "~/components/itenaries/honeymooners";
 
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
+import useFetchImages from "~/hooks/useFetchImages";
+import { ImageProps } from "~/lib/generateBlurPlaceHolder";
+import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
 export const honeyMooners = [
   {
@@ -35,12 +38,12 @@ export const honeyMooners = [
 
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
-    <div className="relative h-[200px] w-[300px] md:w-[80%] md:h-[300px] lg:w-[400px]">
+    <div className="relative h-[200px] w-[300px] md:h-[300px] md:w-[80%] lg:w-[400px]">
       <Image src={src} layout="fill" className="rounded-sm object-cover" />
     </div>
   );
 };
-const AboutPage = () => {
+const Page = ({ images }: { images: ImageProps[] }) => {
   React.useEffect(() => {
     setPageTitle("HoneyMoon Safaris");
   }, []);
@@ -49,7 +52,6 @@ const AboutPage = () => {
     <>
       <PrimaryHeader image="honey-moon-trip.webp" title="Honeymooners" />
 
-   
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">HoneyMoon Safaris</h3>
@@ -83,25 +85,23 @@ const AboutPage = () => {
         </div>
         <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
           <div className="relative h-[400px] w-full lg:w-[50%] ">
-            <Image
-              src="/assets/images/gallery/honey-moon-trip.webp"
-              className="object-cover"
-              layout="fill"
-              alt="cover-img"
+            <CloudinaryImage
+              public_id={images[0]!.public_id}
+              format={images[0]!.format}
+              blurDataUrl={images[0]!.blurDataUrl!}
             />
           </div>
 
           <div className="relative h-[400px] w-full lg:w-[50%]">
-            <Image
-              src="/assets/images/gallery/classic-safaris.webp"
-              className="object-cover"
-              layout="fill"
-              alt="cover-img"
+            <CloudinaryImage
+              public_id={images[2]!.public_id}
+              format={images[2]!.format}
+              blurDataUrl={images[2]!.blurDataUrl!}
             />
           </div>
         </div>
       </div>
-      
+
       <div className="mx-auto mt-10 max-w-7xl px-4">
         <div className="">
           <p className="mb-3 mt-5 text-xl text-[#757371]">
@@ -124,23 +124,27 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <HoneyMooners/>
+      <HoneyMooners />
 
       <QuoteSection
         subText="- Leonie Trubshoe, Australia"
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
       />
-      <div className="flex flex-col items-center justify-center mt-10">
-        <div className="mt-10 lg:mt-[10px] ">
-          <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
-            {honeyMooners.map((item) => (
-              <MemoryImage src={item.src} key={item.id} />
-            ))}
-          </div>
-        </div>
+      <div className="mb-10 mt-10 flex flex-col items-center justify-center">
+        {/* @ts-ignore */}
+        <Gallery images={images} />
       </div>
     </>
   );
 };
 
-export default AboutPage;
+export default Page;
+
+export async function getStaticProps() {
+  const images = await useFetchImages({ folderName: "honeymoon" });
+  return {
+    props: {
+      images,
+    },
+  };
+}

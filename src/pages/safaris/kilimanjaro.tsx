@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import cloudinary from "~/lib/cloudinary";
 import useFetchImages from "~/hooks/useFetchImages";
-import getBase64ImageUrl, { ImageProps } from "~/lib/generateBlurPlaceHolder";
+import  { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
@@ -231,8 +230,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
 export default Page;
 export async function getStaticProps() {
-
-
   // const results = await cloudinary.v2.search
   //   .expression(`folder:kilimanjaro`)
   //   .sort_by("public_id", "desc")
@@ -260,11 +257,11 @@ export async function getStaticProps() {
   // for (let i = 0; i < reducedResults.length; i++) {
   //   reducedResults[i]!.blurDataUrl = imagesWithBlurDataUrls[i];
   // }
-  const reducedResults = await useFetchImages({folderName: "kilimanjaro"})
+  const images = await useFetchImages({ folderName: "kilimanjaro" });
 
   return {
     props: {
-      images: reducedResults,
+      images,
     },
   };
 }
