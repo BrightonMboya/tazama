@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import Image from "next/legacy/image";
 import cloudinary from "~/lib/cloudinary";
+import useFetchImages from "~/hooks/useFetchImages";
 import getBase64ImageUrl, { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
@@ -231,34 +231,36 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
 export default Page;
 export async function getStaticProps() {
-  const results = await cloudinary.v2.search
-    // .expression(`folder:${process.env.CLOUDINARY_FOLDER}/*`)
-    .expression(`folder:kilimanjaro`)
-    .sort_by("public_id", "desc")
-    // .max_results(400)
-    .execute();
-  let reducedResults: ImageProps[] = [];
 
-  let i = 0;
-  for (let result of results.resources) {
-    reducedResults.push({
-      id: i,
-      height: result.height,
-      width: result.width,
-      public_id: result.public_id,
-      format: result.format,
-    });
-    i++;
-  }
 
-  const blurImagePromises = results.resources.map((image: ImageProps) => {
-    return getBase64ImageUrl(image);
-  });
-  const imagesWithBlurDataUrls = await Promise.all(blurImagePromises);
+  // const results = await cloudinary.v2.search
+  //   .expression(`folder:kilimanjaro`)
+  //   .sort_by("public_id", "desc")
+  //   // .max_results(400)
+  //   .execute();
+  // let reducedResults: ImageProps[] = [];
 
-  for (let i = 0; i < reducedResults.length; i++) {
-    reducedResults[i]!.blurDataUrl = imagesWithBlurDataUrls[i];
-  }
+  // let i = 0;
+  // for (let result of results.resources) {
+  //   reducedResults.push({
+  //     id: i,
+  //     height: result.height,
+  //     width: result.width,
+  //     public_id: result.public_id,
+  //     format: result.format,
+  //   });
+  //   i++;
+  // }
+
+  // const blurImagePromises = results.resources.map((image: ImageProps) => {
+  //   return getBase64ImageUrl(image);
+  // });
+  // const imagesWithBlurDataUrls = await Promise.all(blurImagePromises);
+
+  // for (let i = 0; i < reducedResults.length; i++) {
+  //   reducedResults[i]!.blurDataUrl = imagesWithBlurDataUrls[i];
+  // }
+  const reducedResults = await useFetchImages({folderName: "kilimanjaro"})
 
   return {
     props: {
