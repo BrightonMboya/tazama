@@ -2,18 +2,42 @@ import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
-
+import { ImageProps } from "~/lib/generateBlurPlaceHolder";
+import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import QuoteSection from "~/components/QuoteSection";
-import { MemoryImage, honeyMooners } from "./honeymooners";
+import useFetchImages from "~/hooks/useFetchImages";
 
-const Page = () => {
+const Page = ({ images }: { images: ImageProps[] }) => {
   useEffect(() => {
     setPageTitle("Zanzibar Safaris");
   }, []);
 
   return (
     <>
-      <PrimaryHeader image={`beach-holiday.webp`} title="Zanzibar" />
+      <div className="relative h-screen">
+        <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
+          <Image
+            alt="tazama gallery photos"
+            className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
+            style={{
+              transform: "translate3d(0, 0, 0)",
+              imageRendering: "crisp-edges",
+            }}
+            placeholder="blur"
+            blurDataURL={images[1]!.blurDataUrl!}
+            src={`https://res.cloudinary.com/${
+              process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
+            }/image/upload/${images[1]!.public_id}.${images[1]!.format}`}
+            layout="fill"
+          />
+
+          <div className="container">
+            <h1 className="font-base absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-6xl sm:px-12 lg:w-2/3 xl:text-7xl">
+              Zanzibar
+            </h1>
+          </div>
+        </div>
+      </div>
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">
@@ -39,42 +63,43 @@ const Page = () => {
 
           <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
             <div className="relative h-[400px] w-full lg:w-[50%] ">
-              <Image
-                src="/assets/images/gallery/honey-moon-trip.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[3]!.public_id}
+                format={images[3]!.format}
+                blurDataUrl={images[3]!.blurDataUrl!}
               />
             </div>
 
             <div className="relative h-[400px] w-full lg:w-[50%]">
-              <Image
-                src="/assets/images/gallery/classic-safaris.webp"
-                className="object-cover"
-                layout="fill"
-                alt="cover-img"
+              <CloudinaryImage
+                public_id={images[7]!.public_id}
+                format={images[7]!.format}
+                blurDataUrl={images[7]!.blurDataUrl!}
               />
             </div>
           </div>
         </div>
       </div>
-    
-        <QuoteSection
-          subText="- Leonie Trubshoe, Australia"
-          quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
-        />
-        <div className="mt-10 flex flex-col items-center justify-center">
-          <div className="mt-10 lg:mt-[10px] ">
-            <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
-              {honeyMooners.map((item) => (
-                <MemoryImage src={item.src} key={item.id} />
-              ))}
-            </div>
-          </div>
-        </div>
-  
+
+      <QuoteSection
+        subText="- Leonie Trubshoe, Australia"
+        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
+      />
+      <div className="mt-10 flex flex-col items-center justify-center">
+        {/* @ts-ignore */}
+        <Gallery images={images} />
+      </div>
     </>
   );
 };
 
 export default Page;
+
+export async function getStaticProps() {
+  const images = await useFetchImages({ folderName: "beach_holidays" });
+  return {
+    props: {
+      images,
+    },
+  };
+}

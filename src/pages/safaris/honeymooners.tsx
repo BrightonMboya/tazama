@@ -9,32 +9,7 @@ import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
-export const honeyMooners = [
-  {
-    id: 1,
-    src: "/assets/images/gallery/family-trip.webp",
-  },
-  {
-    id: 2,
-    src: "/assets/images/gallery/maasai.webp",
-  },
-  {
-    id: 3,
-    src: "/assets/images/gallery/blog.webp",
-  },
-  {
-    id: 4,
-    src: "/assets/images/gallery/offer.webp",
-  },
-  {
-    id: 5,
-    src: "/assets/images/gallery/classic-safaris.webp",
-  },
-  {
-    id: 6,
-    src: "/assets/images/gallery/discovery.webp",
-  },
-];
+
 
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
