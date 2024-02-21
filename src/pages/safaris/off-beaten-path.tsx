@@ -1,53 +1,44 @@
 import React from "react";
-import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import OffBeatenItenary from "~/components/itenaries/off-beaten-path"
+import OffBeatenItenary from "~/components/itenaries/off-beaten-path";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
+import useFetchImages from "~/hooks/useFetchImages";
 
-const honeyMooners = [
-  {
-    id: 1,
-    src: "/assets/images/gallery/family-trip.webp",
-  },
-  {
-    id: 2,
-    src: "/assets/images/gallery/maasai.webp",
-  },
-  {
-    id: 3,
-    src: "/assets/images/gallery/blog.webp",
-  },
-  {
-    id: 4,
-    src: "/assets/images/gallery/offer.webp",
-  },
-  {
-    id: 5,
-    src: "/assets/images/gallery/classic-safaris.webp",
-  },
-  {
-    id: 6,
-    src: "/assets/images/gallery/discovery.webp",
-  },
-];
+import { ImageProps } from "~/lib/generateBlurPlaceHolder";
+import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 
-const MemoryImage = ({ src }: { src: string }) => {
-  return (
-    <div className="relative h-[200px] w-[80%] md:h-[300px] lg:w-[400px]">
-      <Image src={src} layout="fill" className="rounded-sm object-cover" />
-    </div>
-  );
-};
-const AboutPage = () => {
+const Page = ({ images }: { images: ImageProps[] }) => {
   React.useEffect(() => {
     setPageTitle("Off the Beaten Path");
   }, []);
 
   return (
     <>
-      <PrimaryHeader image="classic-safaris.webp" title="Off the Beaten Path" />
+      <div className="relative h-screen">
+        <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
+          <Image
+            alt="tazama gallery photos"
+            className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
+            style={{
+              transform: "translate3d(0, 0, 0)",
+              imageRendering: "crisp-edges",
+            }}
+            placeholder="blur"
+            blurDataURL={images[1]!.blurDataUrl!}
+            src={`https://res.cloudinary.com/${
+              process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
+            }/image/upload/${images[1]!.public_id}.${images[1]!.format}`}
+            layout="fill"
+          />
 
+          <div className="container">
+            <h1 className="font-base absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-6xl sm:px-12 lg:w-2/3 xl:text-7xl">
+              Off the Beaten Path
+            </h1>
+          </div>
+        </div>
+      </div>
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Off the Beaten Path</h3>
@@ -76,20 +67,18 @@ const AboutPage = () => {
         </div>
         <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
           <div className="relative h-[400px] w-full lg:w-[50%] ">
-            <Image
-              src="/assets/images/gallery/discovery.webp"
-              className="object-cover"
-              layout="fill"
-              alt="cover-img"
+            <CloudinaryImage
+              public_id={images[2]!.public_id}
+              format={images[2]!.format}
+              blurDataUrl={images[2]!.blurDataUrl!}
             />
           </div>
 
           <div className="relative h-[400px] w-full lg:w-[50%]">
-            <Image
-              src="/assets/images/gallery/group-departure.webp"
-              className="object-cover"
-              layout="fill"
-              alt="cover-img"
+            <CloudinaryImage
+              public_id={images[0]!.public_id}
+              format={images[0]!.format}
+              blurDataUrl={images[0]!.blurDataUrl!}
             />
           </div>
         </div>
@@ -113,23 +102,29 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <OffBeatenItenary/>
+      <OffBeatenItenary />
 
       <QuoteSection
         subText="- Leonie Trubshoe, Australia"
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
       />
       <div className="mt-10 flex flex-col items-center justify-center">
-        <div className="mt-10 lg:mt-[10px] ">
-          <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
-            {honeyMooners.map((item) => (
-              <MemoryImage src={item.src} key={item.id} />
-            ))}
-          </div>
+        <div className="mb-10 mt-10 lg:mt-[10px] ">
+          {/* @ts-ignore */}
+          <Gallery images={images} />
         </div>
       </div>
     </>
   );
 };
 
-export default AboutPage;
+export default Page;
+
+export async function getStaticProps() {
+  const images = await useFetchImages({ folderName: "offbeaten_path" });
+  return {
+    props: {
+      images,
+    },
+  };
+}

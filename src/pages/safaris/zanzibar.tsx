@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
