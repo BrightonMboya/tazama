@@ -32,7 +32,7 @@ export function CloudinaryImage({ public_id, blurDataUrl, format }: Props) {
   return (
     <Image
       alt="tazama gallery photos"
-      className="transform rounded-lg object-cover brightness-90 transition will-change-auto group-hover:brightness-110"
+      className="object-cover"
       style={{
         transform: "translate3d(0, 0, 0)",
         imageRendering: "crisp-edges",

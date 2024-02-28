@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
-import Image from "next/legacy/image";
 
 const navMainContent = [
   {
