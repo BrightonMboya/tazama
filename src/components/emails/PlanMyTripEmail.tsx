@@ -27,7 +27,7 @@ interface EmailProps {
   dateofTravel: string;
   additionalPlans: string;
   mustSeePlans: string;
-  additionalComments: string;
+  additionalComments?: string;
   firstName: string;
   lastName: string;
   email: string;
