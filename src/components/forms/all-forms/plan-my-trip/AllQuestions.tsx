@@ -95,6 +95,7 @@ const PlanMyTripForm = () => {
       {currentPage === 8 && <Question8 register={register} />}
       {currentPage === 9 && <Question9 register={register} />}
       {currentPage === 10 && <ContactForm register={register} />}
+     { currentPage === 10 && errors && <p className="text-red-500">Looks like you didnt answer some questions :( </p>}
 
       {currentPage > 0 && (
         <div className="mt-5 space-x-5 text-white">
