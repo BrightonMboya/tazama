@@ -63,18 +63,15 @@ export default function Email(props: EmailProps) {
         <Preview>August Product & Growth Update</Preview>
         <Body style={main}>
           <Container className="mx-auto my-0 w-full max-w-[680px] bg-white">
-           
-
-            <Row className="flex flex-col rounded-t-[5px] bg-black relative">
+            <Row className="relative flex flex-col rounded-t-[5px] bg-black">
               <Img
                 // width={146}
                 height={200}
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708503376/about/kdn3adaglqhebzttfttk.jpg"
-                className=" placeholder opacity-50 rounded-t-md"
+                className=" placeholder rounded-t-md opacity-50"
               />
 
               {/* <Text className="absolute  bottom-0 text-white text-xl pl-5">New Trip</Text> */}
-             
             </Row>
 
             <Section className="ml-[20px] mt-[20px] max-w-md lg:max-w-[38rem]">
@@ -87,6 +84,19 @@ export default function Email(props: EmailProps) {
               <Text className=" text-base leading-[27px] text-[#3c3f44]">
                 {`Summary of ${props.firstName} ${props.lastName} inquiry`}
               </Text>
+
+              <Row className="gap-3">
+                <Text className=" text-lg font-medium leading-[27px] text-[#0c0d0e]">
+                  Guest Full Names
+                </Text>
+                <Text className="text-base">{`${props.firstName} ${props.lastName}`}</Text>
+              </Row>
+              <Row className="gap-3">
+                <Text className=" text-lg font-medium leading-[27px] text-[#0c0d0e]">
+                  Email
+                </Text>
+                <Text className="text-base">{props.email}</Text>
+              </Row>
 
               <Row className="gap-3">
                 <Text className=" text-lg font-medium leading-[27px] text-[#0c0d0e]">
