@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
+import PlanMyTrip from "~/components/forms/all-forms/plan-my-trip";
+
 
 const navMainContent = [
   {
@@ -60,15 +62,15 @@ const Navbar = () => {
   const [onExit, setOnExit] = useState<object>({});
   const [searchModal, setSearchModal] = useState(false);
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//embed.typeform.com/next/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "//embed.typeform.com/next/embed.js";
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   function toggleSearchModal() {
     setOnExit({
@@ -98,7 +100,8 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
-          <button
+          <PlanMyTrip/>
+          {/* <button
             data-tf-popup="yy0ZJs6g"
             data-tf-opacity="100"
             data-tf-size="100"
@@ -109,7 +112,7 @@ const Navbar = () => {
             className="font-base font-now rounded-md bg-[#A87133] px-4 py-2 text-center text-xs text-white hover:bg-[#946632] md:text-base"
           >
             Plan my trip
-          </button>
+          </button> */}
 
           <AnimatePresence>
             {searchModal ? (

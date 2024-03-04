@@ -5,6 +5,43 @@ import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import { CloudinaryImage } from "~/components/ui/GalleryImage";
 import useFetchImages from "~/hooks/useFetchImages";
 import EnquireNow from "~/components/EnquireNow";
+import { motion, useScroll } from "framer-motion";
+import useParallax from "~/hooks/useParallax";
+
+function ParallaxImg({
+  publicId,
+  format,
+  blurDataUrl,
+}: {
+  publicId: string;
+  format: string;
+  blurDataUrl: string;
+}) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y = useParallax(scrollYProgress, 200);
+  return (
+    <motion.div
+      style={{ y }}
+      className="relative mt-[60px] h-[400px] w-full md:h-[600px]"
+      whileInView={{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.5,
+        },
+      }}
+      initial={{ opacity: 0, x: -10 }}
+    >
+      <Image
+        src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${publicId}.${format}`}
+        alt="Tazama Img"
+        layout="fill"
+        className="-ml-4 h-full w-full object-cover"
+      />
+    </motion.div>
+  );
+}
 
 export default function Page({ images }: { images: ImageProps[] }) {
   return (
@@ -87,7 +124,12 @@ export default function Page({ images }: { images: ImageProps[] }) {
           <div className="mx-auto px-4 pt-10 md:pt-[80px]">
             <section className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-5 ">
               <div className="flex items-center justify-center pt-5">
-                <div className="relative h-[400px] w-full md:h-[600px]">
+                <ParallaxImg
+                  format={images[7]?.format!}
+                  publicId={images[7]?.public_id!}
+                  blurDataUrl={images[7]?.blurDataUrl!}
+                />
+                {/* <div className="relative h-[400px] w-full md:h-[600px]">
                   <Image
                     alt="tazama gallery photos"
                     className="transform  object-cover  transition will-change-auto "
@@ -97,7 +139,7 @@ export default function Page({ images }: { images: ImageProps[] }) {
                     layout="fill"
                     src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${images[7]?.public_id}.${images[7]?.format}`}
                   />
-                </div>
+                </div> */}
               </div>
               <div>
                 <p className="pt-5 text-lg font-bold text-primary lg:text-xl">

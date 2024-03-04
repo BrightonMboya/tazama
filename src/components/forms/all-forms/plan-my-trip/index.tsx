@@ -10,11 +10,11 @@ import PlanMyTripForm from "~/components/forms/all-forms/plan-my-trip/AllQuestio
 
 export default function PlanMyTrip() {
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="">
       <Dialog>
         <DialogTrigger
           asChild
-          className="font-now bg-primary font-medium text-white lg:text-xl"
+          className="font-now bg-primary px-2 font-medium text-white"
         >
           <Button variant="outline">Plan My Trip</Button>
         </DialogTrigger>
