@@ -17,6 +17,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { Button } from "~/components/ui/button";
 import { api } from "~/lib/api";
+import Spinner from "~/components/ui/spinner";
 
 export const planMyTripSchema = z.object({
   tripType: z.string(),
@@ -70,7 +71,7 @@ const PlanMyTripForm = () => {
   // console.log(errors);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="font-now">
       {currentPage === 0 && (
         <WelcomeNote
           currentPage={currentPage}
@@ -111,14 +112,14 @@ const PlanMyTripForm = () => {
       {currentPage === 8 && <Question8 register={register} />}
       {currentPage === 9 && <Question9 register={register} />}
       {currentPage === 10 && <ContactForm register={register} />}
-      {currentPage === 10 && errors && (
+      {/* {currentPage === 10 && errors && (
         <p className="text-red-500">
           Looks like you didnt answer some questions :({" "}
         </p>
-      )}
+      )} */}
 
       {currentPage > 0 && (
-        <div className="mt-5 space-x-5 text-white">
+        <div className="font-now mt-5 space-x-5 text-white">
           <Button
             disabled={currentPage <= 1}
             type="button"

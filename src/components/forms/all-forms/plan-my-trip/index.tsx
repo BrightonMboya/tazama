@@ -2,10 +2,7 @@ import { Button } from "~/components/ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
   DialogPortal,
 } from "~/components/ui/dialog";
@@ -22,7 +19,7 @@ export default function PlanMyTrip() {
           <Button variant="outline">Plan My Trip</Button>
         </DialogTrigger>
         <DialogPortal>
-          <DialogContent className="bg-lightest h-screen sm:max-w-[80%] lg:h-[70%] lg:w-[60%]">
+          <DialogContent className="h-screen bg-lightest sm:max-w-[80%] lg:h-[70%] lg:w-[60%]">
             <DialogHeader></DialogHeader>
             <PlanMyTripForm />
           </DialogContent>
