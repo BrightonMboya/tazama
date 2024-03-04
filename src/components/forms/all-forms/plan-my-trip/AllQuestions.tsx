@@ -18,6 +18,7 @@ import { useState } from "react";
 import { Button } from "~/components/ui/button";
 import { api } from "~/lib/api";
 import Spinner from "~/components/ui/spinner";
+import { useRouter } from "next/router";
 
 export const planMyTripSchema = z.object({
   tripType: z.string(),
@@ -46,9 +47,14 @@ const PlanMyTripForm = () => {
     resolver: zodResolver(planMyTripSchema),
     mode: "onChange",
   });
+  const router = useRouter();
 
   const [currentPage, setCurrentPage] = useState(0);
-  const { mutateAsync, isLoading } = api.email.send.useMutation();
+  const { mutateAsync, isLoading } = api.email.send.useMutation({
+    onSuccess: () => {
+      router.push("/thank-you");
+    },
+  });
 
   const onSubmit: SubmitHandler<PlanMyTripType> = (data) => {
     // console.log(data);
@@ -134,7 +140,11 @@ const PlanMyTripForm = () => {
           >
             Next
           </Button>
-          {currentPage >= 10 && <Button type="submit">Save</Button>}
+          {currentPage >= 10 && (
+            <Button type="submit" disabled={isLoading}>
+              {isLoading ? <Spinner /> : "Save"}
+            </Button>
+          )}
         </div>
       )}
     </form>
