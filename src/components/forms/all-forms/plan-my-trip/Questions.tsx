@@ -228,8 +228,7 @@ export function Question6({
   return (
     <QuestionWrapper>
       <label className="text-xl">
-        What kind of budget do you expect to spend per person on this trip in
-        USD (excluding international flights)?
+       Which dates are you looking to travel?
       </label>
       <p className="pt-3 text-sm font-light">
         If you're not sure of the exact date, just give me a rough idea of when
@@ -283,7 +282,7 @@ export function Question8({
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
         placeholder="Type your answer here... "
-        {...register("additionalPlans")}
+        {...register("mustSeePlans")}
       />
     </QuestionWrapper>
   );

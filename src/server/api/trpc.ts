@@ -47,7 +47,7 @@ type CreateContextOptions = {
 const createInnerTRPCContext = (_opts: CreateContextOptions) => {
   return {
     db,
-    auth: _opts.auth,
+    // auth: _opts.auth,
   
   };
 };
@@ -60,11 +60,11 @@ const createInnerTRPCContext = (_opts: CreateContextOptions) => {
  */
 
 export const createTRPCContext = async (opts?: CreateNextContextOptions) => {
-  const auth = getAuth(opts?.req as NextApiRequest);
-  return createInnerTRPCContext({
-    auth,
+  // const auth = getAuth(opts?.req as NextApiRequest);
+  // return createInnerTRPCContext({
+  //   auth,
    
-  });
+  // });
 };
 
 /**
@@ -113,15 +113,15 @@ export const mergeRouters = t.mergeRouters;
  */
 export const publicProcedure = t.procedure;
 
-const isAuthed = t.middleware(({ next, ctx }) => {
-  if (!ctx.auth.userId) {
-    throw new TRPCError({ code: "UNAUTHORIZED" });
-  }
-  return next({
-    ctx: {
-      auth: ctx.auth,
-    },
-  });
-});
+// const isAuthed = t.middleware(({ next, ctx }) => {
+//   if (!ctx.auth.userId) {
+//     throw new TRPCError({ code: "UNAUTHORIZED" });
+//   }
+//   return next({
+//     ctx: {
+//       auth: ctx.auth,
+//     },
+//   });
+// });
 
-export const protectedProcedure = t.procedure.use(isAuthed);
+// export const protectedProcedure = t.procedure.use(isAuthed);

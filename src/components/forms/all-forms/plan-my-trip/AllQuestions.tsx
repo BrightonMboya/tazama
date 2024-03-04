@@ -16,6 +16,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { Button } from "~/components/ui/button";
+import { api } from "~/lib/api";
 
 export const planMyTripSchema = z.object({
   tripType: z.string(),
@@ -46,9 +47,24 @@ const PlanMyTripForm = () => {
   });
 
   const [currentPage, setCurrentPage] = useState(0);
+  const { mutateAsync, isLoading } = api.email.send.useMutation();
 
   const onSubmit: SubmitHandler<PlanMyTripType> = (data) => {
-    console.log(data);
+    // console.log(data);
+    mutateAsync({
+      tripType: data.tripType,
+      addOns: data.addOns,
+      planningProcess: data.planningProcess,
+      numberOfGuests: data.numberOfGuests,
+      budget: data.budget,
+      dateofTravel: data.dateofTravel,
+      additionalPlans: data.additionalPlans,
+      mustSeePlans: data.mustSeePlans,
+      additionalComments: data.additionalComments,
+      firstName: data.firstName,
+      lastName: data.lastName,
+      email: data.email,
+    });
   };
 
   // console.log(errors);
@@ -95,7 +111,11 @@ const PlanMyTripForm = () => {
       {currentPage === 8 && <Question8 register={register} />}
       {currentPage === 9 && <Question9 register={register} />}
       {currentPage === 10 && <ContactForm register={register} />}
-     { currentPage === 10 && errors && <p className="text-red-500">Looks like you didnt answer some questions :( </p>}
+      {currentPage === 10 && errors && (
+        <p className="text-red-500">
+          Looks like you didnt answer some questions :({" "}
+        </p>
+      )}
 
       {currentPage > 0 && (
         <div className="mt-5 space-x-5 text-white">
