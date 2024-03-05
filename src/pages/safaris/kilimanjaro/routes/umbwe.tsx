@@ -24,80 +24,92 @@ export default function Page() {
         <section className="mx-auto flex items-start justify-center lg:mx-0 lg:gap-10">
           <div className="mx-auto  px-4 md:px-8 lg:mx-0 lg:max-w-[60%] lg:text-justify">
             <div className="mb-10 py-8">
-              <h3 className="text-4xl text-[#A87133]">
-                Reach the Summit of Kilimanjaro with Tazama: A Journey to
-                Africa's Highest Peak
-              </h3>
+              <p className="mt-5 text-xl font-bold text-primary">
+                The Ultimate Test: Conquering Kilimanjaro via the Umbwe Route
+              </p>
               <p className="mb-3 mt-5 text-xl text-[#757371]">
-                Nestled in Northern Tanzania, Mount Kilimanjaro stands as
-                Africa's tallest peak and the world's highest free-standing
-                mountain, soaring to an impressive 5,895 meters. Every year,
-                Kilimanjaro attracts around 30,000 trekkers, from seasoned
-                mountaineers to ambitious beginners, all drawn to the challenge
-                of reaching its summit.
+                The Umbwe Route, known for its steep, direct climb to the summit
+                of Mount Kilimanjaro, stands as the most challenging path among
+                the various routes up the mountain. This route is tailored for
+                adventurers seeking a rigorous trek and rapid ascent without the
+                gradual acclimatization stages offered by other paths.
               </p>{" "}
               <p className="mb-3 mt-5 text-xl text-[#757371]">
-                Climbing Kilimanjaro with Tazama is an unforgettable adventure
-                that combines personal achievement with the raw beauty of
-                nature. The mountain offers a unique experience with its diverse
-                ecosystems, from lush rainforests to alpine deserts, each
-                providing its own set of challenges and rewards.
+                Originating from the south, the Umbwe Route quickly gains
+                altitude, presenting a steep journey through breathtaking
+                rainforests before emerging into the alpine desert. Its direct
+                approach leads adventurers to Barranco Camp, where it joins the
+                Southern Circuit, offering awe-inspiring views beneath
+                Kilimanjaro’s Southern Ice Field, before making the final ascent
+                from Barafu Camp. The descent is navigated via the Mweka Route,
+                completing a full circle of memorable experiences.
+              </p>{" "}
+              <p className="mt-5 text-xl font-bold text-primary">
+                Why Embark on the Umbwe Route with Tazama?
+              </p>
+              <p className="mb-3 mt-5 text-xl text-[#757371]">
+                Tazama offers this route as a unique 6 or 7-day private climb,
+                with the 7-day option including a crucial acclimatization day at
+                Barranco Camp. This additional day significantly enhances the
+                success rate and overall trekking experience, allowing climbers
+                to adjust to the altitude and enjoy the stunning vistas and
+                unique flora.
               </p>
               <div className="relative mt-[50px] h-[400px] w-full lg:hidden lg:w-[50%]">
                 <Image
-                  src={`${CLOUDINARY_URL}kilimanjaro/lgh2fwz5va3kxih34jek.jpg`}
+                  src={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.jpg`}
                   className="object-cover"
                   layout="fill"
                   alt="cover-img"
                   placeholder="blur"
-                  blurDataURL={`${CLOUDINARY_URL}kilimanjaro/lgh2fwz5va3kxih34jek.blurDataUrl`}
+                  blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
                 />
               </div>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                The journey to the top of Kilimanjaro is accessible to a wide
-                range of climbers, including young adventurers over the age of
-                10 and those in their 60s and 70s with a zest for life and
-                adventure. The main challenge lies in adapting to the altitude
-                and the pace of ascent. However, with Tazama's support, reaching
-                the summit is an attainable goal. Our expert guides are trained
-                to prioritize your safety and success, making them your most
-                valuable companions on this journey.
-              </p>{" "}
               <p className="mb-3 mt-5 text-xl text-[#757371]">
                 <span className="text-primary">
-                  So, who can climb Kilimanjaro? {"  "}
+                  Key Details: <br />{" "}
                 </span>
-                Anyone with a spirit of adventure and determination. Join the
-                exclusive group of climbers who have successfully summited Mount
-                Kilimanjaro, guided by the expertise of Tazama's dedicated team.
+                Distance: Approximately 53 km (32 miles). <br />
+                Duration: 6 or 7 days, with the latter recommended for better
+                acclimatization. <br />
+                Difficulty: The Umbwe Route is the most strenuous on
+                Kilimanjaro. It's designed for strong, experienced hikers who
+                can adapt quickly to high altitudes. Success Rates: While
+                challenging, the success rates for the Umbwe Route can be as
+                high as 70% with proper preparation and the extended itinerary.
+              </p>
+              <p className="mt-5 text-xl font-bold text-primary">
+                What Will You Experience?
+              </p>
+              <p className="mb-3 mt-5 text-xl text-[#757371]">
+                This route not only tests your endurance but also rewards you
+                with less trafficked paths, intimate encounters with
+                Kilimanjaro's ecosystems, and unparalleled serenity. You'll trek
+                through lush forests, witness exotic wildlife, and gaze upon the
+                icy expanse of Kilimanjaro’s summit, all contributing to an
+                unforgettable adventure.
               </p>
               <div className="relative mt-[50px] h-[400px] w-full lg:hidden lg:w-[50%]">
                 <Image
-                  src={`${CLOUDINARY_URL}/kilimanjaro/xcchlu7mvfosvlbuqswy.png`}
+                  src={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.png`}
                   className="object-cover"
                   layout="fill"
                   alt="cover-img"
-                  blurDataURL={`${CLOUDINARY_URL}/kilimanjaro/xcchlu7mvfosvlbuqswy.blurDataUrl`}
+                  blurDataURL={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.blurDataUrl`}
                   placeholder="blur"
                 />
               </div>
-              <p className="mb-3 mt-5 text-xl text-[#757371] lg:mt-0">
-                <span className="text-primary">Best Time to Climb: </span>
-                Mount Kilimanjaro welcomes climbers year-round, offering the
-                chance to summit in any season. For those who prefer drier
-                conditions, the recommended months are January to February and
-                June to October. Selecting the best time to climb Kilimanjaro
-                requires careful consideration of weather patterns and other
-                factors, all of which Tazama is equipped to guide you through,
-                ensuring a remarkable experience.
-              </p>{" "}
+              <p className="mt-5 text-xl font-bold text-primary">
+                Begin Your Kilimanjaro Journey with Tazama
+              </p>
               <p className="mb-3 mt-5 text-xl text-[#757371]">
-                Ready to witness the world from the peak of Africa and fulfill a
-                lifetime goal? Tazama is here to guide your journey to the
-                summit of Kilimanjaro. Our commitment to safety, personalized
-                service, and environmental stewardship ensures an unparalleled
-                climbing experience. Answer the call of the mountain and reach
-                the summit of Kilimanjaro with Tazama.
+                Are you ready to take on Kilimanjaro's toughest challenge?
+                Choose Tazama for your Umbwe Route climb and discover why this
+                path captivates the hearts of true adventurers. With Tazama's
+                expert guidance, top-notch safety protocols, and dedication to
+                responsible trekking, your journey to the Roof of Africa will be
+                as rewarding as it is exhilarating. Contact us to start planning
+                your climb and embrace the adventure of a lifetime.
               </p>
             </div>
           </div>
@@ -105,22 +117,22 @@ export default function Page() {
           <section className="mb-10 hidden space-y-5 py-8 lg:block">
             <div className="relative h-[600px] w-full lg:w-[400px]">
               <Image
-                src={`${CLOUDINARY_URL}kilimanjaro/lgh2fwz5va3kxih34jek.jpg`}
+                src={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.jpg`}
                 className="object-cover"
                 layout="fill"
                 alt="cover-img"
                 placeholder="blur"
-                blurDataURL={`${CLOUDINARY_URL}kilimanjaro/lgh2fwz5va3kxih34jek.blurDataUrl`}
+                blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
 
             <div className="relative h-[300px] w-full lg:w-[400px]">
               <Image
-                src={`${CLOUDINARY_URL}/kilimanjaro/xcchlu7mvfosvlbuqswy.png`}
+                src={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.png`}
                 className="object-cover"
                 layout="fill"
                 alt="cover-img"
-                blurDataURL={`${CLOUDINARY_URL}/kilimanjaro/xcchlu7mvfosvlbuqswy.blurDataUrl`}
+                blurDataURL={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.blurDataUrl`}
                 placeholder="blur"
               />
             </div>
@@ -151,7 +163,7 @@ export default function Page() {
           </div>
 
           <BlogCard
-          blogLink="/kilimanjaro/routes/machame"
+            blogLink="/kilimanjaro/routes/machame"
             title="Machame Routes"
             caption="The Machame Route stands out for its scenic diversity and the robust challenge it offers, making it a magnet for adventurers"
             imgLink="kilimanjaro/glossugv7zlnlgp3oie4"
