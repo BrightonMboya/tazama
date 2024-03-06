@@ -1,30 +1,23 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
 import { aboutPageContentData } from "~/data/about-data";
 import ContentSection, {
   contentSectionData,
 } from "~/components/ContentSection";
 import { array } from "fast-web-kit";
-import Carousel from "~/components/Carousel";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
+import HeadSEO from "~/components/ui/Head";
 
 const AboutPage = () => {
-  React.useEffect(() => {
-    setPageTitle("About");
-  }, []);
-
   return (
     <>
       <PrimaryHeader image="about.webp" title="About Tazama" />
-
+      <HeadSEO title="About Tazama" />
       {/* about tazama section */}
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">
-          <h3 className="text-4xl text-[#A87133]">
-            About Tazama
-          </h3>
+          <h3 className="text-4xl text-[#A87133]">About Tazama</h3>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
             TAZAMA specializes in curating unforgettable memories that will have
             you reminiscing with your loved ones for years to come. Boasting
@@ -115,7 +108,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <div className="mt-5 lg:mt-0  md:mb-[8rem] lg:mb-[10rem]">
+      <div className="mt-5 md:mb-[8rem]  lg:mb-[10rem] lg:mt-0">
         {array
           .sort(aboutPageContentData, "asc", "rank")
           .map((content: contentSectionData, index: number) => (
@@ -133,7 +126,6 @@ const AboutPage = () => {
           ))}
       </div>
       <QuoteSection
-      
         subText="- Leonie Trubshoe, Australia"
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
       />

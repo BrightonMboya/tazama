@@ -1,18 +1,15 @@
-import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
 import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-  //^?
-  useEffect(() => {
-    setPageTitle("Kilimanjaro");
-  }, []);
+
 
   return (
     <>
+    <HeadSEO title="Kilimanjaro"/>
       <PrimaryHeader
         image={`mount-kilimanjaro.webp`}
         title="Mount Kilimanjaro"

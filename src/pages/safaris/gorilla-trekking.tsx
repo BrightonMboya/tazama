@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
+
 import Image from "next/legacy/image";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = () => {
-  useEffect(() => {
-    setPageTitle("Gorilla Trekking");
-  }, []);
+
 
   return (
     <>
+    <HeadSEO title="Gorilla Trekking"/>
       <PrimaryHeader image={`chimps.webp`} title="Gorilla Trekking" />
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div className="mb-10 py-8">

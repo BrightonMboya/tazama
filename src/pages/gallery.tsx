@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
+import HeadSEO from "~/components/ui/Head";
 const honeyMooners = [
   {
     id: 1,
@@ -38,12 +38,9 @@ const MemoryImage = ({ src }: { src: string }) => {
 };
 
 const GalleryPage = () => {
-  React.useEffect(() => {
-    setPageTitle("Gallery");
-  }, []);
-
   return (
     <>
+      <HeadSEO title="Gallery" />
       <PrimaryHeader image="gallery.webp" title="Glimpse of our Memories" />
 
       <section className="flex flex-col items-center justify-center">

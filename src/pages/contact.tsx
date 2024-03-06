@@ -1,14 +1,11 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
 import { Input } from "~/components/Form";
 import Loader from "~/components/Loader";
+import HeadSEO from "~/components/ui/Head";
 
 const ContactPage = () => {
-  React.useEffect(() => {
-    setPageTitle("contact");
-    // eslint-disable-next-line
-  }, []);
+
 
   const [loading, setLoading] = React.useState<boolean>(false);
   const [email, setEmail] = React.useState<string>("");
@@ -19,6 +16,7 @@ const ContactPage = () => {
   return (
     <>
       {loading ? <Loader /> : null}
+      <HeadSEO title="Contact Us"/>
       <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact" />
       <div className="mx-auto pt-[12rem]">
         <div className="text-center text-[#757371]">

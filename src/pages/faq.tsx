@@ -1,21 +1,17 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
 import Accordion from "~/components/Accordion";
 import { accordionQns } from "~/data/data";
+import HeadSEO from "~/components/ui/Head";
 
 const FAQPage = () => {
-  React.useEffect(() => {
-    setPageTitle("Frequently Asked Questions");
-    // eslint-disable-next-line
-  }, []);
-
   const [category, setCategory] = React.useState("safari");
 
   return (
     <>
+      <HeadSEO title="FAQ" />
       <PrimaryHeader image="faq.webp" title="Frequently Asked Questions" />
-      <div className="mx-auto mt-48 lg:mt-5 max-w-7xl px-4 py-20 lg:py-10 md:px-8">
+      <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
         <p className="mx-auto max-w-4xl p-4 text-center text-2xl text-[#757371]">
           Explore our FAQ section to find answers to common queries. This
           resource provides quick, reliable guidance for your most frequent

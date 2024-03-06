@@ -1,8 +1,7 @@
-import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
-import QuoteSection from "~/components/QuoteSection";
+
 import Image from "next/legacy/image";
+import HeadSEO from "~/components/ui/Head";
 
 const honeyMooners = [
   {
@@ -39,12 +38,11 @@ const MemoryImage = ({ src }: { src: string }) => {
   );
 };
 const AboutPage = () => {
-  React.useEffect(() => {
-    setPageTitle("Wildlife Adventures");
-  }, []);
+  
 
   return (
     <>
+    <HeadSEO title="Wildlife Adventures"/>
       <PrimaryHeader image="classic-safaris.webp" title="Wildlife Adventures" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">

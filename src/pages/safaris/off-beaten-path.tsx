@@ -1,20 +1,15 @@
-import React from "react";
-import { setPageTitle } from "~/helpers";
 import OffBeatenItenary from "~/components/itenaries/off-beaten-path";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 import useFetchImages from "~/hooks/useFetchImages";
-
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-  React.useEffect(() => {
-    setPageTitle("Off the Beaten Path");
-  }, []);
-
   return (
     <>
+      <HeadSEO title="Off the Beaten Path" />
       <div className="relative h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
           <Image

@@ -11,6 +11,7 @@ import ContentSection, {
   contentSectionData,
 } from "~/components/ContentSection";
 import { array } from "fast-web-kit";
+import HeadSEO from "~/components/ui/Head";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -36,6 +37,7 @@ export const homePageContentData: contentSectionData[] = [
 export default function Page() {
   return (
     <>
+    <HeadSEO title="Tazama Africa Safaris"/>
       <PrimaryHeader
         image="home.webp"
         title="Your Next Adventure Awaits"
@@ -103,25 +105,7 @@ export default function Page() {
         <section className="flex flex-col items-center justify-center">
           <SafariCarousel />
         </section>
-        {/* <div className="flex flex-col gap-y-16">
-          {carouselData.sort().map((data, index) => (
-            <motion.div
-              initial={{
-                translateY: 10,
-                opacity: 0,
-              }}
-              whileInView={{
-                translateY: 0,
-                opacity: 1,
-                transition: { duration: 1 },
-              }}
-              key={index}
-            >
-              <h3 className="mb-4 text-center text-3xl">{data.heading}</h3>
-              <Carousel slides={data.images} />
-            </motion.div>
-          ))}
-        </div> */}
+        
       </div>
       <HomeContactUs />
     </>
