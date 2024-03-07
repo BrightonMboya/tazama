@@ -9,11 +9,11 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import superjson from "superjson";
-import {
-  getAuth,
-  type SignedInAuthObject,
-  type SignedOutAuthObject,
-} from "@clerk/nextjs/server";
+// import {
+//   getAuth,
+//   type SignedInAuthObject,
+//   type SignedOutAuthObject,
+// } from "@clerk/nextjs/server";
 
 import { ZodError } from "zod";
 
@@ -31,7 +31,7 @@ import { env } from "~/env";
 // creating a supabse client so that I pass it to context
 
 type CreateContextOptions = {
-  auth: SignedInAuthObject | SignedOutAuthObject;
+  // auth: SignedInAuthObject | SignedOutAuthObject;
 
 };
 /**
@@ -61,10 +61,10 @@ const createInnerTRPCContext = (_opts: CreateContextOptions) => {
 
 export const createTRPCContext = async (opts?: CreateNextContextOptions) => {
   // const auth = getAuth(opts?.req as NextApiRequest);
-  // return createInnerTRPCContext({
-  //   auth,
+  return createInnerTRPCContext({
+    // auth,
    
-  // });
+  });
 };
 
 /**

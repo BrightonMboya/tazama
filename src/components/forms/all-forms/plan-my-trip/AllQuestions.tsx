@@ -14,11 +14,12 @@ import {
 import { z } from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { Button } from "~/components/ui/button";
 import { api } from "~/lib/api";
 import Spinner from "~/components/ui/spinner";
 import { useRouter } from "next/router";
+import posthog from "posthog-js";
 
 export const planMyTripSchema = z.object({
   tripType: z.string(),
@@ -36,8 +37,11 @@ export const planMyTripSchema = z.object({
 });
 
 export type PlanMyTripType = z.infer<typeof planMyTripSchema>;
+interface Props {
+  setDialogOpen: Dispatch<SetStateAction<boolean>>;
+}
 
-const PlanMyTripForm = () => {
+const PlanMyTripForm = (props: Props) => {
   const {
     register,
     handleSubmit,
@@ -52,13 +56,18 @@ const PlanMyTripForm = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const { mutateAsync, isLoading } = api.email.send.useMutation({
     onSuccess: () => {
+      posthog.capture("plan-trip-form-submitted");
+      props.setDialogOpen(false);
       router.push("/thank-you");
     },
+    onError: () => {
+      posthog.capture("error_on_plan_my_trip");
+    },
   });
+  const planMyTripRouter = api.planMyTrip.record.useMutation();
 
   const onSubmit: SubmitHandler<PlanMyTripType> = (data) => {
-    // console.log(data);
-    mutateAsync({
+    const tripInfo = {
       tripType: data.tripType,
       addOns: data.addOns,
       planningProcess: data.planningProcess,
@@ -71,10 +80,10 @@ const PlanMyTripForm = () => {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
-    });
+    };
+    mutateAsync(tripInfo);
+    // planMyTripRouter.mutateAsync(tripInfo);
   };
-
-  // console.log(errors);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="font-now">

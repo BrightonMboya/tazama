@@ -8,32 +8,33 @@ import {
 } from "~/components/ui/dialog";
 import PlanMyTripForm from "~/components/forms/all-forms/plan-my-trip/AllQuestions";
 import posthog from "posthog-js";
+import { useState } from "react";
 
 export default function PlanMyTrip() {
+  const [dialopOpen, setDialopOpen] = useState(false);
+
   return (
-    <div className="">
-      <Dialog>
-        <DialogTrigger
-          asChild
-          className="font-now bg-primary px-2 font-medium text-white"
+    <Dialog onOpenChange={setDialopOpen} open={dialopOpen}>
+      <DialogTrigger
+        asChild
+        className="font-now bg-primary px-2 font-medium text-white"
+      >
+        <Button
+          className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2  text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2"
+          onClick={() => {
+            // sending the event that a user has opened up this form
+            posthog.capture("opened-form", { property: "Plan My Trip Form" });
+          }}
         >
-          <Button
-            variant="outline"
-            onClick={() => {
-              // sending the event that a user has opened up this form
-              posthog.capture("opened-form", { property: "Plan My Trip Form" });
-            }}
-          >
-            Plan My Trip
-          </Button>
-        </DialogTrigger>
-        <DialogPortal>
-          <DialogContent className="h-screen bg-lightest sm:max-w-[80%] lg:h-[70%] lg:w-[60%]">
-            <DialogHeader></DialogHeader>
-            <PlanMyTripForm />
-          </DialogContent>
-        </DialogPortal>
-      </Dialog>
-    </div>
+          Plan My Trip
+        </Button>
+      </DialogTrigger>
+      <DialogPortal>
+        <DialogContent className="h-screen bg-lightest sm:max-w-[80%] lg:h-[70%] lg:w-[60%]">
+          <DialogHeader></DialogHeader>
+          <PlanMyTripForm setDialogOpen={setDialopOpen} />
+        </DialogContent>
+      </DialogPortal>
+    </Dialog>
   );
 }

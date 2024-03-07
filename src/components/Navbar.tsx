@@ -140,7 +140,7 @@ const Navbar = () => {
           </AnimatePresence>
 
           <button
-            className={`menu-trigger rounded-md text-white flex items-center gap-2 bg-[#A87133] px-2 py-1 transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2`}
+            className="menu-trigger rounded-md text-white flex items-center gap-2 bg-[#A87133] px-2 py-1 transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2"
             onClick={toggleNav}
           >
             <span className="font-now menu-trigger">Menu</span>

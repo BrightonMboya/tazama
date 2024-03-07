@@ -24,7 +24,7 @@ export function WelcomeNote({
   return (
     <QuestionWrapper>
       <h3 className="font-now text-xl font-medium">
-        Let's talk about your trip to Tanzania
+        Let's talk about your trip to Tanzania 
       </h3>
       <Button
         className="font-now mt-5 text-lg text-white"
@@ -45,7 +45,7 @@ export function Question1({
   return (
     <QuestionWrapper>
       <label className="text-xl">
-        What type of trip are you interested in?
+        What type of trip are you interested in?<sup>*</sup>
       </label>
       <div className="font-now mt-5 flex flex-col space-y-5">
         <FormButton
@@ -88,7 +88,7 @@ export function Question2({
   return (
     <QuestionWrapper>
       <label className="text-xl">
-        Would you like to add any of the following?
+        Would you like to add any of the following?<sup>*</sup>
       </label>
       <div className="font-now mt-5 flex flex-col space-y-5">
         <FormButton
@@ -132,7 +132,7 @@ export function Question3({
   return (
     <QuestionWrapper>
       <label className="text-xl">
-        How far along are you along in your planning process?
+        How far along are you along in your planning process?<sup>*</sup>
       </label>
       <div className="font-now mt-5 flex flex-col space-y-5">
         <FormButton
@@ -166,6 +166,7 @@ export function Question4({
   return (
     <QuestionWrapper>
       <label className="text-xl">How many people are in your group?</label>
+      <sup>*</sup>
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
@@ -185,7 +186,7 @@ export function Question5({
     <QuestionWrapper>
       <label className="text-xl">
         What kind of budget do you expect to spend per person on this trip in
-        USD (excluding international flights)?
+        USD (excluding international flights)?<sup>*</sup>
       </label>
       <div className="font-now mt-5 flex flex-col space-y-5">
         <FormButton
@@ -228,7 +229,7 @@ export function Question6({
   return (
     <QuestionWrapper>
       <label className="text-xl">
-       Which dates are you looking to travel?
+        Which dates are you looking to travel?<sup>*</sup>
       </label>
       <p className="pt-3 text-sm font-light">
         If you're not sure of the exact date, just give me a rough idea of when
@@ -252,10 +253,10 @@ export function Question7({
   return (
     <QuestionWrapper>
       <label className="text-xl">
-        Is there anything you would like to tell me about your plans
+        Is there anything you would like to tell me about your plans<sup>*</sup>
       </label>
       <p className="pt-3 text-sm font-light">
-       e.g Celebrating honeymoon, travelling with children, etc
+        e.g Celebrating honeymoon, travelling with children, etc
       </p>
 
       <Input
@@ -275,9 +276,8 @@ export function Question8({
   return (
     <QuestionWrapper>
       <label className="text-xl">
-        Any Specific Wildlife or Experiences on your must-see list?
+        Any Specific Wildlife or Experiences on your must-see list?<sup>*</sup>
       </label>
-    
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
