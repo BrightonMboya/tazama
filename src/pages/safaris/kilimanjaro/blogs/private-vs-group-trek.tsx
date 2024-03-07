@@ -1,30 +1,15 @@
 import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
-import BlogCard from "~/components/ui/BlogCard";
-import HeadSEO from "~/components/ui/Head";
+
+import BlogLayout from "~/components/ui/BlogLayout";
 
 export default function Page() {
   return (
     <>
-    <HeadSEO title="Private vs Group Trek"/>
-      <div className="relative h-[60vh]">
-        <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
-          <img
-            src={`/assets/images/gallery/mount-kilimanjaro.webp`}
-            className="absolute left-0 right-0 top-0 -z-50 h-[60vh] w-screen object-cover opacity-80"
-          />
-          <div className="container">
-            <h1 className="font-base absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-6xl sm:px-12 lg:w-2/3 xl:text-7xl">
-              Private vs Group Trek
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      <section className="lg:mx-auto lg:max-w-none">
-        <section className="mx-auto flex items-start justify-center lg:mx-0 lg:gap-10">
-          <div className="mx-auto  px-4 md:px-8 lg:mx-0 lg:max-w-[60%] lg:text-justify">
+      <BlogLayout title="Private vs Group Trek">
+        <section className="flex items-start lg:mx-0 lg:gap-10">
+          <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
             <div className="mb-10 py-8">
               <p className="mt-5 text-2xl font-bold text-primary">
                 Embracing the Private Tour Experience
@@ -88,9 +73,6 @@ export default function Page() {
                 journey? Reach out to Tazama, where your adventure begins with
                 trust, care, and the promise of an extraordinary climb.
               </p>
-             
-            
-              
               <div className="relative mt-[50px] h-[400px] w-full lg:hidden lg:w-[50%]">
                 <Image
                   src={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.png`}
@@ -129,8 +111,8 @@ export default function Page() {
           </section>
         </section>
 
-        <section className="mx-auto flex flex-col items-center space-x-5 md:mx-8 md:flex-row lg:ml-[110px]">
-          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md">
+        <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
+          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
             <div className="relative h-[200px] w-full rounded-sm">
               <Image
                 src="/assets/images/gallery/chimps.webp"
@@ -151,14 +133,28 @@ export default function Page() {
               </Button>
             </div>
           </div>
+          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+            <div className="relative h-[200px] w-full rounded-sm">
+              <Image
+                src="/assets/images/gallery/chimps.webp"
+                layout="fill"
+                alt="blog_img"
+                className="object-cover"
+              />
+            </div>
 
-          <BlogCard
-            blogLink="/kilimanjaro/routes/machame"
-            title="Machame Routes"
-            caption="The Machame Route stands out for its scenic diversity and the robust challenge it offers, making it a magnet for adventurers"
-            imgLink="kilimanjaro/glossugv7zlnlgp3oie4"
-          />
-          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md">
+            <div className="p-3">
+              <p className="font-now text-primary">Kilimanjaro Routes</p>
+              <p className="font-now text-sm">
+                Ready to witness the world from the peak of Africa and fulfill a
+                lifetime goal.
+              </p>
+              <Button className="font-now mt-5 text-lg text-white">
+                View More
+              </Button>
+            </div>
+          </div>
+          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
             <div className="relative h-[200px] w-full rounded-sm">
               <Image
                 src="/assets/images/gallery/chimps.webp"
@@ -180,7 +176,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-      </section>
+      </BlogLayout>
     </>
   );
 }

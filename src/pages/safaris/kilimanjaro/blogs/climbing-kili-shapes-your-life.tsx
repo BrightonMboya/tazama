@@ -3,139 +3,60 @@ import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
 import BlogCard from "~/components/ui/BlogCard";
 import HeadSEO from "~/components/ui/Head";
+import BlogLayout from "~/components/ui/BlogLayout";
 
 export default function Page() {
   return (
-    <>
-    <HeadSEO title="Climbing Kilimanjaro shapes your life"/>
-      <div className="relative h-[60vh]">
-        <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
-          <img
-            src={`/assets/images/gallery/mount-kilimanjaro.webp`}
-            className="absolute left-0 right-0 top-0 -z-50 h-[60vh] w-screen object-cover opacity-80"
-          />
-          <div className="container">
-            <h1 className="font-base absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-6xl sm:px-12 lg:w-2/3 xl:text-7xl">
-              How Climbing Mount Kilimanjaro Reshapes Your View of Life
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      <section className="lg:mx-auto lg:max-w-none">
-        <section className="mx-auto flex items-start justify-center lg:mx-0 lg:gap-10">
-          <div className="mx-auto  px-4 md:px-8 lg:mx-0 lg:max-w-[60%] lg:text-justify">
-            <div className="mb-10 py-8">
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                Embarking on the challenge of Climbing Mount Kilimanjaro is more
-                than just a mark on a bucket list; it's an expedition that could
-                profoundly transform your outlook on life. Imagine standing
-                under the starlit sky, the cold biting at your cheeks, each
-                breath a testament to your resilience. The climb is arduous,
-                pushing you to the brink of your physical and mental limits.
-                Yet, it's in these moments of sheer willpower and determination
-                that you discover the boundless potential within you.
-              </p>{" "}
-              <p className="mt-5 text-2xl font-bold text-primary">
-                A Journey of Humility and Equality
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                The path to Kilimanjaro's summit is a great leveler. It strips
-                away all pretenses, revealing the core of human endurance and
-                spirit. Here, on these ancient trails, you learn a humbling
-                truth: we are all equal in the face of nature's majesty. The
-                mountain does not discriminate; it challenges all equally,
-                teaching us the value of every step taken in earnest
-              </p>{" "}
-              <p className="mt-5 text-2xl font-bold text-primary">
-                The Power of Support and Community
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                Climbing Kilimanjaro is a testament to the strength found in
-                unity. The journey is intensely personal, yet it is the support
-                from those around you—porters, guides, fellow climbers—that
-                propels you forward. This trek teaches you to embrace help with
-                grace and to extend your hand in kind. It's a powerful reminder
-                of our shared humanity and the strength that comes from
-                collaboration.
-              </p>
-              <p className="mt-5 text-2xl font-bold text-primary">
-                Patience, Persistence, and the Slow March to Success
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                Kilimanjaro demands patience. The slow, deliberate pace is a
-                lesson in itself, teaching you the value of persistence and the
-                strength of gradual progress. It's a metaphor for life's
-                challenges, where the key to overcoming obstacles often lies in
-                steady, persistent effort rather than rushed endeavors. On
-                Kilimanjaro, every step is a lesson in endurance, every breath a
-                reminder of the journey's worth.
-              </p>
-              <div className="relative mt-[50px] h-[400px] w-full lg:hidden lg:w-[50%]">
-                <Image
-                  src={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.jpg`}
-                  className="object-cover"
-                  layout="fill"
-                  alt="cover-img"
-                  placeholder="blur"
-                  blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
-                />
-              </div>
-              <p className="mt-5 text-2xl font-bold text-primary">
-                Stepping Beyond Comfort to Embrace Adventure
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                To climb Kilimanjaro is to step boldly beyond the familiar
-                confines of comfort, into a realm where adventure reigns. It's
-                in this leap of faith that you discover the exhilaration of the
-                unknown, the joy of exploration, and the transformative power of
-                confronting the new. Standing atop Africa, the world unfolds in
-                a new light, urging you to embrace the vastness of possibility.
-              </p>
-              <p className="mt-5 text-2xl font-bold text-primary">
-                Finding Beauty in Every Direction
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                As you ascend, remember to pause, to breathe in the crisp
-                mountain air, to witness the unfurling beauty of the world from
-                this unique vantage point. Kilimanjaro teaches you to appreciate
-                the journey in all its facets—the struggle, the camaraderie, the
-                breathtaking vistas. It's a reminder to cherish each moment, for
-                each step is a part of a larger, beautiful journey.
-              </p>
-              <p className="mt-5 text-2xl font-bold text-primary">
-                A Changed Perspective
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
-                Climbing Mount Kilimanjaro alters your perspective, not just on
-                the mountain, but on life itself. It's a voyage that challenges,
-                humbles, and ultimately, inspires profound change within. At
-                Tazama, we are committed to crafting journeys that not only
-                reach physical summits but also elevate the spirit. Our luxury,
-                personalized expeditions promise not just a climb, but an
-                awakening.
-                <br />
-                <br />
-                Are you ready to transform your view of the world and yourself?
-                Join us on this life-altering adventure to the roof of Africa.
-                Let Tazama be the guide on your journey to self-discovery and
-                boundless potential.
-              </p>
-              <div className="relative mt-[50px] h-[400px] w-full lg:hidden lg:w-[50%]">
-                <Image
-                  src={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.png`}
-                  className="object-cover"
-                  layout="fill"
-                  alt="cover-img"
-                  blurDataURL={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.blurDataUrl`}
-                  placeholder="blur"
-                />
-              </div>
-            </div>
-          </div>
-
-          <section className="mb-10 hidden space-y-5 py-8 lg:block">
-            <div className="relative h-[600px] w-full lg:w-[400px]">
+    <BlogLayout title="Climbing Kilimanjaro shapes your life">
+      <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
+        <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
+          <div className="mb-10 py-8">
+            <p className="mb-3 mt-5 text-xl text-[#757371]">
+              Embarking on the challenge of Climbing Mount Kilimanjaro is more
+              than just a mark on a bucket list; it's an expedition that could
+              profoundly transform your outlook on life. Imagine standing under
+              the starlit sky, the cold biting at your cheeks, each breath a
+              testament to your resilience. The climb is arduous, pushing you to
+              the brink of your physical and mental limits. Yet, it's in these
+              moments of sheer willpower and determination that you discover the
+              boundless potential within you.
+            </p>{" "}
+            <p className="mt-5 text-2xl font-bold text-primary">
+              A Journey of Humility and Equality
+            </p>
+            <p className="mb-3 mt-5 text-xl text-[#757371]">
+              The path to Kilimanjaro's summit is a great leveler. It strips
+              away all pretenses, revealing the core of human endurance and
+              spirit. Here, on these ancient trails, you learn a humbling truth:
+              we are all equal in the face of nature's majesty. The mountain
+              does not discriminate; it challenges all equally, teaching us the
+              value of every step taken in earnest
+            </p>{" "}
+            <p className="mt-5 text-2xl font-bold text-primary">
+              The Power of Support and Community
+            </p>
+            <p className="mb-3 mt-5 text-xl text-[#757371]">
+              Climbing Kilimanjaro is a testament to the strength found in
+              unity. The journey is intensely personal, yet it is the support
+              from those around you—porters, guides, fellow climbers—that
+              propels you forward. This trek teaches you to embrace help with
+              grace and to extend your hand in kind. It's a powerful reminder of
+              our shared humanity and the strength that comes from
+              collaboration.
+            </p>
+            <p className="mt-5 text-2xl font-bold text-primary">
+              Patience, Persistence, and the Slow March to Success
+            </p>
+            <p className="mb-3 mt-5 text-xl text-[#757371]">
+              Kilimanjaro demands patience. The slow, deliberate pace is a
+              lesson in itself, teaching you the value of persistence and the
+              strength of gradual progress. It's a metaphor for life's
+              challenges, where the key to overcoming obstacles often lies in
+              steady, persistent effort rather than rushed endeavors. On
+              Kilimanjaro, every step is a lesson in endurance, every breath a
+              reminder of the journey's worth.
+            </p>
+            <div className="relative mt-[50px] h-[400px] w-full lg:hidden lg:w-[50%]">
               <Image
                 src={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.jpg`}
                 className="object-cover"
@@ -145,8 +66,47 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-
-            <div className="relative h-[300px] w-full lg:w-[400px]">
+            <p className="mt-5 text-2xl font-bold text-primary">
+              Stepping Beyond Comfort to Embrace Adventure
+            </p>
+            <p className="mb-3 mt-5 text-xl text-[#757371]">
+              To climb Kilimanjaro is to step boldly beyond the familiar
+              confines of comfort, into a realm where adventure reigns. It's in
+              this leap of faith that you discover the exhilaration of the
+              unknown, the joy of exploration, and the transformative power of
+              confronting the new. Standing atop Africa, the world unfolds in a
+              new light, urging you to embrace the vastness of possibility.
+            </p>
+            <p className="mt-5 text-2xl font-bold text-primary">
+              Finding Beauty in Every Direction
+            </p>
+            <p className="mb-3 mt-5 text-xl text-[#757371]">
+              As you ascend, remember to pause, to breathe in the crisp mountain
+              air, to witness the unfurling beauty of the world from this unique
+              vantage point. Kilimanjaro teaches you to appreciate the journey
+              in all its facets—the struggle, the camaraderie, the breathtaking
+              vistas. It's a reminder to cherish each moment, for each step is a
+              part of a larger, beautiful journey.
+            </p>
+            <p className="mt-5 text-2xl font-bold text-primary">
+              A Changed Perspective
+            </p>
+            <p className="mb-3 mt-5 text-xl text-[#757371]">
+              Climbing Mount Kilimanjaro alters your perspective, not just on
+              the mountain, but on life itself. It's a voyage that challenges,
+              humbles, and ultimately, inspires profound change within. At
+              Tazama, we are committed to crafting journeys that not only reach
+              physical summits but also elevate the spirit. Our luxury,
+              personalized expeditions promise not just a climb, but an
+              awakening.
+              <br />
+              <br />
+              Are you ready to transform your view of the world and yourself?
+              Join us on this life-altering adventure to the roof of Africa. Let
+              Tazama be the guide on your journey to self-discovery and
+              boundless potential.
+            </p>
+            <div className="relative mt-[50px] h-[400px] w-full lg:hidden lg:w-[50%]">
               <Image
                 src={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.png`}
                 className="object-cover"
@@ -156,61 +116,99 @@ export default function Page() {
                 placeholder="blur"
               />
             </div>
-          </section>
-        </section>
+          </div>
+        </div>
 
-        <section className="mx-auto flex flex-col items-center space-x-5 md:mx-8 md:flex-row lg:ml-[110px]">
-          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md">
-            <div className="relative h-[200px] w-full rounded-sm">
-              <Image
-                src="/assets/images/gallery/chimps.webp"
-                layout="fill"
-                alt="blog_img"
-                className="object-cover"
-              />
-            </div>
-
-            <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Routes</p>
-              <p className="font-now text-sm">
-                Ready to witness the world from the peak of Africa and fulfill a
-                lifetime goal.
-              </p>
-              <Button className="font-now mt-5 text-lg text-white">
-                View More
-              </Button>
-            </div>
+        <section className="mb-10 hidden space-y-5 py-8 lg:block">
+          <div className="relative h-[600px] w-full lg:w-[400px]">
+            <Image
+              src={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.jpg`}
+              className="object-cover"
+              layout="fill"
+              alt="cover-img"
+              placeholder="blur"
+              blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
+            />
           </div>
 
-          <BlogCard
-            blogLink="/kilimanjaro/routes/machame"
-            title="Machame Routes"
-            caption="The Machame Route stands out for its scenic diversity and the robust challenge it offers, making it a magnet for adventurers"
-            imgLink="kilimanjaro/glossugv7zlnlgp3oie4"
-          />
-          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md">
-            <div className="relative h-[200px] w-full rounded-sm">
-              <Image
-                src="/assets/images/gallery/chimps.webp"
-                layout="fill"
-                alt="blog_img"
-                className="object-cover"
-              />
-            </div>
-
-            <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Routes</p>
-              <p className="font-now text-sm">
-                Ready to witness the world from the peak of Africa and fulfill a
-                lifetime goal.
-              </p>
-              <Button className="font-now mt-5 text-lg text-white">
-                View More
-              </Button>
-            </div>
+          <div className="relative h-[300px] w-full lg:w-[400px]">
+            <Image
+              src={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.png`}
+              className="object-cover"
+              layout="fill"
+              alt="cover-img"
+              blurDataURL={`${CLOUDINARY_URL}/kilimanjaro/uva3xbqf8xr2dn1cgwzd.blurDataUrl`}
+              placeholder="blur"
+            />
           </div>
         </section>
       </section>
-    </>
+
+      <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
+        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+          <div className="relative h-[200px] w-full rounded-sm">
+            <Image
+              src="/assets/images/gallery/chimps.webp"
+              layout="fill"
+              alt="blog_img"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="p-3">
+            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-sm">
+              Ready to witness the world from the peak of Africa and fulfill a
+              lifetime goal.
+            </p>
+            <Button className="font-now mt-5 text-lg text-white">
+              View More
+            </Button>
+          </div>
+        </div>
+        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+          <div className="relative h-[200px] w-full rounded-sm">
+            <Image
+              src="/assets/images/gallery/chimps.webp"
+              layout="fill"
+              alt="blog_img"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="p-3">
+            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-sm">
+              Ready to witness the world from the peak of Africa and fulfill a
+              lifetime goal.
+            </p>
+            <Button className="font-now mt-5 text-lg text-white">
+              View More
+            </Button>
+          </div>
+        </div>
+        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+          <div className="relative h-[200px] w-full rounded-sm">
+            <Image
+              src="/assets/images/gallery/chimps.webp"
+              layout="fill"
+              alt="blog_img"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="p-3">
+            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-sm">
+              Ready to witness the world from the peak of Africa and fulfill a
+              lifetime goal.
+            </p>
+            <Button className="font-now mt-5 text-lg text-white">
+              View More
+            </Button>
+          </div>
+        </div>
+      </section>
+    </BlogLayout>
   );
 }
