@@ -3,10 +3,10 @@ import PrimaryHeader from "~/components/PrimaryHeader";
 import { Input } from "~/components/Form";
 import Loader from "~/components/Loader";
 import HeadSEO from "~/components/ui/Head";
+import posthog from "posthog-js";
+
 
 const ContactPage = () => {
-
-
   const [loading, setLoading] = React.useState<boolean>(false);
   const [email, setEmail] = React.useState<string>("");
   const [fullNames, setFullNames] = React.useState("");
@@ -16,15 +16,16 @@ const ContactPage = () => {
   return (
     <>
       {loading ? <Loader /> : null}
-      <HeadSEO title="Contact Us"/>
+      <HeadSEO title="Contact Us" />
       <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact" />
-      <div className="mx-auto pt-[12rem]">
+      <div className="mx-auto">
         <div className="text-center text-[#757371]">
-          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-3xl md:text-4xl">
+          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-xl ">
             We'd love to hear from you. Simply fill in the form below or reach
             out directly to us through one of our contacts listed below.
           </p>
-          <p className=" text-2xl md:text-3xl">
+
+          <p className=" text-xl ">
             Email:&nbsp;
             <a
               href="mailto:info@tazamaafricasafari.com"
@@ -34,7 +35,7 @@ const ContactPage = () => {
               info@tazamaafricasafari.com
             </a>
           </p>
-          <p className=" text-2xl md:text-3xl">
+          <p className=" text-xl md:text-3xl">
             Phone:&nbsp;
             <a href="tel:+255745100011" className="hover:underline">
               (255)745100011
@@ -109,11 +110,14 @@ const ContactPage = () => {
             <input
               type="hidden"
               name="_next"
-              value="https://www.tazamaafricasafari.com/"
+              value="https://www.tazamaafricasafari.com/thank-you"
             ></input>
 
             <button
               type="submit"
+              onClick={() => {
+                posthog.capture("contact-form", { property: "Contact form" })
+              }}
               className="font-now w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
             >
               Submit Form
