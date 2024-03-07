@@ -34,6 +34,7 @@
     "@trpc/react-query": "^10.45.1",
     "@trpc/server": "^10.45.1",
     "@types/mdx": "^2.0.11",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/og": "^0.6.2",
     "class-variance-authority": "^0.7.0",
     "cloudinary": "^2.0.1",
