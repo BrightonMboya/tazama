@@ -7,15 +7,14 @@ import ClassicSafaris from "~/components/itenaries/classic-safaris"
 import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
+import HeadSEO from "~/components/ui/Head";
 
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-  React.useEffect(() => {
-    setPageTitle("Classic Safaris");
-  }, []);
 
   return (
     <>
+    <HeadSEO title="Classic Safaris"/>
       <PrimaryHeader image="discovery.webp" title="Classic Safaris" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">

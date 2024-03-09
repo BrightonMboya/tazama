@@ -88,11 +88,11 @@ const ContentSection = (props: contentSectionData) => {
               },
             }}
             className={`
-              font-now
+              font-raleway
               mb-8
-              text-sm leading-loose
+              text-lg
               text-[#757371]
-              sm:text-base
+             
             `}
           >
             {props.description}
@@ -115,6 +115,7 @@ const ContentSection = (props: contentSectionData) => {
               <Link
                 href={props.action}
                 className={`
+                    font-raleway
                     rounded-md
                     border
                     border-black

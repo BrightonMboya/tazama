@@ -1,18 +1,14 @@
-import React, { useEffect } from "react";
 import PrimaryHeader from "../../components/PrimaryHeader";
-import { setPageTitle } from "../../helpers";
 import { safaris } from "~/data/data";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/legacy/image";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = () => {
-  useEffect(() => {
-    setPageTitle("Safaris");
-  }, []);
-
   return (
     <>
+      <HeadSEO title="Safaris" />
       <PrimaryHeader
         image={`maasai.webp`}
         title="Unique Tailored Safaris
@@ -65,7 +61,7 @@ const Page = () => {
           <hr className="mt-4 border" />
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-10">
+        <div className="mb-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {safaris.map((safari, index) => (
             <motion.div
               initial={{

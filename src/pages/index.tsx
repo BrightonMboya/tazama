@@ -1,16 +1,13 @@
 import { HomeContactUs } from "~/components/HomeContactUs";
-import { carouselData } from "~/data/data";
 import { motion } from "framer-motion";
 import SafariCarousel from "~/components/safari-carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";
-// import { routerProps } from "../../types";
-import React from "react";
-import Layout from "~/components/ui/Layout";
 
 import ContentSection, {
   contentSectionData,
 } from "~/components/ContentSection";
 import { array } from "fast-web-kit";
+import HeadSEO from "~/components/ui/Head";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -36,6 +33,10 @@ export const homePageContentData: contentSectionData[] = [
 export default function Page() {
   return (
     <>
+      <HeadSEO
+        title="Tazama Africa Safaris"
+        keywords="African safaris, luxuruy safaris, personalized safaris, Serengeti, Kilimanjaro, memorable safaris"
+      />
       <PrimaryHeader
         image="home.webp"
         title="Your Next Adventure Awaits"
@@ -62,7 +63,7 @@ export default function Page() {
       <br />
       <br />
       <br />
-      <div className="mx-auto max-w-[82rem] px-4 xl:px-8">
+      <div className="mx-auto max-w-[82rem] px-4 xl:px-8 ">
         <div className="mx-auto mb-8 w-full px-4 py-4 text-[#757371] sm:w-2/3">
           <motion.h3
             initial={{
@@ -93,7 +94,7 @@ export default function Page() {
                 delay: 0.2,
               },
             }}
-            className="text-center"
+            className="font-raleway text-center text-lg"
           >
             Start exploring some of sample itineraries and see where an
             adventure with Tazama Africa can take you.
@@ -103,25 +104,6 @@ export default function Page() {
         <section className="flex flex-col items-center justify-center">
           <SafariCarousel />
         </section>
-        {/* <div className="flex flex-col gap-y-16">
-          {carouselData.sort().map((data, index) => (
-            <motion.div
-              initial={{
-                translateY: 10,
-                opacity: 0,
-              }}
-              whileInView={{
-                translateY: 0,
-                opacity: 1,
-                transition: { duration: 1 },
-              }}
-              key={index}
-            >
-              <h3 className="mb-4 text-center text-3xl">{data.heading}</h3>
-              <Carousel slides={data.images} />
-            </motion.div>
-          ))}
-        </div> */}
       </div>
       <HomeContactUs />
     </>

@@ -1,20 +1,15 @@
-import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
-import FamilyItinerary from "~/components/itenaries/family"
+import FamilyItinerary from "~/components/itenaries/family";
 import QuoteSection from "~/components/QuoteSection";
-import Image from "next/legacy/image";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import useFetchImages from "~/hooks/useFetchImages";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-  React.useEffect(() => {
-    setPageTitle("Family Safaris");
-  }, []);
-
   return (
     <>
+      <HeadSEO title="Family Safaris" />
       <PrimaryHeader image="discovery.webp" title="Family Safaris" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
@@ -98,7 +93,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
       />
       <div className="mt-10 flex flex-col items-center justify-center">
-        <div className="mt-10 lg:mt-[10px] mb-10 ">
+        <div className="mb-10 mt-10 lg:mt-[10px] ">
           {/* @ts-ignore */}
           <Gallery images={images} />
         </div>
@@ -108,7 +103,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 };
 
 export default Page;
-
 
 export async function getStaticProps() {
   const images = await useFetchImages({ folderName: "family_safari" });

@@ -1,18 +1,13 @@
-import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
-import Image from "next/legacy/image";
 import useFetchImages from "~/hooks/useFetchImages";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-  useEffect(() => {
-    setPageTitle("Mount Meru");
-  }, []);
-
   return (
     <>
+      <HeadSEO title="Mount Meru" />
       <PrimaryHeader image={`mount-meru.webp`} title="Mount Meru" />
       <div className="mx-auto  max-w-7xl px-4 md:px-8">
         <div className=" py-8">

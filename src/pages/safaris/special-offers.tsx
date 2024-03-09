@@ -1,20 +1,14 @@
-import React, { useEffect } from "react";
 import PrimaryHeader from "../../components/PrimaryHeader";
-import { setPageTitle } from "../../helpers";
 import { safaris } from "~/data/data";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/legacy/image";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = () => {
-
-
-  useEffect(() => {
-    setPageTitle("Tazama Special Offers");
-  }, []);
-
   return (
     <>
+      <HeadSEO title="Tazama Special Offers" />
       <PrimaryHeader
         image={`adventure.webp`}
         title="Our discounted special offers."

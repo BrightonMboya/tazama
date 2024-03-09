@@ -1,18 +1,15 @@
-import React, { useEffect } from "react";
-import { setPageTitle } from "~/helpers";
 import Image from "next/legacy/image";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import QuoteSection from "~/components/QuoteSection";
 import useFetchImages from "~/hooks/useFetchImages";
+import HeadSEO from "~/components/ui/Head";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-  useEffect(() => {
-    setPageTitle("Zanzibar Safaris");
-  }, []);
-
+ 
   return (
     <>
+    <HeadSEO title="Zanzibar Safaris"/>
       <div className="relative h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
           <Image

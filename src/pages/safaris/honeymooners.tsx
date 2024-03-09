@@ -1,15 +1,12 @@
-import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
-import HoneyMooners from "~/components/itenaries/honeymooners";
-
-import QuoteSection from "~/components/QuoteSection";
+import { honeyMooners } from "~/components/itenaries/day-itienary";
 import Image from "next/legacy/image";
 import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
-
-
+import EnquireNow from "~/components/EnquireNow";
+import ItienaryViewer from "~/components/itenaries/day-itienary";
+import HeadSEO from "~/components/ui/Head";
 
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
@@ -19,12 +16,10 @@ export const MemoryImage = ({ src }: { src: string }) => {
   );
 };
 const Page = ({ images }: { images: ImageProps[] }) => {
-  React.useEffect(() => {
-    setPageTitle("HoneyMoon Safaris");
-  }, []);
-
+ 
   return (
     <>
+    <HeadSEO title="HoneyMoon Safaris"/>
       <PrimaryHeader image="honey-moon-trip.webp" title="Honeymooners" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
@@ -98,17 +93,22 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </p>
         </div>
       </div>
+      <EnquireNow />
 
-      <HoneyMooners />
-
-      <QuoteSection
-        subText="- Leonie Trubshoe, Australia"
-        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
-      />
-      <div className="mb-10 mt-10 flex flex-col items-center justify-center">
-        {/* @ts-ignore */}
-        <Gallery images={images} />
-      </div>
+      <section className="mx-auto  max-w-7xl px-4 pb-10 md:px-8">
+        <>
+          {honeyMooners.map((data) => (
+            <ItienaryViewer
+              desc={data.desc}
+              key={data.id}
+              title={data.title}
+              format={images[1]?.format!}
+              blurDataUrl={images[1]?.blurDataUrl!}
+              public_id={data.public_id}
+            />
+          ))}
+        </>
+      </section>
     </>
   );
 };

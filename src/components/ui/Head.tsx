@@ -1,19 +1,18 @@
 import Head from "next/head";
 
-export default function HeadSEO() {
+export default function HeadSEO({
+  title,
+  keywords,
+}: {
+  title: string;
+  keywords: string;
+}) {
   return (
     <Head>
-      {/* Basics */}
-      <meta http-equiv="x-ua-compatible" content="ie=edge" />
-      <meta
-        name="viewport"
-        content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
-      />
-
       {/* keywords tags */}
       <meta
         name="keywords"
-        content="african luxury safaris, kilimanjaro, zanzibar, serengeti plains, Saadan national park, tarangire, manyara national park"
+        content={keywords}
       />
 
       <meta name="mobile-web-app-capable" content="yes" />
@@ -22,7 +21,7 @@ export default function HeadSEO() {
       {/* Open Graph stuff */}
       <meta
         property="og:image"
-        content={`https://www.tazamaafricasafaris.com/api/OG`}
+        content="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708505897/family_safari/frzvpsec6tiivi2aeszm.jpg"
       />
 
       <meta property="og:site_name" content="Tazama Africa Tours and Safaris" />
@@ -47,10 +46,7 @@ export default function HeadSEO() {
             travel experiences throughout East Africa, giving you the trip of a
             lifetime."
       />
-      <meta name="googlebot" content="notranslate" />
-      <meta name="google" content="nopagereadaloud" />
-      <meta name="robots" content="index, follow" />
-      <title>Tazama Africa Tours and Safaris</title>
+      <title>{title}</title>
     </Head>
   );
 }

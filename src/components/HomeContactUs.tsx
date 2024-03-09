@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const HomeContactUs = () => {
   return (
     <>
-      <div className="mx-auto mt-10 w-full w-full max-w-[82rem] px-10 py-10">
+      <div className="mx-auto mt-10 w-full max-w-[82rem] px-10 py-10">
         <div className="text-[#757371]">
           <motion.h3
             initial={{ opacity: 0, x: -10 }}
@@ -28,7 +28,7 @@ export const HomeContactUs = () => {
                 delay: 0.2,
               },
             }}
-            className="font-now w-full md:w-2/3"
+            className="font-raleway w-full md:w-2/3"
           >
             Your questions, feedback, and insights are valuable to us. Reach out
             to me directly through the contact details below, and we’ll get back
@@ -49,7 +49,7 @@ export const HomeContactUs = () => {
             >
               <h4 className="mb-2 text-sm font-bold md:text-lg">Email</h4>
               <a
-                className="font-now text-lg font-light text-[#969492] hover:underline md:text-2xl"
+                className="font-raleway text-lg font-light text-[#969492] hover:underline md:text-2xl"
                 href="info@tazamaafricasafari.com"
               >
                 info@tazamaafricasafari.com
@@ -68,7 +68,7 @@ export const HomeContactUs = () => {
             >
               <h4 className="mb-2 text-sm font-bold md:text-lg">Phone</h4>
               <a
-                className="font-now text-lg font-light text-[#969492] hover:underline md:text-2xl"
+                className="font-raleway text-lg font-light text-[#969492] hover:underline md:text-2xl"
                 href="tel:+255745100011"
               >
                 (255)745100011
