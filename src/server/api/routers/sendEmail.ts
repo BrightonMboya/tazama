@@ -10,9 +10,8 @@ export const emailRouter = createTRPCRouter({
   send: publicProcedure.input(planMyTripSchema).mutation(async ({ input }) => {
     try {
       const response = await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: "james@tazamaafricasafari.com",
         to: "info@tazamaafricasafari.com",
-        // reply_to: 'b.mboya@alustudent.com',
         subject: "New Form Enquiry",
         react: PlanMyTripEmail({
           tripType: input.tripType,
