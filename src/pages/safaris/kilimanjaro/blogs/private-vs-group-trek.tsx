@@ -3,6 +3,8 @@ import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
 
 import BlogLayout from "~/components/ui/BlogLayout";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
@@ -11,10 +13,10 @@ export default function Page() {
         <section className="flex items-start lg:mx-0 lg:gap-10">
           <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
             <div className="mb-10 py-8">
-              <p className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl font-bold text-primary">
                 Embracing the Private Tour Experience
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
+              </h3>
+              <p className="mb-3 mt-5 text-lg text-[#757371]">
                 For those seeking a more tailored adventure, Tazama offers
                 luxurious private tours. These excursions offer the ultimate
                 personalized experience, allowing climbers to set their pace,
@@ -24,10 +26,10 @@ export default function Page() {
                 as you envisioned, with all the luxury and attention to detail
                 that sets Tazama apart.
               </p>{" "}
-              <p className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl font-bold text-primary">
                 The Group Climb Advantage
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
+              </h3>
+              <p className="mb-3 mt-5 text-lg text-[#757371]">
                 Group climbs on Kilimanjaro offer a unique blend of shared
                 challenge and collective triumph. They're not just about
                 reaching the summit; they're about the bonds formed on the way
@@ -37,10 +39,10 @@ export default function Page() {
                 are carefully managed to ensure safety and personal attention,
                 making your climb both intimate and inclusive.
               </p>{" "}
-              <p className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl font-bold text-primary">
                 Choosing Your Path with Tazama
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
+              </h3>
+              <p className="mb-3 mt-5 text-lg text-[#757371]">
                 Whether you're drawn to the camaraderie of a group climb or the
                 bespoke experience of a private tour, Tazama is here to make
                 your Kilimanjaro dream a reality. We understand the importance
@@ -60,10 +62,10 @@ export default function Page() {
                   blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
                 />
               </div>
-              <p className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl font-bold text-primary">
                 Your Kilimanjaro Adventure Awaits
-              </p>
-              <p className="mb-3 mt-5 text-xl text-[#757371]">
+              </h3>
+              <p className="mb-3 mt-5 text-lg text-[#757371]">
                 Climbing Kilimanjaro is an invitation to challenge yourself,
                 connect with nature, and become part of a community of
                 adventurers. Whether in the solidarity of a group or the
@@ -112,69 +114,64 @@ export default function Page() {
         </section>
 
         <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
-          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/blogs/recovery-journey"
+          >
             <div className="relative h-[200px] w-full rounded-sm">
-              <Image
-                src="/assets/images/gallery/chimps.webp"
-                layout="fill"
-                alt="blog_img"
-                className="object-cover"
-              />
+              <BlurImage src="https://images.unsplash.com/photo-1521150932951-303a95503ed3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Routes</p>
+              <p className="font-now text-primary">Recovery Journey</p>
               <p className="font-now text-sm">
-                Ready to witness the world from the peak of Africa and fulfill a
-                lifetime goal.
+                Recovery Journey After climbing Kilimanjaro: How many days it
+                takes to recover from climbing kilimanjaro
               </p>
               <Button className="font-now mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
-          </div>
-          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+          </Link>
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/blogs/preventing-injuries"
+          >
             <div className="relative h-[200px] w-full rounded-sm">
-              <Image
-                src="/assets/images/gallery/chimps.webp"
-                layout="fill"
-                alt="blog_img"
-                className="object-cover"
-              />
+              <BlurImage src="https://images.unsplash.com/photo-1632864792014-19793d73f8e5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Routes</p>
+              <p className="font-now text-primary">Preventing Injuries</p>
               <p className="font-now text-sm">
-                Ready to witness the world from the peak of Africa and fulfill a
-                lifetime goal.
+                Learn how you can prevent common Injuries while climbing
+                Kilimanjaro.
               </p>
               <Button className="font-now mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
-          </div>
-          <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+          </Link>
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/blogs/best-sunglasses-for-kilimanjaro"
+          >
             <div className="relative h-[200px] w-full rounded-sm">
-              <Image
-                src="/assets/images/gallery/chimps.webp"
-                layout="fill"
-                alt="blog_img"
-                className="object-cover"
-              />
+              <BlurImage src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Routes</p>
+              <p className="font-now text-primary">
+                Sunglasses for Kilimanjaro
+              </p>
               <p className="font-now text-sm">
-                Ready to witness the world from the peak of Africa and fulfill a
-                lifetime goal.
+                Protect your eyes against the harsh UV lights in the mountain.
               </p>
               <Button className="font-now mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
-          </div>
+          </Link>
         </section>
       </BlogLayout>
     </>

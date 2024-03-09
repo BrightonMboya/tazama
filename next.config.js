@@ -35,7 +35,7 @@ const config = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true
+    ignoreBuildErrors: true,
   },
   images: {
     formats: ["image/avif", "image/webp"],
@@ -47,7 +47,7 @@ const config = {
         pathname: "/my-account/**",
       },
     ],
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "images.unsplash.com"],
   },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };

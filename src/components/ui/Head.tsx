@@ -1,12 +1,18 @@
 import Head from "next/head";
 
-export default function HeadSEO({title}: {title: string}) {
+export default function HeadSEO({
+  title,
+  keywords,
+}: {
+  title: string;
+  keywords: string;
+}) {
   return (
     <Head>
       {/* keywords tags */}
       <meta
         name="keywords"
-        content="african luxury safaris, kilimanjaro, zanzibar, serengeti plains, Saadan national park, tarangire, manyara national park"
+        content={keywords}
       />
 
       <meta name="mobile-web-app-capable" content="yes" />

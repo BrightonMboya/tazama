@@ -4,7 +4,7 @@ import { Input } from "~/components/Form";
 import Loader from "~/components/Loader";
 import HeadSEO from "~/components/ui/Head";
 import posthog from "posthog-js";
-
+import { base_keywords } from "~/lib/constants";
 
 const ContactPage = () => {
   const [loading, setLoading] = React.useState<boolean>(false);
@@ -16,8 +16,8 @@ const ContactPage = () => {
   return (
     <>
       {loading ? <Loader /> : null}
-      <HeadSEO title="Contact Us" />
-      <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact" />
+      <HeadSEO title="Contact Us" keywords={base_keywords} />
+      <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact Us" />
       <div className="mx-auto">
         <div className="text-center text-[#757371]">
           <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-xl ">
@@ -35,7 +35,7 @@ const ContactPage = () => {
               info@tazamaafricasafari.com
             </a>
           </p>
-          <p className=" text-xl md:text-3xl">
+          <p className=" text-xl">
             Phone:&nbsp;
             <a href="tel:+255745100011" className="hover:underline">
               (255)745100011
@@ -48,7 +48,7 @@ const ContactPage = () => {
 
         <div className="mx-auto my-20 max-w-4xl px-4">
           <h3 className="text-4xl">Contact Us</h3>
-          <p className="font-now mt-8 text-black md:mt-12">
+          <p className=" mt-8 text-black md:mt-12">
             Please complete the form below
           </p>
 
@@ -78,11 +78,11 @@ const ContactPage = () => {
             />
 
             <div className="flex w-full flex-col gap-2">
-              <label htmlFor="message" className="font-now text-[#484848]">
+              <label htmlFor="message" className="text-[#484848]">
                 Message*
               </label>
               <textarea
-                className="font-now h-36 rounded-lg border-none px-4 py-3 shadow-sm placeholder:text-gray-300 focus:ring-[#A87133]"
+                className=" h-36 rounded-lg border-none px-4 py-3 shadow-sm placeholder:text-gray-300 focus:ring-[#A87133]"
                 placeholder="Write your message here"
                 required
                 name="Message"
@@ -116,9 +116,9 @@ const ContactPage = () => {
             <button
               type="submit"
               onClick={() => {
-                posthog.capture("contact-form", { property: "Contact form" })
+                posthog.capture("contact-form", { property: "Contact form" });
               }}
-              className="font-now w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+              className=" w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
             >
               Submit Form
             </button>

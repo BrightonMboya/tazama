@@ -1,5 +1,6 @@
 import React from "react";
 import HeadSEO from "./Head";
+import { Kilimanjaro_keywords } from "~/lib/constants";
 
 export default function BlogLayout({
   children,
@@ -10,7 +11,7 @@ export default function BlogLayout({
 }) {
   return (
     <React.Fragment>
-      <HeadSEO title={title} />
+      <HeadSEO title={title} keywords={Kilimanjaro_keywords} />
       <div className="relative h-[60vh]">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
           <img

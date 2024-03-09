@@ -2,6 +2,8 @@ import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
 import BlogLayout from "~/components/ui/BlogLayout";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
@@ -9,10 +11,10 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Understanding Kilimanjaro Altitude Sickness
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Climbing Kilimanjaro is a dream for many adventurers, and while
               the journey to its peak is exhilarating, it's essential to
               understand the risks associated with high-altitude trekking,
@@ -20,7 +22,7 @@ export default function Page() {
               your safety and ensure that you're well-prepared to enjoy your
               climb without undue distress.
             </p>{" "}
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Kilimanjaro Altitude Sickness, or Acute Mountain Sickness (AMS),
               is a concern for climbers due to the lower oxygen levels at high
               altitudes. Symptoms like headache, nausea, fatigue, and shortness
@@ -43,14 +45,14 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Preventing Kilimanjaro Altitude Sickness
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Prevention starts with preparation. Here are essential tips to
               mitigate the risk of AMS:
             </p>
-            <ul className="list-disc pl-10 text-xl text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-[#757371]">
               <li>
                 <span className="text-primary">Prepare Before Ascend:</span>{" "}
                 Engage in altitude training, aerobic exercises, and strength
@@ -87,10 +89,10 @@ export default function Page() {
                 increased urination and tingling sensations.
               </li>
             </ul>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Tazama's Commitment to Your Safety
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               With Tazama, your safety is paramount. Our experienced guides
               monitor your well-being closely, ready to adjust plans for optimal
               acclimatization. We equip you with the necessary knowledge and
@@ -107,21 +109,21 @@ export default function Page() {
                 placeholder="blur"
               />
             </div>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               <span className="text-primary">Remember </span>
               AMS can affect anyone, regardless of fitness level or previous
               high-altitude experience. By following our guidance and listening
               to your body, you can significantly reduce the risk of altitude
               sickness and enjoy the incredible journey to the roof of Africa.
             </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Choose Tazama for a Kilimanjaro climb that prioritizes your
               health, safety, and personal achievement. With our expert
               guidance, comprehensive preparation, and commitment to luxury and
               personalized experiences, you're set for an unforgettable
               expedition.
             </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Ready to take on the challenge of Kilimanjaro with the best
               support by your side? Reach out to Tazama today and start planning
               your safe and exhilarating climb to the summit. Let's conquer the
@@ -157,69 +159,63 @@ export default function Page() {
       </section>
 
       <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/kilimanjaro-visa"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Kilimanjaro Visa</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              This is a non-negotiable prerequisite for anyone planning to
+              conquer Kilimanjaro .....
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/kilimanjaro-food"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1585540083814-ea6ee8af9e4f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWZyaWNhbiUyMGZvb2R8ZW58MHx8MHx8fDA%3D" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Kilimanjaro Food</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Tazama ensures your journey to the summit of Mount Kilimanjaro is
+              not only successful but also delightful ...
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/private-toilets"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1650668302197-7f556c34cb91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Kilimanjaro Private Toilets</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Climbing Mount Kilimanjaro is an intimate and bonding experience
+              with your team, but privacy is paramount,
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
+        </Link>
       </section>
     </BlogLayout>
   );

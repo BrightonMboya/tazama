@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Mate:700,600,500,400,300);
-
+/* 
 @font-face {
   font-family: Now;
   src: url("../fonts/now/now.regular.otf");
@@ -16,23 +16,29 @@
   font-family: Now;
   src: url("../fonts/now/now.regular.otf");
   font-weight: 600;
-}
+} */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+h1,
+h3 {
   font-family: Mate;
+}
+
+p,
+label,
+input,
+textarea,
+button,
+ul {
+  font-family: var(--font-raleway);
 }
 
 body {
   background-color: #f5f1eb;
   overflow-x: hidden;
-}
-
-.font-now {
-  font-family: Now !important;
 }
 
 .text-shadow {
@@ -66,8 +72,6 @@ body {
   background-color: #b7b0a17a;
 }
 
-
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -98,7 +102,6 @@ body {
     --ring: 240 5% 64.9%;
     --radius: 0.5rem;
   }
-
 
   /* for hiding the arrows on inputs */
   /* Chrome, Safari, Edge, Opera */

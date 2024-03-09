@@ -2,6 +2,8 @@ import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
 import BlogLayout from "~/components/ui/BlogLayout";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
@@ -9,10 +11,10 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Kilimanjaro Visa: Your Gateway to Adventure
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Embarking on a journey to Mount Kilimanjaro, the crown jewel of
               Tanzania and Africa's highest peak, is a dream for many
               adventurers and trekkers worldwide. Before setting foot on this
@@ -22,10 +24,10 @@ export default function Page() {
               is here to guide you through this essential process, ensuring your
               adventure starts smoothly and stress-free.
             </p>{" "}
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Do You Need a Visa to Climb Kilimanjaro?
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Absolutely, yes. As Mount Kilimanjaro graciously stands in the
               northern part of Tanzania, most foreign nationals are required to
               obtain a visa for entry into Tanzania. This is a non-negotiable
@@ -43,10 +45,10 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Securing Your Visa: Options and Processes
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               For those embarking from afar, the Kilimanjaro Visa On Arrival
               (VOA) presents a convenient option, allowing trekkers to obtain
               their visa directly at Tanzania’s Kilimanjaro International
@@ -57,10 +59,10 @@ export default function Page() {
               application process, providing peace of mind as you prepare for
               your journey.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Online Visa Application: What You Need to Know
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               The Tanzanian government has streamlined the visa application
               process, allowing travelers to apply online. This process involves
               filling out a form, making a payment, and submitting your
@@ -74,10 +76,10 @@ export default function Page() {
               For the online visa application, visit: Tanzania Immigration
               Services Website.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Kilimanjaro Visa Requirements at a Glance:
-            </p>
-            <ul className="list-disc pl-10 text-xl text-[#757371]">
+            </h3>
+            <ul className="list-disc pl-10 text-lg text-[#757371]">
               <li>
                 <span className="text-primary">Valid Passport:</span> Must be
                 valid for six months beyond your travel date, with at least one
@@ -106,10 +108,10 @@ export default function Page() {
                 payments accepted via credit/debit cards and PayPal.
               </li>
             </ul>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Tanzania Visa Costs and Processing Times:
-            </p>
-            <ul className="list-disc pl-10 text-xl text-[#757371]">
+            </h3>
+            <ul className="list-disc pl-10 text-lg text-[#757371]">
               <li>
                 U.S. Citizens: Multiple-entry e-Visa, standard to super rush
                 processing, USD 100.00.
@@ -133,18 +135,18 @@ export default function Page() {
                 placeholder="blur"
               />
             </div>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Where to Obtain Your Visa:
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Online, at any Tanzanian Embassy, High Commission, or specific
               entry points to Tanzania, including international airports and
               border crossings.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Elevating Your Kilimanjaro Experience
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               At Tazama, we understand that the journey to Kilimanjaro's summit
               begins long before you set foot on the mountain. Our commitment to
               your seamless adventure extends beyond the trek itself, ensuring
@@ -154,10 +156,10 @@ export default function Page() {
               experience that prioritizes your safety, comfort, and personal
               preferences.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Ready to Start Your Kilimanjaro Adventure?
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Let Tazama be your guide to not only conquering Africa's highest
               peak but also navigating the essential steps before your journey
               begins. With our expert knowledge, personalized service, and
@@ -196,69 +198,64 @@ export default function Page() {
       </section>
 
       <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/kilimanjaro-facts"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
+            <BlurImage
+              src="
+            https://images.unsplash.com/photo-1635865897833-38bc0f8aee44?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww"
             />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className=" text-primary">Kilimanjaro Facts</p>
+            <p className=" text-sm">
+              Mount Kilimanjaro, a marvel of nature, stands as a beacon of
+              adventure for climbers worldwide.
+            </p>
+            <Button className="mt-5 text-lg text-white">View More</Button>
+          </div>
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/kilimanjaro-vaccinations"
+        >
+          <div className="relative h-[200px] w-full rounded-sm">
+            <BlurImage src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
+          </div>
+
+          <div className="p-3">
+            <p className="font-now text-primary">Kilimanjaro Vaccinations</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Be sure you understand how an anti-malarial may affect your sleep,
+              appetite and exposure to sun before you begin,
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/training-for-kilimanjaro"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1650668302197-7f556c34cb91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Training for Kilimanjaro</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Climbing Mount Kilimanjaro is an intimate and bonding experience
+              with your team, but privacy is paramount,
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
-          <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
-          </div>
-
-          <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
-            <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
-            </p>
-            <Button className="font-now mt-5 text-lg text-white">
-              View More
-            </Button>
-          </div>
-        </div>
+        </Link>
       </section>
     </BlogLayout>
   );

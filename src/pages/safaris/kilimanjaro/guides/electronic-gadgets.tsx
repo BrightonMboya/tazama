@@ -2,6 +2,8 @@ import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
 import BlogLayout from "~/components/ui/BlogLayout";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
@@ -9,10 +11,10 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Essential Electronic Gadgets for Your Kilimanjaro Adventure
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               In the majestic realm of Mount Kilimanjaro, where every step
               brings you closer to the roof of Africa, ensuring you're
               well-equipped is paramount. Tazama understands the essence of
@@ -20,12 +22,12 @@ export default function Page() {
               that can transform your climb into a more comfortable and
               memorable experience.
             </p>{" "}
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Your journey to the summit is a blend of endurance, marvel, and a
               touch of modern convenience, provided by the right gadgets. Here
               are the essentials:
             </p>
-            <ul className="list-disc pl-10 text-xl text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-[#757371]">
               <li>
                 <span className="text-primary">Smartphone:</span> Your gateway
                 to the world below as you ascend. A smartphone not only keeps
@@ -58,15 +60,15 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               8 Gadgets to Enhance Your Climb
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               This one is for our gadget lovers who don’t want to leave tech
               behind. Beyond the essentials, these gadgets can enhance your
               climbing experience:
             </p>
-            <ul className="list-disc pl-10 text-xl text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-[#757371]">
               <li>
                 <span className="text-primary">Headlamp: </span>
                 Essential for those pre-dawn summit attempts, ensuring you have
@@ -144,69 +146,62 @@ export default function Page() {
       </section>
 
       <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/attitude-sickness"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className=" text-primary">Attitude Sickness</p>
+            <p className=" text-sm">
+              The key to a successful summit isn't just physical fitness but how
+              well you adapt to the altitude.
+            </p>
+            <Button className="mt-5 text-lg text-white">View More</Button>
+          </div>
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/kilimanjaro-solo-climb"
+        >
+          <div className="relative h-[200px] w-full rounded-sm">
+            <BlurImage src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
+          </div>
+
+          <div className="p-3">
+            <p className="font-now text-primary">Kilimanjaro Solo Climb</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Does Solo Climbing Mean You're Alone?...
+              <br />
+              <br />
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/guides/training-for-kilimanjaro"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1650668302197-7f556c34cb91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Training for Kilimanjaro</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Climbing Mount Kilimanjaro is an intimate and bonding experience
+              with your team, but privacy is paramount,
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
-          <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
-          </div>
-
-          <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
-            <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
-            </p>
-            <Button className="font-now mt-5 text-lg text-white">
-              View More
-            </Button>
-          </div>
-        </div>
+        </Link>
       </section>
     </BlogLayout>
   );

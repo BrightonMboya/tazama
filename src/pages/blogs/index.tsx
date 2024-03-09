@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { setPageTitle } from "../../helpers";
 import Image from "next/legacy/image";
-import Link from "next/link";
 import { Button } from "~/components/ui/button";
 
 const ItenaryPage = () => {

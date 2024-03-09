@@ -2,6 +2,8 @@ import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
 import BlogLayout from "~/components/ui/BlogLayout";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
@@ -9,11 +11,11 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Recovery Journey After climbing Kilimanjaro: How many days it
               takes to recover from climbing kilimanjaro
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               The ascent of Mount Kilimanjaro is an adventure that tests your
               limits, not just during the climb but also in the days that follow
               as your body recovers from this monumental feat. With Tazama, your
@@ -21,20 +23,20 @@ export default function Page() {
               care, and support that extends beyond the descent, ensuring a
               recovery as memorable as the climb itself
             </p>{" "}
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Post-Kilimanjaro: The Unseen Challenge
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Climbing the towering heights of Kilimanjaro is a testament to
               human endurance, and the recovery period is a crucial part of this
               epic journey. The descent from the peak might mark the end of the
               climb, but it heralds the beginning of a different kind of
               challenge: recovery.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               The Aftermath: Physical Echoes of the Climb
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               As you revel in the glory of having reached the summit, your body
               begins to whisper tales of the trek. Symptoms such as headache,
               nausea, dizziness, and shortness of breath may linger, while the
@@ -42,10 +44,10 @@ export default function Page() {
               Recovery is not just about resting; it's about listening and
               responding to your body's needs.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               The Path to Recovery: A Holistic Approach
-            </p>
-            <ul className="list-disc pl-10 text-xl text-[#757371]">
+            </h3>
+            <ul className="list-disc pl-10 text-lg text-[#757371]">
               <li>
                 <span className="text-primary">Choosing the Right Route:</span>{" "}
                 Opting for a longer route on Kilimanjaro not only increases your
@@ -84,10 +86,10 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Every Climber's Journey is Unique and Personal
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Recovery varies from one climber to another, influenced by
               physical fitness, mental fortitude, and the body's inherent
               ability to heal. Some may find themselves bouncing back in a
@@ -95,10 +97,10 @@ export default function Page() {
               Remember, some physical reminders of your journey may linger, a
               testament to your courage and determination.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Embracing Recovery with Tazama
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               With Tazama, your post-Kilimanjaro experience is as meticulously
               planned as your ascent. Our commitment to your well-being ensures
               that your recovery is supported every step of the way, from
@@ -154,69 +156,63 @@ export default function Page() {
       </section>
 
       <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/summit-night"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Summit Night</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
+              adventure awaits during the enigmatic summit night.
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/recovery-journey"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1521150932951-303a95503ed3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Recovery Journey</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Recovery Journey After climbing Kilimanjaro: How many days it
+              takes to recover from climbing kilimanjaro
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/private-vs-group-trek"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Private vs Group Trek</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Chose which one is right for you, either group trek or a private
+              one
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
+        </Link>
       </section>
     </BlogLayout>
   );

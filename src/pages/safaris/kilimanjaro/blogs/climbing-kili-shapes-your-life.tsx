@@ -1,9 +1,9 @@
 import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
-import BlogCard from "~/components/ui/BlogCard";
-import HeadSEO from "~/components/ui/Head";
 import BlogLayout from "~/components/ui/BlogLayout";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
@@ -11,7 +11,7 @@ export default function Page() {
       <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
         <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Embarking on the challenge of Climbing Mount Kilimanjaro is more
               than just a mark on a bucket list; it's an expedition that could
               profoundly transform your outlook on life. Imagine standing under
@@ -21,10 +21,10 @@ export default function Page() {
               moments of sheer willpower and determination that you discover the
               boundless potential within you.
             </p>{" "}
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               A Journey of Humility and Equality
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               The path to Kilimanjaro's summit is a great leveler. It strips
               away all pretenses, revealing the core of human endurance and
               spirit. Here, on these ancient trails, you learn a humbling truth:
@@ -32,10 +32,10 @@ export default function Page() {
               does not discriminate; it challenges all equally, teaching us the
               value of every step taken in earnest
             </p>{" "}
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               The Power of Support and Community
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Climbing Kilimanjaro is a testament to the strength found in
               unity. The journey is intensely personal, yet it is the support
               from those around you—porters, guides, fellow climbers—that
@@ -44,10 +44,10 @@ export default function Page() {
               our shared humanity and the strength that comes from
               collaboration.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Patience, Persistence, and the Slow March to Success
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Kilimanjaro demands patience. The slow, deliberate pace is a
               lesson in itself, teaching you the value of persistence and the
               strength of gradual progress. It's a metaphor for life's
@@ -66,10 +66,10 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Stepping Beyond Comfort to Embrace Adventure
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               To climb Kilimanjaro is to step boldly beyond the familiar
               confines of comfort, into a realm where adventure reigns. It's in
               this leap of faith that you discover the exhilaration of the
@@ -77,10 +77,10 @@ export default function Page() {
               confronting the new. Standing atop Africa, the world unfolds in a
               new light, urging you to embrace the vastness of possibility.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Finding Beauty in Every Direction
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               As you ascend, remember to pause, to breathe in the crisp mountain
               air, to witness the unfurling beauty of the world from this unique
               vantage point. Kilimanjaro teaches you to appreciate the journey
@@ -88,10 +88,10 @@ export default function Page() {
               vistas. It's a reminder to cherish each moment, for each step is a
               part of a larger, beautiful journey.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               A Changed Perspective
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Climbing Mount Kilimanjaro alters your perspective, not just on
               the mountain, but on life itself. It's a voyage that challenges,
               humbles, and ultimately, inspires profound change within. At
@@ -145,69 +145,62 @@ export default function Page() {
       </section>
 
       <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/best-sunglasses-for-kilimanjaro"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Sunglasses for Kilimanjaro</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Protect your eyes against the harsh UV lights in the mountain.
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/preventing-injuries"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1632864792014-19793d73f8e5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Preventing Injuries</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Learn how you can prevent common Injuries while climbing
+              Kilimanjaro.
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/private-vs-group-trek"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Private vs Group Trek</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Chose which one is right for you, either group trek or a private
+              one
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
+        </Link>
       </section>
     </BlogLayout>
   );

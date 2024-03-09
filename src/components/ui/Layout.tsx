@@ -11,7 +11,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <>
-      <Head />
+  
       <Navbar />
       <main>{children}</main>
       <Footer />

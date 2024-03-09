@@ -8,24 +8,24 @@ import { array } from "fast-web-kit";
 import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 const AboutPage = () => {
   return (
     <>
       <PrimaryHeader image="about.webp" title="About Tazama" />
-      <HeadSEO title="About Tazama" />
-      {/* about tazama section */}
+      <HeadSEO title="About Tazama" keywords={base_keywords} />
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">About Tazama</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             TAZAMA specializes in curating unforgettable memories that will have
             you reminiscing with your loved ones for years to come. Boasting
             over 15 years of expertise in the safari industry, we've mastered
             the art of crafting seamless journeys.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             Our exceptional guides and dedicated staff are seasoned experts,
             ensuring every aspect of your trip is flawlessly executed. Because
             every trip is as unique as you, a journey with us brings you up
@@ -34,7 +34,7 @@ const AboutPage = () => {
             environmentally sustainable practices and prioritize local, organic,
             and women-owned businesses whenever possible.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             Whether you're conquering the slopes of Kilimanjaro or exploring the
             vast Serengeti plains, we pledge an experience that is genuine,
             thrilling, and awe-inspiring! Join us as we eagerly unveil the
@@ -61,20 +61,10 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="mx-auto p-2">
-        <Carousel
-          slides={[
-            {
-              imageSource: "gallery.webp",
-              title: "",
-              description: "",
-            },
-          ]}
-        />
-      </div> */}
+
       <div className="mx-auto mt-10 max-w-7xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             At Tazama, we don't just offer safaris; we deliver bespoke
             adventures tailored to the dreams of each traveler. With over 15
             years of experience under our belt, we have perfected the recipe for

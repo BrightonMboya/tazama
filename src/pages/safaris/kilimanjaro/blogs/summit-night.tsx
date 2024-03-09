@@ -1,9 +1,9 @@
 import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
-import BlogCard from "~/components/ui/BlogCard";
-import HeadSEO from "~/components/ui/Head";
 import BlogLayout from "~/components/ui/BlogLayout";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
@@ -11,7 +11,7 @@ export default function Page() {
       <section className="mx-auto flex items-start justify-center lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
               adventure awaits during the enigmatic summit night. This is the
               moment that tests your endurance, spirit, and determination under
@@ -21,10 +21,10 @@ export default function Page() {
               makes summit night a transformative chapter in your Kilimanjaro
               saga.
             </p>{" "}
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               The Midnight March: A Prelude to Triumph
-            </p>
-            <ul className="list-disc pl-10 text-xl text-[#757371]">
+            </h3>
+            <ul className="list-disc pl-10 text-lg text-[#757371]">
               <li>
                 <span className="text-primary">Altitude and Sleep: </span>
                 The daunting elevations make rest elusive. By embarking at
@@ -47,10 +47,10 @@ export default function Page() {
                 reward for your efforts and a memory to cherish forever.
               </li>
             </ul>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               What to Expect When the World Sleeps
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Summit night is unlike any other part of your Kilimanjaro journey.
               The air is thinner, the cold more biting, and the path ahead
               illuminated only by moonlight and the beams of your headlamps.
@@ -66,10 +66,10 @@ export default function Page() {
               you can’t take another step our team will be there to grab your
               pack and sing you a song to get you another few meters.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               The Summit: A New Dawn
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               As you approach the summit, the night gives way to the first light
               of dawn, painting the glaciers and the vast plains below in hues
               of gold and pink. The sight of Uhuru Peak, bathed in the morning
@@ -88,20 +88,20 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Descending: A Journey Back to Earth
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               After the euphoria of the summit, the descent begins—a rapid
               return to the lower camps where oxygen is richer and the warmth of
               the sun thaws the chill of the night. This journey back down is a
               time for reflection, for processing the enormity of what you've
               achieved, and for looking forward to the stories you'll share.
             </p>
-            <p className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl font-bold text-primary">
               Your Kilimanjaro Night with Tazama: A Symphony of Stars and Dreams
-            </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            </h3>
+            <p className="mb-3 mt-5 text-lg text-[#757371]">
               Choosing Tazama for your Kilimanjaro climb means embracing the
               summit night with confidence, supported by a team dedicated to
               your success and comfort. Our approach to luxury in the wilderness
@@ -158,69 +158,63 @@ export default function Page() {
       </section>
 
       <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/private-vs-group-trek"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Private vs Group Trek</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Chose which one is right for you, either group trek or a private
+              one
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/recovery-journey"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1521150932951-303a95503ed3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Recovery Journey</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Recovery Journey After climbing Kilimanjaro: How many days it
+              takes to recover from climbing kilimanjaro
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
-        <div className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]">
+        </Link>
+        <Link
+          className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+          href="/safaris/kilimanjaro/blogs/why-climb-kilimanjaro"
+        >
           <div className="relative h-[200px] w-full rounded-sm">
-            <Image
-              src="/assets/images/gallery/chimps.webp"
-              layout="fill"
-              alt="blog_img"
-              className="object-cover"
-            />
+            <BlurImage src="https://images.unsplash.com/photo-1621414050345-53db43f7e7ab?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a2lsaW1hbmphcm98ZW58MHx8MHx8fDA%3D" />
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Routes</p>
+            <p className="font-now text-primary">Why Climb Kilimanjaro</p>
             <p className="font-now text-sm">
-              Ready to witness the world from the peak of Africa and fulfill a
-              lifetime goal.
+              Get to know more about the benefits you will get in climbing Mount
+              Kilimanjaro
             </p>
             <Button className="font-now mt-5 text-lg text-white">
               View More
             </Button>
           </div>
-        </div>
+        </Link>
       </section>
     </BlogLayout>
   );

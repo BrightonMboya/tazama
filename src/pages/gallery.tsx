@@ -2,6 +2,7 @@ import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 const honeyMooners = [
   {
     id: 1,
@@ -40,7 +41,7 @@ const MemoryImage = ({ src }: { src: string }) => {
 const GalleryPage = () => {
   return (
     <>
-      <HeadSEO title="Gallery" />
+      <HeadSEO title="Gallery" keywords={base_keywords} />
       <PrimaryHeader image="gallery.webp" title="Glimpse of our Memories" />
 
       <section className="flex flex-col items-center justify-center">
@@ -48,7 +49,7 @@ const GalleryPage = () => {
           <h3 className="text-center text-4xl text-[#A87133]">
             Our Personal Tailored experiences
           </h3>
-          <p className="mb-3 mt-5 text-center text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-center text-lg text-[#757371]">
             Welcome to our diverse collection of meticulously crafted
             itineraries, each designed to offer you a unique and unforgettable
             travel experience. Our itineraries are thoughtfully curated to
