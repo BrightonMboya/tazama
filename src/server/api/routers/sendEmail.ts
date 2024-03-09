@@ -1,8 +1,8 @@
 import { createTRPCRouter, publicProcedure } from "../trpc";
-import z from "zod";
 import { Resend } from "resend";
 import { planMyTripSchema } from "~/components/forms/all-forms/plan-my-trip/AllQuestions";
 import PlanMyTripEmail from "~/components/emails/PlanMyTripEmail";
+import posthog from "posthog-js";
 
 const resend = new Resend("re_dbr9K3ya_4Wq4Tx5SGiAgEA2vbKpdi8aW");
 
@@ -11,7 +11,7 @@ export const emailRouter = createTRPCRouter({
     try {
       const response = await resend.emails.send({
         from: "onboarding@resend.dev",
-        to: "brighton.mboya.io@gmail.com",
+        to: "info@tazamaafricasafari.com",
         // reply_to: 'b.mboya@alustudent.com',
         subject: "New Form Enquiry",
         react: PlanMyTripEmail({
@@ -33,6 +33,7 @@ export const emailRouter = createTRPCRouter({
       return response;
     } catch (cause) {
       console.log(cause);
+      posthog.capture("Email failed to get sent")
     }
   }),
 });

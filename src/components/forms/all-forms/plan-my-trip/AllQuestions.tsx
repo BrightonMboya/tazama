@@ -86,7 +86,7 @@ const PlanMyTripForm = (props: Props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="font-now">
+    <form onSubmit={handleSubmit(onSubmit)}>
       {currentPage === 0 && (
         <WelcomeNote
           currentPage={currentPage}

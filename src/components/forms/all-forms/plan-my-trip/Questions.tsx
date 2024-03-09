@@ -23,11 +23,11 @@ export function WelcomeNote({
 }) {
   return (
     <QuestionWrapper>
-      <h3 className="font-now text-xl font-medium">
+      <h3 className=" text-xl font-medium">
         Let's talk about your trip to Tanzania 
       </h3>
       <Button
-        className="font-now mt-5 text-lg text-white"
+        className=" mt-5 text-lg text-white"
         type="button"
         onClick={() => setCurrentPage(currentPage + 1)}
       >
@@ -47,7 +47,7 @@ export function Question1({
       <label className="text-xl">
         What type of trip are you interested in?<sup>*</sup>
       </label>
-      <div className="font-now mt-5 flex flex-col space-y-5">
+      <div className=" mt-5 flex flex-col space-y-5">
         <FormButton
           name="tripType"
           value="safari"
@@ -90,7 +90,7 @@ export function Question2({
       <label className="text-xl">
         Would you like to add any of the following?<sup>*</sup>
       </label>
-      <div className="font-now mt-5 flex flex-col space-y-5">
+      <div className=" mt-5 flex flex-col space-y-5">
         <FormButton
           name="addOns"
           value="zanzibar"
@@ -134,7 +134,7 @@ export function Question3({
       <label className="text-xl">
         How far along are you along in your planning process?<sup>*</sup>
       </label>
-      <div className="font-now mt-5 flex flex-col space-y-5">
+      <div className=" mt-5 flex flex-col space-y-5">
         <FormButton
           name="planningProcess"
           value="stillResearching"
@@ -188,7 +188,7 @@ export function Question5({
         What kind of budget do you expect to spend per person on this trip in
         USD (excluding international flights)?<sup>*</sup>
       </label>
-      <div className="font-now mt-5 flex flex-col space-y-5">
+      <div className=" mt-5 flex flex-col space-y-5">
         <FormButton
           name="budget"
           value="3000-5000"
