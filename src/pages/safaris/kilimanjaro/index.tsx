@@ -3,13 +3,14 @@ import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
+import { Kilimanjaro_keywords } from "~/lib/constants";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
 
 
   return (
     <>
-    <HeadSEO title="Kilimanjaro"/>
+    <HeadSEO title="Kilimanjaro" keywords={Kilimanjaro_keywords}/>
       <PrimaryHeader
         image={`mount-kilimanjaro.webp`}
         title="Mount Kilimanjaro"
@@ -19,14 +20,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           <h3 className="text-4xl text-[#A87133]">
             The tallest Summit in Africa{" "}
           </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             Welcome to Tazama's Kilimanjaro Treks - where the spirit of
             adventure meets the majesty of Africa's highest peak. Prepare to
             embark on an extraordinary journey through the heart of Tanzania's
             wilderness, where every step brings you closer to the summit of
             Kilimanjaro
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             As you set foot on Kilimanjaro's slopes, you'll be stepping into a
             world of unparalleled natural beauty and untamed wilderness. From
             dense rainforests teeming with life to rugged alpine deserts, the
@@ -34,14 +35,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             breathtaking.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             At Tazama, we offer treks on five of Kilimanjaro's most renowned
             routes: Machame, Lemosho, Rongai, Umbwe and the Northern Circuit.
             Each route presents its own unique challenges and rewards, ensuring
             that every adventurer finds the perfect path to the summit.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371] ">
+          <p className="mb-3 mt-5 text-lg text-[#757371] ">
             The <span className="font-bold text-primary">Machame route</span>,
             known affectionately as the "Whiskey Route," beckons with its
             stunning scenery and rugged terrain. Trekkers on this route navigate
@@ -69,14 +70,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
 
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             For those seeking a more gradual ascent, the{" "}
             <span className="font-bold text-primary">Lemosho route</span> offers
             a scenic journey through pristine wilderness areas. With ample time
             for acclimatization, trekkers can immerse themselves fully in the
             awe-inspiring beauty of Kilimanjaro.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             For the ultimate Kilimanjaro experience, the{" "}
             <span className="font-bold text-primary">
               Northern Circuit route
@@ -85,14 +86,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             wilderness. This lesser-traveled route promises solitude and
             serenity as you traverse the northern slopes of the mountain.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             The <span className="font-bold text-primary">Rongai route</span>,
             originating from the north, offers a quieter and less congested path
             to the summit. Trekkers on this route enjoy stunning vistas of the
             Kenyan plains and the chance to witness Kilimanjaro's awe-inspiring
             sunrise.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             Meanwhile, the{" "}
             <span className="font-bold text-primary">Umbwe route</span>, known
             for its steep and challenging terrain, attracts seasoned adventurers
@@ -109,7 +110,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
               />
             </div>
           </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             No matter which route you choose, Tazama ensures an unforgettable
             experience with our seasoned guides, top-quality equipment, and
             personalized service. From the moment you arrive in Tanzania until
@@ -117,7 +118,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             ensuring your safety, comfort, and enjoyment every step of the way.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             Embark on the adventure of a lifetime with Tazama's Kilimanjaro
             Treks and experience the thrill of conquering Africa's highest peak.
             Are you ready to write your own chapter in the story of Kilimanjaro?
@@ -127,15 +128,15 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
         <div className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">Why Trek with Tazama</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             When it comes to embarking on the adventure of a lifetime, we
             understand that choosing the right trekking company is crucial.
             Here's why Tazama stands out from the rest:
           </p>
-          <ul className=" list-outside text-xl text-[#757371]">
+          <ul className=" list-outside text-lg text-[#757371]">
             <li className="font-bold text-primary">Safety First</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-xl text-[#757371]">
+          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
             <li>Guides certified as Wilderness First Responders</li>
             <li>Twice daily health monitoring</li>
             <li>Pulse oximeters and emergency oxygen on every climb</li>
@@ -145,28 +146,28 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-xl text-[#757371]">
+          <ul className=" list-outside pt-5 text-lg text-[#757371]">
             <li className="font-bold text-primary">Responsible Travel:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-xl text-[#757371]">
+          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
             <li>Adherence to Leave No Trace principles.</li>
             <li>Fair and ethical treatment of all mountain crew</li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-xl text-[#757371]">
+          <ul className=" list-outside pt-5 text-lg text-[#757371]">
             <li className="font-bold text-primary">High-Quality Equipment:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-xl text-[#757371]">
+          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
             <li>4 season expedition sleeping tents</li>
             <li>Dining tents with durable tables and chairs</li>
             <li>Hygienic private toilets</li>
             <li>4-season sleeping bags</li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-xl text-[#757371]">
+          <ul className=" list-outside pt-5 text-lg text-[#757371]">
             <li className="font-bold text-primary">Professional Team:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-xl text-[#757371]">
+          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
             <li>
               Experienced guides with extensive knowledge of Kilimanjaro's
               terrain and ecosystems.
@@ -189,10 +190,10 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-xl text-[#757371]">
+          <ul className=" list-outside pt-5 text-lg text-[#757371]">
             <li className="font-bold text-primary">Personalized Service:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-xl text-[#757371]">
+          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
             <li>
               Tailored service catering to individual needs and preferences .
             </li>
@@ -210,7 +211,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
               />
             </div>
           </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-[#757371]">
             Choose Tazama Africa for your Kilimanjaro trek and embark on a
             journey of a lifetime with confidence and peace of mind. With our
             unwavering commitment to safety, responsible travel, high-quality
