@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 
 export default function HeadSEO({
   title,
@@ -45,11 +44,11 @@ export default function HeadSEO({
             lifetime."
       />
       <title>{title}</title>
-      <Script
+      <script
         src="https://assets.usestyle.ai/seonajsplugin"
         defer
         id="seona-js-plugin"
-      ></Script>
+      ></script>
     </Head>
   );
 }
