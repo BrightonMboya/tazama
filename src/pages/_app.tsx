@@ -8,8 +8,9 @@ import "~/styles/globals.css";
 import { env } from "~/env";
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
+import React from "react";
 
-const raleway = Raleway({
+export const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
 });
@@ -26,14 +27,23 @@ if (typeof window !== "undefined") {
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <PostHogProvider client={posthog}>
-      <main className={`${raleway.variable}`}>
-        <Layout>
-          <Component {...pageProps} />
-          <Analytics />
-        </Layout>
-      </main>
-    </PostHogProvider>
+    <React.Fragment>
+      <style jsx global>
+        {`
+          :root {
+            --font-raleway: ${raleway.variable};
+          }
+        `}
+      </style>
+      <PostHogProvider client={posthog}>
+        <main className={`${raleway.variable}`}>
+          <Layout>
+            <Component {...pageProps} />
+            <Analytics />
+          </Layout>
+        </main>
+      </PostHogProvider>
+    </React.Fragment>
   );
 };
 

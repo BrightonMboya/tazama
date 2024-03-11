@@ -23,9 +23,7 @@ export function WelcomeNote({
 }) {
   return (
     <QuestionWrapper>
-      <h3 className=" text-xl font-medium">
-        Let's talk about your trip to Tanzania 
-      </h3>
+      <p className=" text-xl">Let's talk about your trip to Tanzania</p>
       <Button
         className=" mt-5 text-lg text-white"
         type="button"
@@ -295,9 +293,7 @@ export function Question9({
 }) {
   return (
     <QuestionWrapper>
-      <label className="text-xl">
-        Additional comments or requests
-      </label>
+      <label className="text-xl">Additional comments or requests</label>
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
@@ -308,39 +304,34 @@ export function Question9({
   );
 }
 
-
 export function ContactForm({
   register,
 }: {
   register: UseFormRegister<PlanMyTripType>;
 }) {
   return (
-    <section className="space-y-4">
-      <h3 className="text-xl">Please provide me with your contact information</h3>
+    <section className="font-raleway space-y-4">
+      <h3 className="text-xl">
+        Please provide me with your contact information
+      </h3>
       <div>
         <label>First Name</label>
         <Input
           {...register("firstName")}
-          placeholder="Jane"
-          className="mt-2 py-[30px] lg:w-[500px]"
+          className="mt-2 py-[30px] placeholder:text-gray-500 lg:w-[500px]"
         />
       </div>
       <div>
         <label>Last Name</label>
         <Input
           {...register("lastName")}
-          placeholder="Smith"
           className="mt-2 py-[30px] lg:w-[500px]"
         />
       </div>
 
       <div>
         <label>Email</label>
-        <Input
-          {...register("email")}
-          placeholder="J.smith@tazamasafaris.com"
-          className="mt-2 py-[30px] lg:w-[500px]"
-        />
+        <Input {...register("email")} className="mt-2 py-[30px] lg:w-[500px]" />
       </div>
     </section>
   );
