@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 export default function HeadSEO({
   title,
@@ -10,10 +11,7 @@ export default function HeadSEO({
   return (
     <Head>
       {/* keywords tags */}
-      <meta
-        name="keywords"
-        content={keywords}
-      />
+      <meta name="keywords" content={keywords} />
 
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -47,6 +45,11 @@ export default function HeadSEO({
             lifetime."
       />
       <title>{title}</title>
+      <Script
+        src="https://assets.usestyle.ai/seonajsplugin"
+        defer
+        id="seona-js-plugin"
+      ></Script>
     </Head>
   );
 }
