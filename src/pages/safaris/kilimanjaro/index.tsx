@@ -4,13 +4,14 @@ import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
 import { Kilimanjaro_keywords } from "~/lib/constants";
+import { Button } from "@react-email/components";
+import Link from "next/link";
+import BlurImage from "~/components/ui/BlurImage";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-
-
   return (
     <>
-    <HeadSEO title="Kilimanjaro" keywords={Kilimanjaro_keywords}/>
+      <HeadSEO title="Kilimanjaro" keywords={Kilimanjaro_keywords} />
       <PrimaryHeader
         image={`mount-kilimanjaro.webp`}
         title="Mount Kilimanjaro"
@@ -221,6 +222,132 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
         {/* @ts-ignore */}
         <Gallery images={images} />
+
+        <p className="mt-10 text-2xl text-primary">Our Guides and Blogs</p>
+        <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/blogs/best-sunglasses-for-kilimanjaro"
+          >
+            <div className="relative h-[200px] w-full rounded-sm">
+              <CloudinaryImage
+                blurDataUrl={images[4]?.blurDataUrl as string}
+                format={images[4]?.format as string}
+                public_id={images[4]?.public_id as string}
+              />
+            </div>
+
+            <div className="p-3">
+              <p className=" text-primary">Best Sunglasses for Kilimanjaro</p>
+              <p className=" text-sm">
+                Why Protecting Your Eyes is Non-Negotiable on Kilimanjaro...
+              </p>
+              <Button className="mt-5 text-lg text-white">View More</Button>
+            </div>
+          </Link>
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/blogs/climbing-kili-shapes-your-life"
+          >
+            <div className="relative h-[200px] w-full rounded-sm">
+              <BlurImage src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
+            </div>
+
+            <div className="p-3">
+              <p className="font-now text-primary">
+                {" "}
+                Climbing Kilimanjaro Shapes your life
+              </p>
+              <p className="font-now text-sm">
+                A Journey of Humility and Equality
+                <br />
+                <br />
+              </p>
+              <Button className="font-now mt-5 text-lg text-white">
+                View More
+              </Button>
+            </div>
+          </Link>
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/blogs/diverse-kilimanjaro-climbers"
+          >
+            <div className="relative h-[200px] w-full rounded-sm">
+              <BlurImage src="https://images.unsplash.com/photo-1650668302197-7f556c34cb91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGtpbGltYW5qYXJvfGVufDB8fDB8fHww" />
+            </div>
+
+            <div className="p-3">
+              <p className="font-now text-primary">
+                Diverse Kilimanjaro Climbers
+              </p>
+              <p className="font-now text-sm">
+                Conquering Mount Kilimanjaro, the rooftop of Africa, is a dream
+                many adventurers from around the globe share.
+              </p>
+              <Button className="font-now mt-5 text-lg text-white">
+                View More
+              </Button>
+            </div>
+          </Link>
+        </section>
+
+        <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/guides/kilimanjaro-visa"
+          >
+            <div className="relative h-[200px] w-full rounded-sm">
+              <BlurImage src="https://images.unsplash.com/photo-1677519910517-5bfee903a814?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2lsaW1hbmphcm8lMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D" />
+            </div>
+
+            <div className="p-3">
+              <p className=" text-primary">Kilimanjaro Visa</p>
+              <p className=" text-sm">
+                For those embarking from afar, the Kilimanjaro Visa On Arrival
+                (VOA) presents a convenient option ...
+              </p>
+              <Button className="mt-5 text-lg text-white">View More</Button>
+            </div>
+          </Link>
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/guides/kilimanjaro-foods"
+          >
+            <div className="relative h-[200px] w-full rounded-sm">
+              <BlurImage src="https://images.unsplash.com/photo-1677519917377-118338dd2ed1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lsaW1hbmphcm8lMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D" />
+            </div>
+
+            <div className="p-3">
+              <p className="font-now text-primary">Kilimanjaro Foods</p>
+              <p className="font-now text-sm">
+                Staying hydrated is crucial to mitigate the risks associated
+                with high altitude.
+              </p>
+              <Button className="font-now mt-5 text-lg text-white">
+                View More
+              </Button>
+            </div>
+          </Link>
+          <Link
+            className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
+            href="/safaris/kilimanjaro/guides/attitude-sickness"
+          >
+            <div className="relative h-[200px] w-full rounded-sm">
+              <BlurImage src="https://images.unsplash.com/photo-1568259547325-f08f48165cfd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGtpbGltYW5qYXJvJTIwbW91bnRhaW58ZW58MHx8MHx8fDA%3D" />
+            </div>
+
+            <div className="p-3">
+              <p className="font-now text-primary">Attitude Sickness</p>
+              <p className="font-now text-sm">
+                Kilimanjaro Altitude Sickness, or Acute Mountain Sickness (AMS),
+                is a concern for climbers ...
+              </p>
+              <Button className="font-now mt-5 text-lg text-white">
+                View More
+              </Button>
+            </div>
+          </Link>
+        </section>
       </div>
     </>
   );

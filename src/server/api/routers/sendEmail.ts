@@ -12,6 +12,7 @@ export const emailRouter = createTRPCRouter({
       const response = await resend.emails.send({
         from: "james@tazamaafricasafari.com",
         to: "info@tazamaafricasafari.com",
+        cc: "jaff@tazamaafricasafari.com",
         subject: "New Form Enquiry",
         react: PlanMyTripEmail({
           tripType: input.tripType,
@@ -32,7 +33,7 @@ export const emailRouter = createTRPCRouter({
       return response;
     } catch (cause) {
       console.log(cause);
-      posthog.capture("Email failed to get sent")
+      posthog.capture("Email failed to get sent");
     }
   }),
 });
