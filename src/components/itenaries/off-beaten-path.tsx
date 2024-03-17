@@ -33,7 +33,7 @@ const Page = () => {
               </li>
 
               <li className="relative h-[300px] w-[300px] bg-zinc-900">
-                <Link href="https://wetu.com/Itinerary/Landing/EC03E682-B66F-4924-AB41-549AF4117281">
+                <Link href="https://wetu.com/Itinerary/Landing/EC03E682-B66F-4924-AB41-549AF4117281" target="_blank">
                   <>
                     <Image
                       src="/assets/images/gallery/discovery.webp"

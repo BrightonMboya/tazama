@@ -13,7 +13,7 @@ import { base_keywords } from "~/lib/constants";
 const AboutPage = () => {
   return (
     <>
-      <PrimaryHeader image="about.webp" title="About Tazama" />
+      <PrimaryHeader image="about.webp" title="Tazama Africa Tours | Design Your Dream Safari Experience" />
       <HeadSEO title="About Tazama" keywords={base_keywords} />
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">

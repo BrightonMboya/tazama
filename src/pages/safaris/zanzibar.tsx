@@ -4,12 +4,15 @@ import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import QuoteSection from "~/components/QuoteSection";
 import useFetchImages from "~/hooks/useFetchImages";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
- 
   return (
     <>
-    <HeadSEO title="Zanzibar Safaris"/>
+      <HeadSEO
+        title="Zanzibar Safaris - Tazama Africa Tours"
+        keywords={base_keywords}
+      />
       <div className="relative h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
           <Image

@@ -3,11 +3,15 @@ import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
-      <HeadSEO title="Arusha National Park" />
+      <HeadSEO
+        title="Arusha National Park Safari Tours | Tazama Africa Safaris"
+        keywords={base_keywords}
+      />
       <div className="relative h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
           <Image

@@ -2,6 +2,7 @@ import PrimaryHeader from "~/components/PrimaryHeader";
 
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 const honeyMooners = [
   {
@@ -38,11 +39,12 @@ const MemoryImage = ({ src }: { src: string }) => {
   );
 };
 const AboutPage = () => {
-  
-
   return (
     <>
-    <HeadSEO title="Wildlife Adventures"/>
+      <HeadSEO
+        title="Wildlife Adventures - Tazama Africa Tours and Safaris"
+        keywords={base_keywords}
+      />
       <PrimaryHeader image="classic-safaris.webp" title="Wildlife Adventures" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
@@ -124,8 +126,6 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-
-     
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">

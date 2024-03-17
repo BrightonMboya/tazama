@@ -7,6 +7,7 @@ import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import EnquireNow from "~/components/EnquireNow";
 import ItienaryViewer from "~/components/itenaries/day-itienary";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
@@ -16,10 +17,9 @@ export const MemoryImage = ({ src }: { src: string }) => {
   );
 };
 const Page = ({ images }: { images: ImageProps[] }) => {
- 
   return (
     <>
-    <HeadSEO title="HoneyMoon Safaris"/>
+      <HeadSEO title="HoneyMoon Safaris - Tazama Africa Safaris" keywords={base_keywords} />
       <PrimaryHeader image="honey-moon-trip.webp" title="Honeymooners" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">

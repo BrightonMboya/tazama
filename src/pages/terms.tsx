@@ -1,7 +1,8 @@
-
 import markdownToHtml from "~/lib/markdown-to-html";
 import { getPostBySlug } from "~/lib/markddownConfig";
-import markdownStyles from "~/styles/markdownStyles.module.css"
+import markdownStyles from "~/styles/markdownStyles.module.css";
+import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 const PostBody = ({ content }: any) => {
   return (
@@ -17,6 +18,10 @@ const PostBody = ({ content }: any) => {
 export default function Page({ post }: any) {
   return (
     <>
+      <HeadSEO
+        title="Tazama Africa Tours & Safaris = East Africa Travel Specialists"
+        keywords={base_keywords}
+      />
       <div className="mx-auto  max-w-7xl px-4 pt-20 text-lg text-[#757371] md:px-8">
         <article>
           <PostBody content={post.content} />

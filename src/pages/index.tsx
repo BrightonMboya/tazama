@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <>
       <HeadSEO
-        title="Tazama Africa Safaris"
+        title="Tazama Africa Safaris - East Africa Safaris"
         keywords="African safaris, luxuruy safaris, personalized safaris, Serengeti, Kilimanjaro, memorable safaris"
       />
       <PrimaryHeader

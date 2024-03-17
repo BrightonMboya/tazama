@@ -5,11 +5,15 @@ import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import useFetchImages from "~/hooks/useFetchImages";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
-      <HeadSEO title="Family Safaris" />
+      <HeadSEO
+        title="Family Safaris - Tazama Africa"
+        keywords={base_keywords}
+      />
       <PrimaryHeader image="discovery.webp" title="Family Safaris" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">

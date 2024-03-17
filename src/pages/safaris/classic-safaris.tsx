@@ -1,20 +1,20 @@
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { setPageTitle } from "~/helpers";
 import QuoteSection from "~/components/QuoteSection";
-import Image from "next/legacy/image";
-import ClassicSafaris from "~/components/itenaries/classic-safaris"
+import ClassicSafaris from "~/components/itenaries/classic-safaris";
 import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
-
+import { base_keywords } from "~/lib/constants";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-
   return (
     <>
-    <HeadSEO title="Classic Safaris"/>
+      <HeadSEO
+        title="Tazama Africa Classic Safaris - Design Your Dream Safaris"
+        keywords={base_keywords}
+      />
       <PrimaryHeader image="discovery.webp" title="Classic Safaris" />
 
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
@@ -116,4 +116,3 @@ export async function getStaticProps() {
     },
   };
 }
-

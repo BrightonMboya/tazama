@@ -16,7 +16,7 @@ const ContactPage = () => {
   return (
     <>
       {loading ? <Loader /> : null}
-      <HeadSEO title="Contact Us" keywords={base_keywords} />
+      <HeadSEO title="Contact Tazama Africa for your Dream Safari Experience" keywords={base_keywords} />
       <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact Us" />
       <div className="mx-auto">
         <div className="text-center text-[#757371]">
