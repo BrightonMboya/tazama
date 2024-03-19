@@ -42,6 +42,10 @@ const navSubContent = [
     link: "/safaris/special-offers",
   },
   {
+    title: "Blogs",
+    link: "/blogs",
+  },
+  {
     title: "Photos and Videos",
     link: "/gallery",
   },
@@ -255,7 +259,7 @@ const Navbar = () => {
                   </div>
 
                   <Link
-                    className="rounded-md border font-raleway  border-white px-6 py-2 transition duration-150 ease-in hover:bg-white hover:text-[#A87133]"
+                    className="rounded-md border border-white  px-6 py-2 font-raleway transition duration-150 ease-in hover:bg-white hover:text-[#A87133]"
                     href="/contact"
                     onClick={() => setNav(false)}
                   >
