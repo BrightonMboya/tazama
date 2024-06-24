@@ -72,14 +72,14 @@ export default function Page() {
       <br />
       <br />
       <div className="mx-auto max-w-6xl px-4 xl:px-8 ">
-        <div className="mx-auto mb-8 w-full px-4 py-4 sm:w-2/3">
+        <div className="mb-8 w-full px-4 py-4">
           <h3
-            className="mb-4 text-center text-4xl lg:text-5xl"
+            className="mb-4 text-4xl lg:text-5xl"
           >
             Authentic & timeless adventures
           </h3>
           <p
-            className="font-raleway text-center text-lg"
+            className="font-raleway text-lg"
           >
             Start exploring some of sample itineraries and see where an
             adventure with Tazama Africa can take you.
@@ -92,21 +92,21 @@ export default function Page() {
       <br />
       <br />
       <br />
-      <div className="px-4 xl:px-8 my-20 bg-[#dad2c6] py-10 lg:py-20 bg-fixed">
+      <div className="px-4 xl:px-8 my-20 bg-[#e2dacd] py-10 lg:py-20 bg-fixed">
         <div className="mx-auto max-w-6xl px-4 xl:px-8">
-          <div className="mx-auto mb-8 w-full px-4 py-4 sm:w-2/3">
+          <div className="mb-8 w-full px-4 py-4 ">
             <h3
-              className="mb-4 text-center text-4xl lg:text-5xl text-dark"
+              className="mb-4 text-4xl lg:text-5xl text-dark"
             >
               Ascending Africa's Summits
             </h3>
             <p
-              className="font-raleway text-center text-lg text-text-darker"
+              className="font-raleway text-lg text-text-darker"
             >
               Explore the summits of Africa with Tazama Africa Safaris as you climb the mountains Kilimanajaro and Meru to fulfill your desire to know what it's like to be at the top
             </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-6 max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-6 max-w-6xl px-4 mx-auto">
             <Link href={'/safaris/kilimanjaro'} className="w-full border border-white overflow-hidden rounded-md h-72 relative group">
               <Image src={"/assets/images/gallery/mount-kilimanjaro.webp"} layout="fill" className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-105" alt="Travel to Mount Kilimanjaro" />
               <p className="w-full absolute bottom-0 left-0 bg-gradient-to-t from-orange-950/35 to-transparent text-white p-4 text-xl">Mount Kilimanjaro</p>
@@ -123,15 +123,15 @@ export default function Page() {
       <br />
       <br />
       <div className="mb-16">
-        <div className="mx-auto max-w-5xl px-4 xl:px-8 mb-2">
-          <div className="mx-auto mb-8 w-full px-4 py-4 sm:w-2/3">
+        <div className="mx-auto max-w-6xl px-4 xl:px-8 mb-2">
+          <div className="mx-auto mb-8 w-full px-4 py-4">
             <h3
-              className="mb-4 text-center text-4xl lg:text-5xl"
+              className="mb-3 text-4xl lg:text-5xl"
             >
               Our Partners
             </h3>
             <p
-              className="font-raleway text-center text-lg"
+              className="font-raleway text-lg"
             >
               We at Tazama Africa Safaris pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer.
             </p>
@@ -143,14 +143,13 @@ export default function Page() {
       <br />
       <br />
       <div className="mt-10 max-w-6xl mx-auto px-4 xl:px-8 mb-20 text-[#3e3227]">
-        <div className="flex justify-between flex-col mx-auto items-center mb-4">
-          <div className="text-center">
+        <div className="flex justify-between flex-col md:flex-row mx-auto items-center md:items-end mb-4">
+          <div className="">
             <h3
-              className="text-4xl lg:text-5xl"
+              className="text-4xl lg:text-5xl mb-3"
             >
               Latest From Tazama Africa
             </h3>
-            <br />
             <p className="max-w-2xl">Catch up to the latest posts we got for you, from packing lists, to tips on trekking.</p>
           </div>
           <br />

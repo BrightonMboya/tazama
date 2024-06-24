@@ -4,6 +4,7 @@ import Link from "next/link";
 import BlurImage from "~/components/ui/BlurImage";
 import Input from "~/components/ui/input";
 import { useState } from "react";
+import PrimaryHeader from "~/components/PrimaryHeader";
 
 interface BlogProps {
   name: string;
@@ -42,6 +43,7 @@ const Page = () => {
   );
   return (
     <>
+      <PrimaryHeader title="Latest From Tazama" image="safari.webp"/>
       <div className="mt-20 flex items-center justify-center ">
         <Input
           placeholder="Filter Blogs..."
