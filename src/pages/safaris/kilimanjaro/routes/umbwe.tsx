@@ -15,14 +15,14 @@ export default function Page() {
             <p className="mt-5 text-xl font-bold text-primary">
               The Ultimate Test: Conquering Kilimanjaro via the Umbwe Route
             </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
               The Umbwe Route, known for its steep, direct climb to the summit
               of Mount Kilimanjaro, stands as the most challenging path among
               the various routes up the mountain. This route is tailored for
               adventurers seeking a rigorous trek and rapid ascent without the
               gradual acclimatization stages offered by other paths.
             </p>{" "}
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
               Originating from the south, the Umbwe Route quickly gains
               altitude, presenting a steep journey through breathtaking
               rainforests before emerging into the alpine desert. Its direct
@@ -35,7 +35,7 @@ export default function Page() {
             <p className="mt-5 text-xl font-bold text-primary">
               Why Embark on the Umbwe Route with Tazama?
             </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
               Tazama offers this route as a unique 6 or 7-day private climb,
               with the 7-day option including a crucial acclimatization day at
               Barranco Camp. This additional day significantly enhances the
@@ -53,7 +53,7 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
               <span className="text-primary">
                 Key Details: <br />{" "}
               </span>
@@ -69,7 +69,7 @@ export default function Page() {
             <p className="mt-5 text-xl font-bold text-primary">
               What Will You Experience?
             </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
               This route not only tests your endurance but also rewards you with
               less trafficked paths, intimate encounters with Kilimanjaro's
               ecosystems, and unparalleled serenity. You'll trek through lush
@@ -90,7 +90,7 @@ export default function Page() {
             <p className="mt-5 text-xl font-bold text-primary">
               Begin Your Kilimanjaro Journey with Tazama
             </p>
-            <p className="mb-3 mt-5 text-xl text-[#757371]">
+            <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
               Are you ready to take on Kilimanjaro's toughest challenge? Choose
               Tazama for your Umbwe Route climb and discover why this path
               captivates the hearts of true adventurers. With Tazama's expert
@@ -154,12 +154,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Machame Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Machame Route</p>
+            <p className="font-raleway text-sm">
               The Machame Route, affectionately known as the "Whiskey Route," is
               not just a path to the summit of Kilimanjaro—it's...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -173,12 +173,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Marangu Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Marangu Route</p>
+            <p className="font-raleway text-sm">
               While Marangu might be the most accessible route, it requires
               careful preparation...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

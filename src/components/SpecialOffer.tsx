@@ -72,26 +72,26 @@ const SpecialOfferPopup = () => {
                 className="w-full h-40 object-cover rounded-t-lg image-transition" // Add the image-transition class
             />
             <div className="p-4">
-                <div className="text-md font-semibold text-primary mb-2 font-now">
+                <div className="text-md font-semibold text-primary mb-2 font-raleway">
                     Exclusive Safari Adventure: <br />7 Days Lemosho & 5 Days Migration Safari
                 </div>
-                <p className="mb-2 font-now text-[#757371] text-sm">
+                <p className="mb-2 font-raleway text-darker/85 text-sm">
                     Embark on an extraordinary journey exploring the captivating landscapes of Arusha,
-                    <span className="text-primary text-semibold font-now"> {currentKeywords}</span>,
+                    <span className="text-primary text-semibold font-raleway"> {currentKeywords}</span>,
                     as part of this immersive 12-night adventure in Tanzania.
                 </p>
                 <p className="text-sm text-gray-500 mb-2">Trip Duration: {tripStartDate} - {tripEndDate}</p>
                 <div className="flex justify-center mb-2">
                     <a
                         href="https://wetu.com/Itinerary/Landing/a0618581-0fdc-4ea1-abd7-94d3e6964294"
-                        className="text-primary hover:underline transition duration-300 font-now text-sm"
+                        className="text-primary hover:underline transition duration-300 font-raleway text-sm"
                     >
                         View Detailed Itinerary
                     </a>
                 </div>
                 <button
                     onClick={handleClose}
-                    className="mt-4 p-2 bg-primary text-white rounded-md w-full focus:outline-none transition duration-300 font-now"
+                    className="mt-4 p-2 bg-primary text-white rounded-md w-full focus:outline-none transition duration-300 font-raleway"
                 >
                     Close Offer
                 </button>

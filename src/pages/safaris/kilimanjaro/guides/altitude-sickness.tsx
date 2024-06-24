@@ -14,7 +14,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Understanding Kilimanjaro Altitude Sickness
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing Kilimanjaro is a dream for many adventurers, and while
               the journey to its peak is exhilarating, it's essential to
               understand the risks associated with high-altitude trekking,
@@ -22,7 +22,7 @@ export default function Page() {
               your safety and ensure that you're well-prepared to enjoy your
               climb without undue distress.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Kilimanjaro Altitude Sickness, or Acute Mountain Sickness (AMS),
               is a concern for climbers due to the lower oxygen levels at high
               altitudes. Symptoms like headache, nausea, fatigue, and shortness
@@ -48,11 +48,11 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Preventing Kilimanjaro Altitude Sickness
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Prevention starts with preparation. Here are essential tips to
               mitigate the risk of AMS:
             </p>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Prepare Before Ascend:</span>{" "}
                 Engage in altitude training, aerobic exercises, and strength
@@ -92,7 +92,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Tazama's Commitment to Your Safety
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               With Tazama, your safety is paramount. Our experienced guides
               monitor your well-being closely, ready to adjust plans for optimal
               acclimatization. We equip you with the necessary knowledge and
@@ -109,21 +109,21 @@ export default function Page() {
                 placeholder="blur"
               />
             </div>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Remember </span>
               AMS can affect anyone, regardless of fitness level or previous
               high-altitude experience. By following our guidance and listening
               to your body, you can significantly reduce the risk of altitude
               sickness and enjoy the incredible journey to the roof of Africa.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Choose Tazama for a Kilimanjaro climb that prioritizes your
               health, safety, and personal achievement. With our expert
               guidance, comprehensive preparation, and commitment to luxury and
               personalized experiences, you're set for an unforgettable
               expedition.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Ready to take on the challenge of Kilimanjaro with the best
               support by your side? Reach out to Tazama today and start planning
               your safe and exhilarating climb to the summit. Let's conquer the
@@ -168,12 +168,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Visa</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Visa</p>
+            <p className="font-raleway text-sm">
               This is a non-negotiable prerequisite for anyone planning to
               conquer Kilimanjaro .....
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -187,12 +187,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Food</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Food</p>
+            <p className="font-raleway text-sm">
               Tazama ensures your journey to the summit of Mount Kilimanjaro is
               not only successful but also delightful ...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -206,12 +206,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Private Toilets</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Private Toilets</p>
+            <p className="font-raleway text-sm">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

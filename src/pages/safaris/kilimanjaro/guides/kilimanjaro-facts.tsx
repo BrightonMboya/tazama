@@ -13,7 +13,7 @@ export default function Page() {
         <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
           <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
             <div className="mb-10 py-8">
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Mount Kilimanjaro, a marvel of nature, stands as a beacon of
                 adventure for climbers worldwide. Located in Tanzania, this
                 giant isn't just any mountain; it's Africa's highest peak and
@@ -26,7 +26,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Kilimanjaro Geography and Altitude:
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Nestled in the northern circuit of Tanzania, Kilimanjaro is not
                 just a mountain; it's a geological wonder formed by the eruption
                 of three volcanic cones: Shira, Kibo, and Mawenzi. Kibo houses
@@ -46,7 +46,7 @@ export default function Page() {
                   blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
                 />
               </div>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 <span className="text-primary">
                   Kilimanjaro Weather and Climatic Zones: {"  "}
                 </span>
@@ -64,7 +64,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Kilimanjaro Climbing Routes{" "}
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Choosing the right path is crucial for a successful summit, and
                 Tazama offers guidance on Kilimanjaro's various routes. Each
                 route offers a different experience, from the scenic vistas of
@@ -86,7 +86,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Kilimanjaro Summit Success Rate
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+              <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
                 Success on Kilimanjaro is closely linked to the chosen route and
                 the number of days spent on the mountain. Longer itineraries
                 significantly increase success rates, allowing more time for
@@ -99,7 +99,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Kilimanjaro Preparation and Acclimatization
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+              <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
                 Climbing Kilimanjaro doesn't require technical skills, but it
                 demands respect for altitude and proper acclimatization. The
                 "sleep low, trek high" principle is essential, as is choosing a
@@ -109,7 +109,7 @@ export default function Page() {
                 rates and a more enjoyable climb.
               </p>{" "}
               <p className="mt-5 text-lg font-bold text-primary">FACTS:</p>
-              <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+              <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
                 Mount Kilimanjaro, the towering peak that stands as Africa's
                 highest mountain, holds a wealth of fascinating facts and
                 stories that captivate climbers and adventurers from around the
@@ -119,7 +119,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 The Real Meaning of Kilimanjaro
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 The name 'Kilimanjaro' is a blend of the Swahili word 'Kilima'
                 (meaning "mountain") and 'Njaro,' interpreted as "whiteness."
                 There are various theories about the name's origin. Some suggest
@@ -132,7 +132,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Kilimanjaro Fastest Ascent
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 In 2014, Swiss climber Karl Egloff set a world record for the
                 fastest ascent and descent of Kilimanjaro, completing the
                 challenge in just 6 hours and 42 minutes. His remarkable
@@ -146,7 +146,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Highest Cricket Match
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 September 2014 witnessed a unique event on Kilimanjaro - the
                 highest game of cricket ever recorded. A team of 30 players and
                 officials embarked on the journey to Kilimanjaro's crater camp
@@ -157,7 +157,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Highest Pizza Delivery
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Pizza Hut took pizza delivery to new heights in May 2016 by
                 setting a Guinness World Record for the highest altitude pizza
                 delivery on land when they delivered a pizza to the top of
@@ -168,7 +168,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Africa’s Tallest Tree
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Kilimanjaro is home to Africa's tallest tree, an Entandrophragma
                 excelsum species, standing at an impressive height of 81.5
                 meters. Approximately 600 years old, this towering tree is a
@@ -178,7 +178,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Golf On Kilimanjaro
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Though it's not officially confirmed who made the longest golf
                 shot on Kilimanjaro, there are stories of golf being played from
                 Uhuru Peak to the crater rim. These anecdotes add a whimsical
@@ -188,7 +188,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 A Mountain of Natural Wonders
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Mount Kilimanjaro is a treasure trove of natural wonders,
                 offering dramatic scenic views across its various climbing
                 routes. From lush rainforests to alpine deserts and the icy
@@ -197,7 +197,7 @@ export default function Page() {
                 make each step of the climb a discovery, promising an
                 unforgettable adventure for those who seek to conquer it.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Embark on the journey of a lifetime with Tazama Africa, your
                 trusted companion on the majestic slopes of Mount Kilimanjaro.
                 As you've discovered, Kilimanjaro is not just a mountain; it's a
@@ -207,7 +207,7 @@ export default function Page() {
                 an experience that promises safety, unparalleled support, and a
                 deep connection with the natural world.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Our expert guides and meticulously planned itineraries are
                 designed to offer you the highest chances of success, whether
                 you're aiming to set new records or simply wish to bask in the
@@ -215,7 +215,7 @@ export default function Page() {
                 mountain's challenges and delights and are committed to making
                 your journey as rewarding as it is memorable.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Join us at Tazama Africa, where your dream of conquering
                 Kilimanjaro becomes our mission. Trust in our experience, revel
                 in the beauty of nature, and achieve what few dare to imagine.
@@ -278,12 +278,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Vaccinations</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Kilimanjaro Vaccinations</p>
+              <p className="font-raleway text-sm">
                 Be sure you understand how an anti-malarial may affect your
                 sleep, appetite and exposure to sun before you begin,
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
@@ -297,12 +297,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Training for Kilimanjaro</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Training for Kilimanjaro</p>
+              <p className="font-raleway text-sm">
                 Climbing Mount Kilimanjaro is an intimate and bonding experience
                 with your team, but privacy is paramount,
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>

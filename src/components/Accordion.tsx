@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from "react";
 import { TfiArrowCircleUp } from "react-icons/tfi";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,7 +20,7 @@ const Accordion: React.FunctionComponent<accordion> = React.memo(
           className="flex cursor-pointer items-center justify-between gap-4 text-sm capitalize text-gray-600 md:text-base"
           onClick={() => setAccordion(!accordion)}
         >
-          <span className=" font-now">{props.question}</span>
+          <span className=" font-raleway">{props.question}</span>
           <span
             className={`transition duration-200 ${
               accordion ? "rotate-0" : "rotate-180"
@@ -37,19 +38,19 @@ const Accordion: React.FunctionComponent<accordion> = React.memo(
               transition={{ duration: 0.3 }}
               className={`mt-2 overflow-clip text-justify text-gray-500`}
             >
-              <p className="font-now text-sm">{props.answer}</p>
-              {props.listHeader && <h3 className="pt-4 font-now">{props.listHeader}</h3>}
+              <p className="font-raleway text-sm">{props.answer}</p>
+              {props.listHeader && <h3 className="pt-4 font-raleway">{props.listHeader}</h3>}
               {props.list ? (
                 <ul className="mt-3" style={{ listStyleType: "disc" }}>
                   {props.list.map((item, index) => (
-                    <li className="font-now text-sm" key={index}>
+                    <li className="font-raleway text-sm" key={index}>
                       • {item}
                     </li>
                   ))}
                 </ul>
               ) : null}
               {props.note ? (
-                <p className="font-now mt-3 text-sm">{props.note}</p>
+                <p className="font-raleway mt-3 text-sm">{props.note}</p>
               ) : null}
             </motion.div>
           )}

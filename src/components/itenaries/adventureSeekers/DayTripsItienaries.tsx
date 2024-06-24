@@ -16,17 +16,17 @@ export const TwoDayTripItienary = () => {
 
   return (
     <>
-      <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-        <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+      <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+        <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
           Two Day trip Itinerary
         </h3>
 
-        <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+        <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
           <aside className="w-full md:w-1/3">
-            <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+            <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
               <li>
                 <Link href="/contact">
-                  <Button className="font-now text-white">
+                  <Button className="font-raleway text-white">
                     Request Custom Itinerary
                   </Button>
                 </Link>
@@ -50,17 +50,17 @@ export const TwoDayTripItienary = () => {
 
 export const ThreeDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Three Day trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -83,17 +83,17 @@ export const ThreeDayTrip = () => {
 
 export const FourDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Four Day trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -121,17 +121,17 @@ export const FourDayTrip = () => {
 
 export const FiveDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Five Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -159,17 +159,17 @@ export const FiveDayTrip = () => {
 
 export const SixDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Six Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -197,17 +197,17 @@ export const SixDayTrip = () => {
 
 export const SevenDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Seven Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>

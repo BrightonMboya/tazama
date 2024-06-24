@@ -13,7 +13,7 @@ const Card = (props: cardProperties) => {
     <>
       <a href={props.link} className="relative cursor-pointer">
         {props.offer ? (
-          <p className="font-now absolute left-1 top-1 rounded bg-white px-1.5 py-0.5 text-xs shadow-sm">
+          <p className="font-raleway absolute left-1 top-1 rounded bg-white px-1.5 py-0.5 text-xs shadow-sm">
             {props.offer}
           </p>
         ) : null}
@@ -22,10 +22,10 @@ const Card = (props: cardProperties) => {
           alt=""
           className="h-[11rem] w-full object-cover sm:h-[15rem]"
         />
-        <p className="mt-3 text-xs text-[#A87133] sm:text-sm md:text-base">
+        <p className="mt-3 text-xs text-primary sm:text-sm md:text-base">
           {props.subHeading}
         </p>
-        <p className="-mt-1 text-lg text-[#757371] sm:text-xl md:text-2xl">
+        <p className="-mt-1 text-lg text-darker/85 sm:text-lg md:text-xl font-raleway">
           {props.mainHeading}
         </p>
       </a>

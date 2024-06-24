@@ -16,7 +16,7 @@ export default function ParallaxImg({
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 200);
   return (
-    // <motion.div
+    // <div
     //   style={{ y }}
     <div
       className="relative  h-[400px] w-full md:h-[600px]"
@@ -35,7 +35,7 @@ export default function ParallaxImg({
         layout="fill"
         className="-ml-4 h-full w-full object-cover"
       />
-      {/* </motion.div> */}
+      {/* </div> */}
     </div>
   );
 }

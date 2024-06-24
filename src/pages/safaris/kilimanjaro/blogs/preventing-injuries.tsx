@@ -11,7 +11,7 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Mount Kilimanjaro, standing as a beacon of challenge and
               transformation, calls to adventurers seeking to push their limits
               and experience the profound beauty of the world's tallest
@@ -25,7 +25,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Common Injuries and How to Prevent Them
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing Kilimanjaro can expose adventurers to a variety of
               physical challenges, from the rugged terrain to the thinning air.
               Common injuries include blisters, ankle sprains, muscle strains,
@@ -36,7 +36,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Embark on a Tailored Training Regimen
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Preparation is key to a successful and injury-free climb. Start
               your training at least two months before your expedition, focusing
               on strengthening your legs and upper body, enhancing flexibility,
@@ -49,7 +49,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Choose Your Footwear Wisely
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Your feet are your foundation on Kilimanjaro, and selecting the
               right footwear is critical. Ensure your boots or trail shoes are
               well-fitted, offer robust traction, and are waterproof to keep
@@ -70,7 +70,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Trekking Poles: Your Kilimanjaro Companions
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Trekking poles are invaluable tools on the mountain, providing
               stability, reducing the load on your legs, and aiding in balance.
               They're especially beneficial during descents, when the risk of
@@ -81,7 +81,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Shield Yourself from the Sun
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The equatorial sun on Kilimanjaro can be relentless. Protect your
               skin with high-SPF sunscreen, reapplying regularly, and wear
               protective clothing. Consider spending time in shaded areas during
@@ -92,7 +92,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Acclimatization: The Key to Avoiding Altitude Sickness
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Altitude sickness can affect climbers of all fitness levels, but
               gradual acclimatization can significantly reduce the risk. By
               choosing a route that allows for a "climb high, sleep low"
@@ -103,7 +103,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Concluding Your Journey with Care
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               At Tazama, we believe that climbing Kilimanjaro is a journey of
               the spirit as much as it is of the body. By preparing thoroughly,
               choosing the right gear, and listening to the wisdom of your
@@ -167,11 +167,11 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Sunglasses for Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Sunglasses for Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Protect your eyes against the harsh UV lights in the mountain.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -185,12 +185,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Summit Night</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Summit Night</p>
+            <p className="font-raleway text-sm">
               As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
               adventure awaits during the enigmatic summit night.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -204,12 +204,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Private vs Group Trek</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Private vs Group Trek</p>
+            <p className="font-raleway text-sm">
               Chose which one is right for you, either group trek or a private
               one
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
@@ -8,14 +9,14 @@ import BlogLayout from "~/components/ui/BlogLayout";
 export default function Page() {
   return (
     <BlogLayout title="The Northern Circuit">
-      <section className="lg:mx-auto lg:max-w-none">
+      <section className="lg:mx-auto lg:max-w-5xl mt-16">
         <section className="mx-auto flex items-start justify-center lg:mx-0 lg:gap-10">
           <div className="mx-auto  px-4 md:px-8 lg:mx-0 lg:max-w-[60%] lg:text-justify">
             <div className="mb-10 py-8">
-              <p className="mt-5 text-lg font-bold text-primary">
+              <p className="mt-5 text-4xl font-serif font-bold text-primary">
                 Discover the Northern Circuit Route: Kilimanjaro's Ultimate Trek
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 The Northern Circuit Route, known for its breathtaking panoramas
                 and serene trails, offers an unparalleled journey around Mount
                 Kilimanjaro. Starting in the west at Londorossi Gate, this path
@@ -24,7 +25,7 @@ export default function Page() {
                 the unique Northern Circuit, wrapping around the mountain to
                 reveal Kilimanjaro in all its glory.
               </p>{" "}
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 This route stands out for its length, providing ample time for
                 acclimatization and immersion in the mountain's natural
                 splendor. With a trail less traveled, it promises a peaceful
@@ -34,7 +35,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Why Choose the Northern Circuit Route:
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 The Northern Circuit is the pinnacle of Kilimanjaro treks,
                 offering the best success rates, ranging from 90% to 95%. With
                 options for an 8-day standard journey or a 9-day trek for
@@ -54,8 +55,8 @@ export default function Page() {
                   blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
                 />
               </div>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">
                   Less crowded than other routes:{" "}
                 </span>
                 it provides a tranquil experience, allowing trekkers to soak in
@@ -68,7 +69,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 How Challenging is the Northern Circuit Route?
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-6 mt-2 text-lg text-darker/85">
                 While the Northern Circuit presents its challenges, particularly
                 due to its length, it is manageable with proper preparation. The
                 extended days on the mountain aid in acclimatization,
@@ -87,10 +88,10 @@ export default function Page() {
                   placeholder="blur"
                 />
               </div>
-              <p className="mt-5 text-lg font-bold text-primary">
+              <p className="mt-5 text-xl font-bold text-primary">
                 Summit Success Rate:
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+              <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
                 The Northern Circuit boasts the highest success rate among all
                 Kilimanjaro routes, thanks to its lengthy itinerary that allows
                 trekkers to gradually acclimatize to the altitude. This route is
@@ -98,10 +99,10 @@ export default function Page() {
                 providing climbers with the best chance to reach the summit and
                 enjoy the breathtaking views from Africa's highest point.
               </p>{" "}
-              <p className="mt-5 text-lg font-bold text-primary">
+              <p className="mt-8 mb-3 text-xl font-bold text-primary">
                 What You Will See on the Northern Circuit Route
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+              <p className="mb-6 mt-5 text-lg text-darker/85 lg:mt-0">
                 Embarking on the Northern Circuit Route with Tazama offers a
                 journey through the most diverse and captivating landscapes of
                 Mount Kilimanjaro. This route, celebrated for its scenic beauty
@@ -109,58 +110,58 @@ export default function Page() {
                 ecosystems and panoramic views that are unmatched. Here's what
                 awaits you:
               </p>{" "}
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Lush Rainforests: </span>
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Lush Rainforests: </span>
                 The trek begins in the dense rainforests at the base of
                 Kilimanjaro, where the air is fresh, and the canopy teems with
                 life. This verdant environment is home to an array of wildlife,
                 including monkeys, exotic birds, and smaller mammals, offering a
                 close encounter with nature.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Shira Plateau: </span>
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Shira Plateau: </span>
                 As you ascend, you'll emerge onto the Shira Plateau, a
                 high-altitude desert with sweeping views across the African
                 savannah below. This expansive landscape offers a sense of
                 solitude and vastness that is both humbling and inspiring.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Alpine Deserts and Moors: </span>
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Alpine Deserts and Moors: </span>
                 The route traverses the alpine desert and moorland zones, where
                 the vegetation becomes sparse, and the terrain rugged. These
                 sections offer stunning contrasts between the rock and ice
                 formations and the wide-open skies.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Lava Tower: </span>The Lava
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Lava Tower: </span>The Lava
                 Tower, a prominent volcanic rock formation, presents a
                 challenging but rewarding climb. It's a key acclimatization
                 point and offers spectacular views of the mountain's western
                 face.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Northern Slopes: </span>
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Northern Slopes: </span>
                 Unique to this route, the northern slopes of Kilimanjaro are
                 less traveled and provide a sense of untouched wilderness. The
                 tranquility here is perfect for reflection and enjoying the
                 peace of the mountain.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Panoramic Vistas: </span> The
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Panoramic Vistas: </span> The
                 Northern Circuit wraps around the mountain, offering 360-degree
                 views that include both the Kenyan and Tanzanian sides of
                 Kilimanjaro. These breathtaking panoramas are a highlight for
                 many trekkers.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Uhuru Peak: </span>
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Uhuru Peak: </span>
                 The climax of the journey is the summit at Uhuru Peak, where the
                 vast African continent stretches out below. Watching the sunrise
                 from the highest point in Africa is an unforgettable experience
                 that rewards the spirit of adventure.
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
-                <span className="text-primary">Flora and Fauna: </span>
+              <p className="mb-3 mt-5 text-lg text-darker/85">
+                <span className="text-primary/80 font-semibold">Flora and Fauna: </span>
                 Throughout the trek, the changing ecosystems reveal a variety of
                 flora, from giant senecios and lobelias in the alpine moorland
                 to the hardy plants of the alpine desert. The chance to spot
@@ -170,7 +171,7 @@ export default function Page() {
               <p className="mt-5 text-lg font-bold text-primary">
                 Begin Your Kilimanjaro Journey with Tazama
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Ready for an adventure that transcends the ordinary? Join Tazama
                 on the Northern Circuit Route for an unforgettable journey to
                 the summit of Kilimanjaro. With our expert guides, top-notch
@@ -235,12 +236,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Machame Route</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Machame Route</p>
+              <p className="font-raleway text-sm">
                 The Machame Route, affectionately known as the "Whiskey Route,"
                 is not just a path to the summit of Kilimanjaro—it's...
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
@@ -254,12 +255,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Marangu Route</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Marangu Route</p>
+              <p className="font-raleway text-sm">
                 While Marangu might be the most accessible route, it requires
                 careful preparation...
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>

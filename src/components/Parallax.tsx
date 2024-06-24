@@ -47,8 +47,8 @@ const ParallaxElement: React.FunctionComponent<parallaxElementData> =
         ${props.reverse ? "justify-between md:flex-row-reverse" : "md:flex-row"}
       `}
         >
-          {/* The motion.div contains the image and will move up/down as the user scrolls (parallax effect) */}
-          <motion.div
+          {/* The div contains the image and will move up/down as the user scrolls (parallax effect) */}
+          <div
             style={{ y }}
             className={`h-[75vh] w-full md:max-w-[50%]`}
           >
@@ -61,16 +61,16 @@ const ParallaxElement: React.FunctionComponent<parallaxElementData> =
                 props.reverse ? "ml-4 sm:ml-10" : "-ml-4 sm:-ml-10"
               } object-cover`}
             />
-          </motion.div>
+          </div>
 
           {/* Container for the text content */}
-          <motion.div
+          <div
             className={` ${
               props.reverse ? "mt-20" : "mt-20"
             } z-10 w-full bg-[#f4f1ec] px-8 md:max-w-[55rem] md:px-20 `}
           >
             {/* Heading with fade and slide-in animation when it comes into view */}
-            <motion.h3
+            <h3
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -82,10 +82,10 @@ const ParallaxElement: React.FunctionComponent<parallaxElementData> =
               className={`mb-4 pt-10 text-3xl text-black lg:text-5xl`}
             >
               {props.title}
-            </motion.h3>
+            </h3>
 
             {/* Paragraph with delayed fade and slide-in animation */}
-            <motion.p
+            <p
               initial={{ opacity: 0, x: -10 }}
               whileInView={{
                 opacity: 1,
@@ -96,20 +96,20 @@ const ParallaxElement: React.FunctionComponent<parallaxElementData> =
                 },
               }}
               className={`
-              font-now
+              font-raleway
               mb-8
-              text-xs leading-loose text-[#757371]
+              text-xs leading-loose text-darker/85
               sm:text-sm
               md:text-base
             `}
             >
               {props.description}
-            </motion.p>
+            </p>
 
             {/* Conditional rendering for the call-to-action button with animation */}
 
             {props.action ? (
-              <motion.span
+              <span
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{
                   opacity: 1,
@@ -138,11 +138,11 @@ const ParallaxElement: React.FunctionComponent<parallaxElementData> =
                 >
                   {props.actionTitle}
                 </Link>
-              </motion.span>
+              </span>
             ) : null}
             <br />
             <br />
-          </motion.div>
+          </div>
         </div>
       </>
     );

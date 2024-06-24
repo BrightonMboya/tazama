@@ -15,7 +15,7 @@ export default function Page() {
               Recovery Journey After climbing Kilimanjaro: How many days it
               takes to recover from climbing kilimanjaro
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The ascent of Mount Kilimanjaro is an adventure that tests your
               limits, not just during the climb but also in the days that follow
               as your body recovers from this monumental feat. With Tazama, your
@@ -26,7 +26,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Post-Kilimanjaro: The Unseen Challenge
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing the towering heights of Kilimanjaro is a testament to
               human endurance, and the recovery period is a crucial part of this
               epic journey. The descent from the peak might mark the end of the
@@ -36,7 +36,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               The Aftermath: Physical Echoes of the Climb
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               As you revel in the glory of having reached the summit, your body
               begins to whisper tales of the trek. Symptoms such as headache,
               nausea, dizziness, and shortness of breath may linger, while the
@@ -47,7 +47,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               The Path to Recovery: A Holistic Approach
             </h3>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Choosing the Right Route:</span>{" "}
                 Opting for a longer route on Kilimanjaro not only increases your
@@ -89,7 +89,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Every Climber's Journey is Unique and Personal
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Recovery varies from one climber to another, influenced by
               physical fitness, mental fortitude, and the body's inherent
               ability to heal. Some may find themselves bouncing back in a
@@ -100,7 +100,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Embracing Recovery with Tazama
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               With Tazama, your post-Kilimanjaro experience is as meticulously
               planned as your ascent. Our commitment to your well-being ensures
               that your recovery is supported every step of the way, from
@@ -165,12 +165,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Summit Night</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Summit Night</p>
+            <p className="font-raleway text-sm">
               As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
               adventure awaits during the enigmatic summit night.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -184,12 +184,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Recovery Journey</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Recovery Journey</p>
+            <p className="font-raleway text-sm">
               Recovery Journey After climbing Kilimanjaro: How many days it
               takes to recover from climbing kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -203,12 +203,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Private vs Group Trek</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Private vs Group Trek</p>
+            <p className="font-raleway text-sm">
               Chose which one is right for you, either group trek or a private
               one
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

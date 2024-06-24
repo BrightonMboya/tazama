@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { aboutPageContentData } from "~/data/about-data";
@@ -10,26 +11,27 @@ import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
 import Link from "next/link";
+import { HomeContactUs } from "~/components/HomeContactUs";
 
 const AboutPage = () => {
   return (
     <>
       <PrimaryHeader
         image="about.webp"
-        title="Tazama Africa Tours | Design Your Dream Safari Experience"
+        title="About Tazama"
       />
       <HeadSEO title="About Tazama" keywords={base_keywords} />
-      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+      <div className="mx-auto mt-20 max-2xl:max-w-5xl 2xl:container px-4 pt-[2rem]">
         <div className="">
-          <h3 className="text-4xl text-[#A87133]">About Tazama</h3>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <h3 className="text-5xl text-primary max-w-3xl text-center mx-auto mb-2.5 leading-[4rem]">Tazama Africa Tours | Design Your Dream Safari Experience</h3>
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             TAZAMA specializes in curating unforgettable memories that will have
             you reminiscing with your loved ones for years to come. Boasting
             over 15 years of expertise in the safari industry, we've mastered
             the art of crafting seamless journeys.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             Our exceptional guides and dedicated staff are seasoned experts,
             ensuring every aspect of your trip is flawlessly executed. Because
             every trip is as unique as you, a journey with us brings you up
@@ -39,7 +41,7 @@ const AboutPage = () => {
             and women-owned businesses whenever possible.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             Whether you're conquering the slopes of Kilimanjaro or exploring the
             vast Serengeti plains, we pledge an experience that is genuine,
             thrilling, and awe-inspiring! Join us as we eagerly unveil the
@@ -67,9 +69,9 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4">
+      <div className="mx-auto mt-10  max-2xl:max-w-5xl 2xl:container px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             At Tazama, we don't just offer safaris; we deliver bespoke
             adventures tailored to the dreams of each traveler. With over 15
             years of experience under our belt, we have perfected the recipe for
@@ -101,10 +103,10 @@ const AboutPage = () => {
             are your gateway to a Tanzania you've never imagined, where luxury
             meets the untamed, and every moment is a story waiting to be told.
           </p>
-          <h3 className="pt-[12px] text-3xl text-[#A87133]">
+          <h3 className="pt-[12px] text-3xl text-primary">
             Partnering with SafariBookings.com
           </h3>
-          <p className="mb-3 mt-1 text-lg text-[#757371]">
+          <p className="mb-3 mt-1 text-lg text-darker/85">
             Tazama Africa is represented on SafariBookings.com.
             <br />
              For reviews and
@@ -119,11 +121,11 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <div className="mt-5 md:mb-[8rem]  lg:mb-[10rem] lg:mt-0">
+      <div className="flex flex-col gap-10 mt-20">
         {array
           .sort(aboutPageContentData, "asc", "rank")
           .map((content: contentSectionData, index: number) => (
-            <section className="sm:-mb-72" key={index}>
+            <section className="" key={index}>
               <ContentSection
                 rank={content.rank}
                 title={content.title}
@@ -136,6 +138,7 @@ const AboutPage = () => {
             </section>
           ))}
       </div>
+      {/* <br /> */}
       <QuoteSection
         subText="- Leonie Trubshoe, Australia"
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."

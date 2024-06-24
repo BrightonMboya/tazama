@@ -3,6 +3,7 @@ import Layout from "~/components/ui/Layout";
 import { api } from "~/lib/api";
 import { Analytics } from "@vercel/analytics/react";
 import { Raleway } from "next/font/google";
+import localFont from "next/font/local"
 
 import "~/styles/globals.css";
 import { env } from "~/env";
@@ -17,6 +18,16 @@ export const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
 });
+
+export const amiora = localFont({
+  src: "../fonts/Amiora.ttf",
+  variable: "--font-amiora",
+})
+
+export const gallery = localFont({
+  src: "../fonts/Gallery.ttf",
+  variable: "--font-gallery",
+})
 
 if (typeof window !== "undefined") {
   // checks that we are client-side

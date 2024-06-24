@@ -13,7 +13,7 @@ export default function Page() {
       <section className="flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Conquering Mount Kilimanjaro, the rooftop of Africa, is a dream
               many adventurers from around the globe share. Tazama has been at
               the forefront of turning these dreams into reality, offering
@@ -27,7 +27,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               A Melting Pot of Cultures on the Slopes of Kilimanjaro
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Mount Kilimanjaro, with its breathtaking landscapes and
               challenging treks, attracts thousands of climbers each year.
               Tazama has had the privilege of guiding adventurers from various
@@ -52,7 +52,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Personalization at the Heart of Every Climb
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               What sets Tazama apart is our dedication to personalization.
               Understanding that each climber has unique needs and expectations,
               we tailor every journey to suit individual preferences. Whether
@@ -66,7 +66,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Safety, Expertise, and Warm Hospitality
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Safety is paramount on the slopes of Kilimanjaro, and Tazama's
               expert guides, with their deep knowledge of the mountain's terrain
               and weather patterns, ensure that climbers from all countries feel
@@ -88,7 +88,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Join the Global Tazama Family
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               As Tazama continues to welcome climbers from across the world,
               we're not just offering a climb; we're inviting you to become part
               of a global family that shares the love for adventure, the respect
@@ -152,12 +152,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Summit Night</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Summit Night</p>
+            <p className="font-raleway text-sm">
               As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
               adventure awaits during the enigmatic summit night.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -171,12 +171,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Recovery Journey</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Recovery Journey</p>
+            <p className="font-raleway text-sm">
               Recovery Journey After climbing Kilimanjaro: How many days it
               takes to recover from climbing kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -190,12 +190,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Why Climb Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Why Climb Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Get to know more about the benefits you will get in climbing Mount
               Kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

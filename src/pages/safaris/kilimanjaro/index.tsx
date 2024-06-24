@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import PrimaryHeader from "~/components/PrimaryHeader";
 import useFetchImages from "~/hooks/useFetchImages";
-import { ImageProps } from "~/lib/generateBlurPlaceHolder";
+import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
 import { Kilimanjaro_keywords } from "~/lib/constants";
@@ -16,19 +19,19 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         image={`mount-kilimanjaro.webp`}
         title="Mount Kilimanjaro"
       />
-      <div className="mx-auto  max-w-7xl px-4 md:px-8 ">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8 mt-16">
         <div className=" py-8">
-          <h3 className="text-4xl text-[#A87133]">
-            The tallest Summit in Africa{" "}
+          <h3 className="text-4xl text-primary">
+            The Tallest Summit in Africa
           </h3>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             Welcome to Tazama's Kilimanjaro Treks - where the spirit of
             adventure meets the majesty of Africa's highest peak. Prepare to
             embark on an extraordinary journey through the heart of Tanzania's
             wilderness, where every step brings you closer to the summit of
             Kilimanjaro
           </p>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             As you set foot on Kilimanjaro's slopes, you'll be stepping into a
             world of unparalleled natural beauty and untamed wilderness. From
             dense rainforests teeming with life to rugged alpine deserts, the
@@ -36,14 +39,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             breathtaking.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             At Tazama, we offer treks on five of Kilimanjaro's most renowned
             routes: Machame, Lemosho, Rongai, Umbwe and the Northern Circuit.
             Each route presents its own unique challenges and rewards, ensuring
             that every adventurer finds the perfect path to the summit.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371] ">
+          <p className="mb-3 mt-5  text-darker/85 ">
             The{" "}
             <span className="font-bold text-primary">
               <Link href="/safaris/kilimanjaro/routes/machame">
@@ -76,7 +79,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
 
         <div className="">
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             For those seeking a more gradual ascent, the{" "}
             <span className="font-bold text-primary">
               <Link href="/safaris/kilimanjaro/routes/lemosho">
@@ -87,7 +90,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             ample time for acclimatization, trekkers can immerse themselves
             fully in the awe-inspiring beauty of Kilimanjaro.
           </p>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             For the ultimate Kilimanjaro experience, the{" "}
             <span className="font-bold text-primary">
               <Link href="/safaris/kilimanjaro/routes/northern-circuit">
@@ -98,7 +101,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             wilderness. This lesser-traveled route promises solitude and
             serenity as you traverse the northern slopes of the mountain.
           </p>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             The{" "}
             <span className="font-bold text-primary">
               <Link href="/safaris/kilimanjaro/routes/rongai">
@@ -110,7 +113,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             the Kenyan plains and the chance to witness Kilimanjaro's
             awe-inspiring sunrise.
           </p>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             Meanwhile, the{" "}
             <span className="font-bold text-primary">
               <Link href="/safaris/kilimanjaro/routes/umbwe">Umbwe route</Link>
@@ -129,7 +132,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
               />
             </div>
           </div>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             No matter which route you choose, Tazama ensures an unforgettable
             experience with our seasoned guides, top-quality equipment, and
             personalized service. From the moment you arrive in Tanzania until
@@ -137,7 +140,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             ensuring your safety, comfort, and enjoyment every step of the way.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             Embark on the adventure of a lifetime with Tazama's Kilimanjaro
             Treks and experience the thrill of conquering Africa's highest peak.
             Are you ready to write your own chapter in the story of Kilimanjaro?
@@ -146,16 +149,16 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
 
         <div className="mb-10 py-8">
-          <h3 className="text-4xl text-[#A87133]">Why Trek with Tazama</h3>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <h3 className="text-4xl text-primary">Why Trek with Tazama</h3>
+          <p className="mb-3 mt-5  text-darker/85">
             When it comes to embarking on the adventure of a lifetime, we
             understand that choosing the right trekking company is crucial.
             Here's why Tazama stands out from the rest:
           </p>
-          <ul className=" list-outside text-lg text-[#757371]">
+          <ul className=" list-outside  text-darker/85">
             <li className="font-bold text-primary">Safety First</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
+          <ul className="list-inside list-disc pl-5  text-darker/85">
             <li>Guides certified as Wilderness First Responders</li>
             <li>Twice daily health monitoring</li>
             <li>Pulse oximeters and emergency oxygen on every climb</li>
@@ -165,28 +168,28 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-lg text-[#757371]">
+          <ul className=" list-outside pt-5  text-darker/85">
             <li className="font-bold text-primary">Responsible Travel:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
+          <ul className="list-inside list-disc pl-5  text-darker/85">
             <li>Adherence to Leave No Trace principles.</li>
             <li>Fair and ethical treatment of all mountain crew</li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-lg text-[#757371]">
+          <ul className=" list-outside pt-5  text-darker/85">
             <li className="font-bold text-primary">High-Quality Equipment:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
+          <ul className="list-inside list-disc pl-5  text-darker/85">
             <li>4 season expedition sleeping tents</li>
             <li>Dining tents with durable tables and chairs</li>
             <li>Hygienic private toilets</li>
             <li>4-season sleeping bags</li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-lg text-[#757371]">
+          <ul className=" list-outside pt-5  text-darker/85">
             <li className="font-bold text-primary">Professional Team:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
+          <ul className="list-inside list-disc pl-5  text-darker/85">
             <li>
               Experienced guides with extensive knowledge of Kilimanjaro's
               terrain and ecosystems.
@@ -209,10 +212,10 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </li>
           </ul>
 
-          <ul className=" list-outside pt-5 text-lg text-[#757371]">
+          <ul className=" list-outside pt-5  text-darker/85">
             <li className="font-bold text-primary">Personalized Service:</li>
           </ul>
-          <ul className="list-inside list-disc pl-5 text-lg text-[#757371]">
+          <ul className="list-inside list-disc pl-5  text-darker/85">
             <li>
               Tailored service catering to individual needs and preferences .
             </li>
@@ -223,14 +226,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
           <div className="mt-5 flex flex-col items-center justify-center bg-light py-10 text-center text-white">
             <div className="mt-5 ">
-              <Button className="rounded-md bg-[#A87133] px-2 text-white md:px-6 md:py-6 md:text-lg">
+              <Button className="rounded-md bg-[#A87133] px-2 text-white md:px-6 md:py-6 md:">
                 <Link href="/safaris/kilimanjaro/routes">
                   View all Kilimanjaro routes
                 </Link>
               </Button>
             </div>
           </div>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5  text-darker/85">
             Choose Tazama Africa for your Kilimanjaro trek and embark on a
             journey of a lifetime with confidence and peace of mind. With our
             unwavering commitment to safety, responsible travel, high-quality
@@ -239,7 +242,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </p>
         </div>
         {/* @ts-ignore */}
-        <Gallery images={images} />
 
         <p className="mt-10 text-2xl text-primary">Our Guides and Blogs</p>
         <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
@@ -249,9 +251,9 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           >
             <div className="relative h-[200px] w-full rounded-sm">
               <CloudinaryImage
-                blurDataUrl={images[4]?.blurDataUrl as string}
-                format={images[4]?.format as string}
-                public_id={images[4]?.public_id as string}
+                blurDataUrl={images[4]?.blurDataUrl!}
+                format={images[4]?.format!}
+                public_id={images[4]?.public_id!}
               />
             </div>
 
@@ -260,7 +262,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
               <p className=" text-sm">
                 Why Protecting Your Eyes is Non-Negotiable on Kilimanjaro...
               </p>
-              <Button className="mt-5 text-lg text-white">View More</Button>
+              <Button className="mt-5  text-white">View More</Button>
             </div>
           </Link>
           <Link
@@ -272,16 +274,16 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">
+              <p className="font-raleway text-primary">
                 {" "}
                 Climbing Kilimanjaro Shapes your life
               </p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-sm">
                 A Journey of Humility and Equality
                 <br />
                 <br />
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5  text-white">
                 View More
               </Button>
             </div>
@@ -295,14 +297,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">
+              <p className="font-raleway text-primary">
                 Diverse Kilimanjaro Climbers
               </p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-sm">
                 Conquering Mount Kilimanjaro, the rooftop of Africa, is a dream
                 many adventurers from around the globe share.
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5  text-white">
                 View More
               </Button>
             </div>
@@ -324,7 +326,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                 For those embarking from afar, the Kilimanjaro Visa On Arrival
                 (VOA) presents a convenient option ...
               </p>
-              <Button className="mt-5 text-lg text-white">View More</Button>
+              <Button className="mt-5  text-white">View More</Button>
             </div>
           </Link>
           <Link
@@ -336,12 +338,12 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Foods</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Kilimanjaro Foods</p>
+              <p className="font-raleway text-sm">
                 Staying hydrated is crucial to mitigate the risks associated
                 with high altitude.
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5  text-white">
                 View More
               </Button>
             </div>
@@ -355,16 +357,22 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Attitude Sickness</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Attitude Sickness</p>
+              <p className="font-raleway text-sm">
                 Kilimanjaro Altitude Sickness, or Acute Mountain Sickness (AMS),
                 is a concern for climbers ...
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5  text-white">
                 View More
               </Button>
             </div>
           </Link>
+        </section>
+
+        <section className="my-20">
+          <h4 className="text-4xl">Our Kilimanjaro Gallery</h4>
+          {/* @ts-ignore */}
+          <Gallery images={images} />
         </section>
       </div>
     </>
@@ -373,6 +381,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
 export default Page;
 export async function getStaticProps() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const images = await useFetchImages({ folderName: "kilimanjaro" });
   return {
     props: {

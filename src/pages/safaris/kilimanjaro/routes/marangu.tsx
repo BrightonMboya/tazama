@@ -12,11 +12,11 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <h3 className="text-4xl text-[#A87133]">
+            <h3 className="text-4xl text-primary">
               Discover the Marangu Route with Tazama: The Classic Path to
               Kilimanjaro's Summit
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">The Marangu Route, </span>{" "}
               affectionately known as the "Coca-Cola Route," offers a unique
               trekking experience on Mount Kilimanjaro, combining comfort with
@@ -24,7 +24,7 @@ export default function Page() {
               stands out for those seeking a bit more comfort during their
               ascent to Africa's highest peak.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Starting from the southeast, Marangu is favored for its direct and
               less strenuous path, making it an ideal choice for both novice and
               seasoned hikers. While it may be known as the easiest route, the
@@ -34,7 +34,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Why Choose the Marangu Route?
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Marangu's gentle slopes offer a straightforward trek, perfect for
               those looking for a less technical climb. The route's unique hut
               accommodations provide a cozy retreat after a day's trek, sparing
@@ -55,14 +55,14 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Navigating the Marangu Route
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               While Marangu might be the most accessible route, it requires
               careful preparation and respect for the mountain's challenges. The
               key to success on Marangu lies in taking an extra day for
               acclimatization, ensuring your body adjusts to the higher
               altitudes, thereby enhancing your summit success rate.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The journey covers approximately 68 km, beginning at Marangu Gate
               and ascending to Mandara Hut, before reaching the striking Mawenzi
               Ridge for acclimatization. As you venture further, each step
@@ -82,14 +82,14 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               What You'll Experience on Marangu route
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+            <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
               On the Marangu Route, also known as the "Coca-Cola" route,
               climbers will be treated to a variety of sights and experiences
               that capture the essence of Mount Kilimanjaro's diverse ecosystems
               and breathtaking landscapes. Here's a glimpse into what you'll see
               and encounter on this classic path:
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Rainforest Zone: </span>
               The trek begins in the lush montane rainforest that envelops the
               lower slopes of Kilimanjaro. This dense, green canopy is alive
@@ -97,48 +97,48 @@ export default function Page() {
               you might catch a glimpse of monkeys swinging through the trees or
               the rare, shy dik-dik darting through the underbrush.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Mandara Huts: </span>
               The first campsite on the Marangu Route, nestled in a clearing
               surrounded by the rainforest. It's a serene spot to rest and soak
               in the natural beauty of the forest.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Maundi Crater: </span>A short hike
               from the Mandara Huts, Maundi Crater offers climbers their first
               taste of the stunning vistas beyond the rainforest. From here, you
               can see the vast plains of Kenya and the distant, shimmering
               waters of Lake Chala.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Moorland Zone: </span>
               As you ascend, the dense forest gives way to the open moorland,
               where giant heathers and lobelias dominate the landscape. This
               zone offers expansive views of the surrounding plains and the
               jagged Mawenzi Peak.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Horombo Huts: </span>
               The second campsite, located in the alpine moorland, offers
               breathtaking views of both Kibo and Mawenzi peaks. Sunrises and
               sunsets from Horombo are spectacular, with the clouds often below
               you, creating a sea of clouds effect.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Alpine Desert: </span>
               Beyond Horombo, the terrain changes dramatically into an alpine
               desert. This stark, otherworldly landscape is characterized by
               wide-open spaces, rocky paths, and sparse vegetation. The sense of
               isolation and the vastness of the mountain can be truly felt here.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Kibo Huts: </span>
               The final camp before the summit push, situated at the edge of the
               alpine desert with the summit of Kibo looming overhead. It's a
               stark, moon-like landscape, with the peak of Kilimanjaro beckoning
               in the distance.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Uhuru Peak: </span>
               The culmination of your trek, the summit of Kilimanjaro, offers
               unparalleled views of the African continent. Standing atop Uhuru
@@ -146,7 +146,7 @@ export default function Page() {
               world spread out below you. The sense of accomplishment and awe at
               the natural beauty is indescribable.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Flora and Fauna: </span>
               Throughout the trek, keep an eye out for Kilimanjaro's unique
               flora, such as the giant groundsel and the Kilimanjaro impatiens.
@@ -157,7 +157,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Climb with Confidence
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Ready to conquer the Roof of Africa with the perfect blend of
               challenge and beauty? The Machame Route, affectionately known as
               the "Whiskey Route," offers an invigorating trek filled with
@@ -165,7 +165,7 @@ export default function Page() {
               tests your limits while rewarding you with the unparalleled beauty
               of Mount Kilimanjaro.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Embark on the adventure of a lifetime and conquer the iconic peaks
               of Kilimanjaro with Tazama. Our personalized journeys are crafted
               to ensure an unforgettable experience, blending the thrill of the
@@ -233,12 +233,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Northern Circuit</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Northern Circuit</p>
+            <p className="font-raleway text-sm">
               The Northern Circuit boasts the highest success rate among all
               Kilimanjaro routes,...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -252,12 +252,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Umbwe Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Umbwe Route</p>
+            <p className="font-raleway text-sm">
               The Umbwe Route, known for its steep, direct climb to the summit
               of Mount Kilimanjaro...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

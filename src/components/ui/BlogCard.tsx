@@ -26,9 +26,9 @@ export default function BlogCard(props: Props) {
         </div>
 
         <div className="p-3">
-          <p className="font-now text-primary">{props.title}</p>
-          <p className="font-now text-sm">{props.caption}</p>
-          <Button className="font-now mt-5 text-lg text-white">
+          <p className="font-raleway text-primary">{props.title}</p>
+          <p className="font-raleway text-sm">{props.caption}</p>
+          <Button className="font-raleway mt-5 text-lg text-white">
             View More
           </Button>
         </div>

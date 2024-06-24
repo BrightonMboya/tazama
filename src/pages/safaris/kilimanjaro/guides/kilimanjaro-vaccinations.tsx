@@ -16,7 +16,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Kilimanjaro Vaccinations: Your Shield Against Diseases
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Conquering Mount Kilimanjaro, the tallest freestanding mountain
                 in the world, is an exhilarating experience that demands
                 meticulous preparation, especially when it comes to health and
@@ -25,7 +25,7 @@ export default function Page() {
                 might arise due to high altitude and the tropical environment of
                 Tanzania.
               </p>{" "}
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Vaccinations play a crucial role in protecting trekkers from
                 various diseases that can be encountered while climbing
                 Kilimanjaro. These vaccines prime your immune system to fight
@@ -45,7 +45,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Essential Vaccinations for Kilimanjaro
               </p>
-              <ul className="list-disc pl-10 text-lg text-[#757371]">
+              <ul className="list-disc pl-10 text-lg text-darker/85">
                 <li>
                   <span className="text-primary">Yellow Fever: </span> Mandatory
                   for travelers coming from or transiting through a yellow
@@ -97,7 +97,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Malaria Prevention
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Malaria is a concern in Tanzania, including the lower slopes of
                 Kilimanjaro. Anti-malarial medication is recommended, alongside
                 measures to prevent mosquito bites, such as using insect
@@ -110,7 +110,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Altitude Sickness: Awareness and Prevention
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Altitude sickness is a significant concern on Kilimanjaro.
                 Tazama emphasizes the importance of acclimatization and adopting
                 a slow pace ("pole pole" in Swahili) to reduce the risk. Our
@@ -125,7 +125,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Stay Hydrated and Nourished
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Hydration and proper nutrition are key to a successful summit.
                 Tazama provides ample clean water and nutritious meals to keep
                 you energized and hydrated throughout your climb.
@@ -133,7 +133,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Tazama's Commitment to Your Safety
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Choosing Tazama means opting for a partner who prioritizes your
                 safety above all. Our team, equipped with the necessary medical
                 knowledge and evacuation plans, ensures you have a safe and
@@ -142,7 +142,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Preparing for Your Trek
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 <span className="text-primary">
                   Consult with a healthcare provider{" "}
                 </span>
@@ -155,7 +155,7 @@ export default function Page() {
               <p className="mt-5 text-2xl font-bold text-primary">
                 Embark With Confidence
               </p>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 With Tazama, embark on your Kilimanjaro adventure with the
                 confidence that you're fully prepared for the physical and
                 health challenges ahead. Our comprehensive care and support
@@ -220,12 +220,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Vaccinations</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Kilimanjaro Vaccinations</p>
+              <p className="font-raleway text-sm">
                 Be sure you understand how an anti-malarial may affect your
                 sleep, appetite and exposure to sun before you begin,
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
@@ -239,12 +239,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Training for Kilimanjaro</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Training for Kilimanjaro</p>
+              <p className="font-raleway text-sm">
                 Climbing Mount Kilimanjaro is an intimate and bonding experience
                 with your team, but privacy is paramount,
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>

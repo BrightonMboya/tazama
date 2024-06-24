@@ -74,40 +74,40 @@ export const CustomSafarisEmail = ({
                 </Heading>
 
                 <Text style={paragraph}>
-                  <b className="text-[#a87133]">Full Names </b>
+                  <b className="text-primary">Full Names </b>
                   {fullNames}
                 </Text>
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b className="text-[#a87133]">Email </b>
+                  <b className="text-primary">Email </b>
                   {email}
                 </Text>
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b className="text-[#a87133]">Phone Number: </b>
+                  <b className="text-primary">Phone Number: </b>
                   {phoneNumber}
                 </Text>
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b className="text-[#a87133]">People in the group</b>
+                  <b className="text-primary">People in the group</b>
                   {peopleInTheGroup}
                 </Text>
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b className="text-[#a87133]">Date </b>
+                  <b className="text-primary">Date </b>
                   {date}
                 </Text>
 
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b className="text-[#a87133]">
+                  <b className="text-primary">
                     Stage in the booking process:{" "}
                   </b>
                   {howFar}
                 </Text>
 
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b className="text-[#a87133]">Phone Number: </b>
+                  <b className="text-primary">Phone Number: </b>
                   {phoneNumber}
                 </Text>
 
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b className="text-[#a87133]">Additinal comments: </b>
+                  <b className="text-primary">Additinal comments: </b>
                   {additionalComments}
                 </Text>
                 <Text style={paragraph}>

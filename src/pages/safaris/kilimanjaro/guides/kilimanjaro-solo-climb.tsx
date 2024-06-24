@@ -15,7 +15,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Climbing Kilimanjaro Solo: A Personalized Adventure
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Embarking on a solo journey to conquer Mount Kilimanjaro,
                 Africa's highest peak, is an aspiration many adventurers hold
                 dear. Tazama is here to turn this dream into a reality, offering
@@ -25,7 +25,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Does Solo Climbing Mean You're Alone?
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 While you may set out on this journey solo, you won't be alone.
                 Regulations require the presence of certified Kilimanjaro guides
                 and experienced porters. Tazama ensures you have a team of
@@ -45,7 +45,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Why Opt for Solo Climbing?
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Solo climbs appeal to those seeking solitude, reflection, and
                 personal challenge. Tazama caters to this desire with custom
                 itineraries, gourmet meals tailored to personal taste, and a
@@ -55,7 +55,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 The Risks of Solo Climbing
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Climbing Kilimanjaro presents challenges, notably the risk of
                 altitude sickness. Tazama prioritizes safety, offering
                 comprehensive preparation advice, altitude sickness prevention
@@ -65,7 +65,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Preparation is Key
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Proper preparation is crucial for a successful summit. Tazama
                 provides tailored training programs and preparation guides to
                 enhance cardiovascular fitness, strength, and acclimatization
@@ -85,7 +85,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Choosing Tazama for Your Solo Kilimanjaro Climb
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Opting for Tazama means choosing expertise, luxury, and safety.
                 We remove the stress of planning, allowing you to focus on
                 physical and mental preparation. Our all-inclusive packages
@@ -96,7 +96,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Safety for Female Solo Travelers
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Tazama understands the unique concerns of female solo climbers
                 and places their safety and comfort at the forefront. Our
                 respectful, professional team ensures a secure and empowering
@@ -105,7 +105,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Kilimanjaro Success Rate for Solo Climbers
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 While there's no definitive data comparing solo versus group
                 success rates, Tazama's personalized approach to solo climbing
                 has yielded remarkable success. Our attention to detail,
@@ -115,7 +115,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 The Advantages of Solo Climbing with Tazama:
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Complete itinerary customization for a truly personal
                 experience. <br />
                 The luxury of setting your own pace and schedule. <br />
@@ -125,7 +125,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Considerations for Solo Climbers:
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Solo climbing may come at a higher cost, reflecting the
                 personalized services and dedicated support. While you gain
                 privacy and customization, you may miss out on the camaraderie
@@ -180,12 +180,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Visa</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Kilimanjaro Visa</p>
+              <p className="font-raleway text-sm">
                 This is a non-negotiable prerequisite for anyone planning to
                 conquer Kilimanjaro .....
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
@@ -199,12 +199,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Kilimanjaro Food</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Kilimanjaro Food</p>
+              <p className="font-raleway text-sm">
                 Tazama ensures your journey to the summit of Mount Kilimanjaro
                 is not only successful but also delightful ...
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
@@ -218,14 +218,14 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">
+              <p className="font-raleway text-primary">
                 Kilimanjaro Private Toilets
               </p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-sm">
                 Climbing Mount Kilimanjaro is an intimate and bonding experience
                 with your team, but privacy is paramount,
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>

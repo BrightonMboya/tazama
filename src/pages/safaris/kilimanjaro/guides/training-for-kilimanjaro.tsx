@@ -14,13 +14,13 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Training for Kilimanjaro: Your Ultimate Preparation Guide
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Start your Kilimanjaro training journey well in advance, several
               weeks or ideally several months before to ensure you're
               well-prepared for the summit of Africa's highest peak with our
               comprehensive guide.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing Mount Kilimanjaro is an adventure of a lifetime. As the
               roof of Africa, standing tall at 19,341 feet, Kilimanjaro
               challenges climbers not just physically but mentally. Whether
@@ -32,7 +32,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Physical Preparation: Building Your Foundation
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Journeying on the climb to Kilimanjaro's peak demands more than
               just a basic level of fitness. It requires specific training to
               build endurance, strength, and adaptability to varied terrains and
@@ -51,7 +51,7 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Endurance Training: </span>
               Start with daily walks, gradually increasing your distance.
               Incorporate hiking on varied terrains to mimic Kilimanjaro's
@@ -59,7 +59,7 @@ export default function Page() {
               increasing the distance and carrying a weighted backpack to
               simulate climbing conditions.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Strength Training: </span>
               Focus on building leg strength, core stability, and upper body
               endurance. Exercises like squats, lunges, planks, and push-ups
@@ -67,7 +67,7 @@ export default function Page() {
               Don't overlook the importance of back and shoulder strength for
               carrying your pack.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Altitude Adjustment: </span>
               While it's impossible to replicate high-altitude environments at
               home, you can improve your body's response to reduced oxygen
@@ -87,25 +87,25 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Mental Preparation: Fortifying Your Mind
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The journey to Kilimanjaro's summit is as much a mental challenge
               as it is a physical one. Preparing your mind for the days ahead is
               crucial for overcoming the inevitable hurdles of high-altitude
               climbing.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Visualization: </span>
               Regularly visualize yourself successfully navigating the climb and
               reaching the summit. This mental rehearsal can build confidence
               and reduce anxiety.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Stress Management: </span>
               Learn stress-reduction techniques such as deep breathing,
               meditation, or yoga. These practices can help you maintain
               composure during challenging moments of the climb.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Goal Setting: </span>
               Break down your climb into manageable goals. Celebrate each
               milestone, whether it's completing a challenging training hike or
@@ -114,24 +114,24 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Nutritional Planning: Fueling Your Climb
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Proper nutrition plays a critical role in your training and the
               climb itself. Focus on a balanced diet rich in carbohydrates,
               proteins, and healthy fats to support your training regimen.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Carbohydrate Loading: </span>
               Before long training sessions or hikes, increase your intake of
               complex carbohydrates. Foods like whole grains, fruits, and
               vegetables provide the energy your muscles need for endurance
               activities.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Protein Intake: </span>
               Include lean protein in every meal to aid muscle repair and
               growth. Chicken, fish, beans, and legumes are excellent sources.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Hydration: </span>
               Increase your water intake during training. Proper hydration is
               vital for endurance and helps prevent altitude sickness.
@@ -139,29 +139,29 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Training Program: Structuring Your Success
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Weeks 1-2: </span>
               Focus on building a base level of fitness with daily walks and
               light strength training.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Weeks 3-6: </span>
               Increase the intensity and duration of your hikes. Begin
               incorporating weighted backpack walks and more challenging
               strength exercises.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Weeks 7-8: </span>
               Simulate the climb with back-to-back long hikes on weekends,
               preferably on hilly terrain. Continue strength training and focus
               on your mental preparation strategies.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Week Before Climb: </span>
               Taper your training to allow your body to rest and recover. Focus
               on nutrition, hydration, and mental preparation.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Training for Kilimanjaro is a journey that prepares you not just
               for the climb but for a transformative life experience. Tazama is
               with you every step of the way, providing expert guidance,
@@ -209,12 +209,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Visa</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Visa</p>
+            <p className="font-raleway text-sm">
               This is a non-negotiable prerequisite for anyone planning to
               conquer Kilimanjaro .....
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -228,12 +228,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Food</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Food</p>
+            <p className="font-raleway text-sm">
               Tazama ensures your journey to the summit of Mount Kilimanjaro is
               not only successful but also delightful ...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -247,12 +247,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Private Toilets</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Private Toilets</p>
+            <p className="font-raleway text-sm">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

@@ -14,7 +14,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Kilimanjaro Visa: Your Gateway to Adventure
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Embarking on a journey to Mount Kilimanjaro, the crown jewel of
               Tanzania and Africa's highest peak, is a dream for many
               adventurers and trekkers worldwide. Before setting foot on this
@@ -27,7 +27,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Do You Need a Visa to Climb Kilimanjaro?
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Absolutely, yes. As Mount Kilimanjaro graciously stands in the
               northern part of Tanzania, most foreign nationals are required to
               obtain a visa for entry into Tanzania. This is a non-negotiable
@@ -48,7 +48,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Securing Your Visa: Options and Processes
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               For those embarking from afar, the Kilimanjaro Visa On Arrival
               (VOA) presents a convenient option, allowing trekkers to obtain
               their visa directly at Tanzania’s Kilimanjaro International
@@ -62,7 +62,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Online Visa Application: What You Need to Know
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The Tanzanian government has streamlined the visa application
               process, allowing travelers to apply online. This process involves
               filling out a form, making a payment, and submitting your
@@ -79,7 +79,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Kilimanjaro Visa Requirements at a Glance:
             </h3>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Valid Passport:</span> Must be
                 valid for six months beyond your travel date, with at least one
@@ -111,7 +111,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Tanzania Visa Costs and Processing Times:
             </h3>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 U.S. Citizens: Multiple-entry e-Visa, standard to super rush
                 processing, USD 100.00.
@@ -138,7 +138,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Where to Obtain Your Visa:
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Online, at any Tanzanian Embassy, High Commission, or specific
               entry points to Tanzania, including international airports and
               border crossings.
@@ -146,7 +146,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Elevating Your Kilimanjaro Experience
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               At Tazama, we understand that the journey to Kilimanjaro's summit
               begins long before you set foot on the mountain. Our commitment to
               your seamless adventure extends beyond the trek itself, ensuring
@@ -159,7 +159,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Ready to Start Your Kilimanjaro Adventure?
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Let Tazama be your guide to not only conquering Africa's highest
               peak but also navigating the essential steps before your journey
               begins. With our expert knowledge, personalized service, and
@@ -227,12 +227,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Vaccinations</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Vaccinations</p>
+            <p className="font-raleway text-sm">
               Be sure you understand how an anti-malarial may affect your sleep,
               appetite and exposure to sun before you begin,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -246,12 +246,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Training for Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Training for Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

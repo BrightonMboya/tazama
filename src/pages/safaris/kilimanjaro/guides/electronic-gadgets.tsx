@@ -14,7 +14,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Essential Electronic Gadgets for Your Kilimanjaro Adventure
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               In the majestic realm of Mount Kilimanjaro, where every step
               brings you closer to the roof of Africa, ensuring you're
               well-equipped is paramount. Tazama understands the essence of
@@ -22,12 +22,12 @@ export default function Page() {
               that can transform your climb into a more comfortable and
               memorable experience.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Your journey to the summit is a blend of endurance, marvel, and a
               touch of modern convenience, provided by the right gadgets. Here
               are the essentials:
             </p>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Smartphone:</span> Your gateway
                 to the world below as you ascend. A smartphone not only keeps
@@ -63,12 +63,12 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               8 Gadgets to Enhance Your Climb
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               This one is for our gadget lovers who don’t want to leave tech
               behind. Beyond the essentials, these gadgets can enhance your
               climbing experience:
             </p>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Headlamp: </span>
                 Essential for those pre-dawn summit attempts, ensuring you have
@@ -172,13 +172,13 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Solo Climb</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Solo Climb</p>
+            <p className="font-raleway text-sm">
               Does Solo Climbing Mean You're Alone?...
               <br />
               <br />
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -192,12 +192,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Training for Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Training for Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

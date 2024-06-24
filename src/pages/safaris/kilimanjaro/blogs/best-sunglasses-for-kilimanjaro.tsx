@@ -190,12 +190,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Family</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Family</p>
+            <p className="font-raleway text-sm">
               At Tazama, we believe that the essence of adventure lies in the
               connections we make and the experiences we share.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -209,12 +209,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Tipping Ceremony</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Tipping Ceremony</p>
+            <p className="font-raleway text-sm">
               Learn about the tipping culture in climbing the tallest mountain
               in Africa.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -228,12 +228,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Why Climb Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Why Climb Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Get to know more about the benefits you will get in climbing Mount
               Kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

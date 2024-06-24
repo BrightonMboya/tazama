@@ -11,17 +11,17 @@ import Accordion from "../Accordion";
 
 export function EightDayTrips() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Seven Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -38,7 +38,7 @@ export function EightDayTrips() {
           })}
         </section>
       </div>
-      <div className="font-now mt-10">
+      <div className="font-raleway mt-10">
         <h3 className="text-lg font-medium text-primary">Group Rates</h3>
         <p className="pt-2 text-base">Lodge Safaris</p>
         <ul className="list-inside list-disc pl-5 pt-3">
@@ -112,17 +112,17 @@ export function EightDayTrips() {
 
 export const NineDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Nine Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -150,17 +150,17 @@ export const NineDayTrip = () => {
 
 export function TenDayTrips() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Ten Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -177,7 +177,7 @@ export function TenDayTrips() {
           })}
         </section>
       </div>
-      <div className="font-now mt-10">
+      <div className="font-raleway mt-10">
         <h3 className="text-lg font-medium text-primary">Cost inclusive of;</h3>
         <ul className="list-inside list-disc pl-5 pt-3">
           <li>Transfer from Kilimanjaro/Arusha Airport</li>
@@ -219,17 +219,17 @@ export function TenDayTrips() {
 
 export const TwelveDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Twelve Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>
@@ -252,17 +252,17 @@ export const TwelveDayTrip = () => {
 
 export const FourteenDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-      <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <h3 className="text-center text-4xl uppercase tracking-wider text-primary">
         Fourteen Days trip Itinerary
       </h3>
 
-      <div className="mt-10 flex flex-col items-start gap-4 text-[#757371] md:flex-row md:gap-8">
+      <div className="mt-10 flex flex-col items-start gap-4 text-darker/85 md:flex-row md:gap-8">
         <aside className="w-full md:w-1/3">
-          <ul className="font-now flex flex-col items-start gap-2 md:gap-5">
+          <ul className="font-raleway flex flex-col items-start gap-2 md:gap-5">
             <li>
               <Link href="/contact">
-                <Button className="font-now text-white">
+                <Button className="font-raleway text-white">
                   Request Custom Itinerary
                 </Button>
               </Link>

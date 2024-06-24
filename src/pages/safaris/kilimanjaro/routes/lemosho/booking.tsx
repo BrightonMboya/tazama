@@ -16,10 +16,10 @@ export default function Page() {
         <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
           <div className="mx-auto lg:mx-0 lg:text-justify">
             <div className="mb-10 py-8">
-              <h3 className="text-3xl text-[#A87133] lg:text-4xl">
+              <h3 className="text-3xl text-primary lg:text-4xl">
                 MOUNT KILIMANJARO SAFE & LUXURY CLIMB - 7 days Lemosho route
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 7-day luxury climb up Kilimanjaro's Lemosho Route with Tazama.
                 Explore stunning landscapes, personalized for you, with safety
                 ensured by our expert local team.

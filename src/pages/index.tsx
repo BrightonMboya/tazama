@@ -1,13 +1,19 @@
+/* eslint-disable react/no-unescaped-entities */
 import { HomeContactUs } from "~/components/HomeContactUs";
-import { motion } from "framer-motion";
 import SafariCarousel from "~/components/safari-carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";
 
 import ContentSection, {
   contentSectionData,
 } from "~/components/ContentSection";
+import Image from "next/legacy/image";
 import { array } from "fast-web-kit";
 import HeadSEO from "~/components/ui/Head";
+import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/Carousel";
+import { allBlogs } from "~/blogs/all-blogs";
+import { Blog } from "./blogs";
+import Link from "next/link";
+import Marquee from "~/components/Marquee";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -25,12 +31,14 @@ export const homePageContentData: contentSectionData[] = [
     rank: 2,
     reverse: false,
     image: "maasai.webp",
-    title: "LOCALLY OWNED & OPERATED",
+    title: "Locally Owned & Operated",
     description:
       "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",
   },
 ];
+
 export default function Page() {
+  const homeBlogPosts = allBlogs.slice(-6)
   return (
     <>
       <HeadSEO
@@ -43,11 +51,11 @@ export default function Page() {
         subTitle="connect, celebrate & create memories"
       />
 
-      <div className="sm:mb-52">
+      <div className="my-20 flex flex-col gap-y-8 lg:gap-y-14">
         {array
           .sort(homePageContentData, "asc", "rank")
           .map((content: contentSectionData, index: number) => (
-            <section className="-mb-10 sm:-mb-72" key={index}>
+            <section className="" key={index}>
               <ContentSection
                 rank={content.rank}
                 title={content.title}
@@ -63,48 +71,111 @@ export default function Page() {
       <br />
       <br />
       <br />
-      <div className="mx-auto max-w-[82rem] px-4 xl:px-8 ">
-        <div className="mx-auto mb-8 w-full px-4 py-4 text-[#757371] sm:w-2/3">
-          <motion.h3
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.4,
-              },
-            }}
+      <div className="mx-auto max-w-6xl px-4 xl:px-8 ">
+        <div className="mx-auto mb-8 w-full px-4 py-4 sm:w-2/3">
+          <h3
             className="mb-4 text-center text-4xl lg:text-5xl"
           >
             Authentic & timeless adventures
-          </motion.h3>
-          <motion.p
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.4,
-                delay: 0.2,
-              },
-            }}
+          </h3>
+          <p
             className="font-raleway text-center text-lg"
           >
             Start exploring some of sample itineraries and see where an
             adventure with Tazama Africa can take you.
-          </motion.p>
+          </p>
         </div>
-        <br />
         <section className="flex flex-col items-center justify-center">
           <SafariCarousel />
         </section>
       </div>
+      <br />
+      <br />
+      <br />
+      <div className="px-4 xl:px-8 my-20 bg-[#dad2c6] py-10 lg:py-20 bg-fixed">
+        <div className="mx-auto max-w-6xl px-4 xl:px-8">
+          <div className="mx-auto mb-8 w-full px-4 py-4 sm:w-2/3">
+            <h3
+              className="mb-4 text-center text-4xl lg:text-5xl text-dark"
+            >
+              Ascending Africa's Summits
+            </h3>
+            <p
+              className="font-raleway text-center text-lg text-text-darker"
+            >
+              Explore the summits of Africa with Tazama Africa Safaris as you climb the mountains Kilimanajaro and Meru to fulfill your desire to know what it's like to be at the top
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row gap-6 max-w-5xl mx-auto">
+            <Link href={'/safaris/kilimanjaro'} className="w-full border border-white overflow-hidden rounded-md h-72 relative group">
+              <Image src={"/assets/images/gallery/mount-kilimanjaro.webp"} layout="fill" className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-105" alt="Travel to Mount Kilimanjaro" />
+              <p className="w-full absolute bottom-0 left-0 bg-gradient-to-t from-orange-950/35 to-transparent text-white p-4 text-xl">Mount Kilimanjaro</p>
+            </Link>
+
+            <Link href={'/safaris/mount-meru'} className="w-full border border-white overflow-hidden rounded-md h-72 relative group">
+              <Image src={"/assets/images/gallery/mount-meru.webp"} layout="fill" className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-105" alt="Travel to Mount Kilimanjaro" />
+              <p className="w-full absolute bottom-0 left-0 bg-gradient-to-t from-orange-950/35 to-transparent text-white p-4 text-xl">Mount Meru </p>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div className="mb-16">
+        <div className="mx-auto max-w-5xl px-4 xl:px-8 mb-2">
+          <div className="mx-auto mb-8 w-full px-4 py-4 sm:w-2/3">
+            <h3
+              className="mb-4 text-center text-4xl lg:text-5xl"
+            >
+              Our Partners
+            </h3>
+            <p
+              className="font-raleway text-center text-lg"
+            >
+              We at Tazama Africa Safaris pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer.
+            </p>
+          </div>
+        </div>
+        <Marquee />
+      </div>
+
+      <br />
+      <br />
+      <div className="mt-10 max-w-6xl mx-auto px-4 xl:px-8 mb-20 text-[#3e3227]">
+        <div className="flex justify-between flex-col mx-auto items-center mb-4">
+          <div className="text-center">
+            <h3
+              className="text-4xl lg:text-5xl"
+            >
+              Latest From Tazama Africa
+            </h3>
+            <br />
+            <p className="max-w-2xl">Catch up to the latest posts we got for you, from packing lists, to tips on trekking.</p>
+          </div>
+          <br />
+          <Link href="/blogs" className="text-primary underline underline-offset-2 font-raleway">See more posts from Tazama</Link>
+        </div>
+        <Carousel
+          opts={{
+            align: "start"
+          }}
+          className="w-full max-w-5xl mx-auto lg:max-w-none"
+        >
+          <CarouselPrevious />
+          <CarouselContent>
+            {
+              homeBlogPosts.map((post, index) => (
+                <CarouselItem key={index} className="sm:basis-1/3 lg:basis-1/3 mb-2 lg:mr-6 xl:mr-0">
+                  <Blog name={post.name} link={post.url} imgUrl={post.imgUrl} shortDescription={post.shortDescription} category={post.category} />
+                </CarouselItem>
+              ))
+            }
+          </CarouselContent>
+          <CarouselNext />
+        </Carousel>
+      </div>
+      <br />
       <HomeContactUs />
     </>
   );

@@ -14,7 +14,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Emphasizing Privacy and Hygiene
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Tazama prides itself on enhancing the Kilimanjaro climbing
               experience with the provision of Private Toilet Tents, a service
               that guarantees privacy and convenience for all climbers.
@@ -22,7 +22,7 @@ export default function Page() {
               climb, Tazama offers this exclusive amenity to ensure a more
               pleasant and dignified journey to the summit.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount, especially when it comes
               to personal hygiene. Tazama addresses this need by providing
@@ -43,7 +43,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Understanding Toilet Options on Kilimanjaro
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Kilimanjaro offers various toilet facilities, ranging from basic
               wooden structures to more sophisticated portable options. The
               wooden toilets, while common, lack privacy and cleanliness. To
@@ -54,7 +54,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               No Showers but Ample Cleanliness Solutions
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               While showers are not available on Kilimanjaro, Tazama ensures
               that climbers receive a daily supply of hot water for washing,
               maintaining a level of personal hygiene throughout the trek.
@@ -62,7 +62,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               The Advantage of Private Over Public Toilets
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Public toilets on Kilimanjaro can be unhygienic and uncomfortable,
               especially during the night or in cold weather. Tazama's private
               toilet tents are a significant upgrade, offering a clean, chemical
@@ -82,7 +82,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               The Tazama Difference
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Choosing Tazama for your Kilimanjaro climb means opting for an
               experience where your comfort and hygiene are a top priority. Our
               portable, pump-flush toilets are eco-friendly and maintained to
@@ -93,7 +93,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Elevating Your Climbing Experience
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The provision of private toilet tents is just one of the many ways
               Tazama goes above and beyond to ensure a comfortable, successful,
               and enjoyable Kilimanjaro climb. By focusing on the details that
@@ -140,12 +140,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Visa</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Visa</p>
+            <p className="font-raleway text-sm">
               This is a non-negotiable prerequisite for anyone planning to
               conquer Kilimanjaro .....
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -159,12 +159,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Food</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Food</p>
+            <p className="font-raleway text-sm">
               Tazama ensures your journey to the summit of Mount Kilimanjaro is
               not only successful but also delightful ...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -178,12 +178,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Private Toilets</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Private Toilets</p>
+            <p className="font-raleway text-sm">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

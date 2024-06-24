@@ -11,10 +11,10 @@ export default function Page() {
       <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <h3 className="text-4xl text-[#A87133]">
+            <h3 className="text-4xl text-primary">
               Journeying the Lemosho Route
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The Lemosho Route, starting from the west at Londorossi Gate,
               unfolds a breathtaking ascent to Kilimanjaro, standing proud at
               2,100 meters above sea level. Esteemed as a tranquil path less
@@ -27,7 +27,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Why Lemosho Stands Out
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Lemosho is heralded for its strategic approach to acclimatization,
               with its extended itinerary providing ample time to adapt to the
               mountain's majestic heights. This careful pacing, combined with
@@ -41,7 +41,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Navigating the Lemosho Route
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               While Lemosho presents a challenge, it's a rewarding endeavor.
               With options for a 7 or 8-day trek, climbers have the advantage of
               extra acclimatization time. This thoughtful itinerary ensures that
@@ -64,7 +64,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               A Day-by-Day Adventure
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Day 1: Embark from Londorossi Gate to Mti Mkubwa Camp, covering 7
               km through forest.
               <br />
@@ -93,14 +93,14 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               What You'll Experience on Lemosho route
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+            <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
               On the Lemosho Route, climbers are treated to some of
               Kilimanjaro's most stunning and varied landscapes. This route,
               known for its scenic beauty, offers an unparalleled opportunity to
               witness the diverse ecosystems of Africa's highest peak. Here’s
               what you can expect to see along the way:
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Lush Rainforests: </span>
               The journey begins in the rich, verdant rainforests of
               Kilimanjaro’s lower slopes, home to an array of wildlife including
@@ -108,7 +108,7 @@ export default function Page() {
               The dense canopy overhead is a vibrant green, with sunlight
               filtering through to the forest floor.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Heath and Moorland: </span>
               As you ascend, the terrain shifts to heath and moorland, offering
               sweeping views of the mountain and surrounding plains. This zone
@@ -116,34 +116,34 @@ export default function Page() {
               senecios and lobelias, which seem otherworldly in their
               appearance.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Shira Plateau: </span>One of
               Kilimanjaro's three volcanic cones, the Shira Plateau, offers a
               breathtakingly flat expanse that contrasts sharply with the steep
               slopes that come before and after it. It's an excellent place for
               acclimatization and provides stunning sunset and sunrise views.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Alpine Desert: </span>
               The landscape becomes more rugged and sparse as you enter the
               alpine desert zone. Here, the beauty lies in the starkness and
               wide-open skies, with views that stretch for miles during clear
               weather.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Lava Tower: </span>
               This prominent landmark is a volcanic plug left from Kilimanjaro’s
               volcanic activity. Climbers passing by or stopping for
               acclimatization can marvel at its imposing structure against the
               backdrop of the surrounding desert.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Barranco Wall: </span>A challenging
               but rewarding part of the climb, the Barranco Wall presents a
               steep and rocky ascent. Once at the top, climbers are rewarded
               with one of the route’s most impressive views.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">
                 Glacial Valleys and Ice Fields:{" "}
               </span>
@@ -151,14 +151,14 @@ export default function Page() {
               valleys and vast ice fields. These ancient glaciers, while
               receding, offer a poignant reminder of the mountain’s icy past.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Uhuru Peak: </span>
               The ultimate destination, Uhuru Peak, provides climbers with a
               sense of accomplishment and awe. Standing atop Africa, you are
               surrounded by glaciers and have 360-degree views of the African
               continent below.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Wildlife: </span>
               Throughout the trek, climbers might spot various wildlife,
               including colobus monkeys in the forest zone, high-altitude birds,
@@ -168,7 +168,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Book Your Lemosho Journey with Tazama
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Choosing the Lemosho Route with Tazama means not just aiming for
               the summit but embracing an unforgettable journey enriched with
               meticulous planning, sustainable travel practices, and a
@@ -233,12 +233,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Northern Circuit</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Northern Circuit</p>
+            <p className="font-raleway text-sm">
               The Northern Circuit boasts the highest success rate among all
               Kilimanjaro routes,...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -252,12 +252,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Umbwe Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Umbwe Route</p>
+            <p className="font-raleway text-sm">
               The Umbwe Route, known for its steep, direct climb to the summit
               of Mount Kilimanjaro...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

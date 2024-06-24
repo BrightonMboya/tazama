@@ -12,7 +12,7 @@ type input = {
 
 export const Input: React.FunctionComponent<input> = React.memo((props: input) => (
     <div className="w-full flex flex-col gap-2">
-        <label htmlFor={props.name} className="font-now text-[#484848]">{props.label}</label>
+        <label htmlFor={props.name} className="font-raleway text-[#484848]">{props.label}</label>
         <input
             id={props.name}
             type={props.type}
@@ -21,7 +21,7 @@ export const Input: React.FunctionComponent<input> = React.memo((props: input) =
             // required={props.required}
             onChange={props.onChange}
             placeholder={props.placeholder}
-            className="px-4 py-3 rounded-lg border-none shadow-sm font-now focus:ring-[#A87133] placeholder:text-gray-300"
+            className="px-4 py-3 rounded-lg border-none shadow-sm font-raleway focus:ring-[#A87133] placeholder:text-gray-300"
         />
     </div>
 ))

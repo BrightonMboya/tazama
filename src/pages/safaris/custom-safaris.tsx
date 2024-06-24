@@ -15,23 +15,23 @@ export default function Page() {
       <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:text-justify">
           <div className="mb-10 py-8">
-            <h3 className="text-3xl text-[#A87133] lg:text-4xl">
+            <h3 className="text-3xl text-primary lg:text-4xl">
               Personalise your safari based on your preferences: from $2,500 per
               person
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Our safari is not just about wildlife – it's about you. Tailor
               your journey to your desires, whether it's a romantic honeymoon
               escape, an adrenaline-fueled adventure, or a tranquil beach
               retreat in Zanzibar. With us, your dreams come first.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Our exclusive safari experience offers the chance to witness the
               iconic Big 5 wildlife and explore Tanzania's breathtaking national
               parks. From the majestic Serengeti to the awe-inspiring Ngorongoro
               Crater, every moment promises awe and wonder.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Starting from just $2,500 per person, our personalized safaris
               cater to every budget and aspiration. From migration safaris to
               cultural excursions, the possibilities are endless. Book now and

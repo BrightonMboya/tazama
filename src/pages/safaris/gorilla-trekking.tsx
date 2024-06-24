@@ -10,18 +10,18 @@ const Page = () => {
     <>
     <HeadSEO title="Gorilla Trekking"/>
       <PrimaryHeader image={`chimps.webp`} title="Gorilla Trekking" />
-      <div className="mx-auto  max-w-7xl px-4 md:px-8">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8">
         <div className="mb-10 py-8">
-          <h3 className="text-4xl text-[#A87133]">
+          <h3 className="text-4xl text-primary">
             After sunset – the magic of twilight in the bush
           </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             There’s something about the end of the day, as the sun starts to
             dip, when a magical atmosphere descends over the bush. The light
             softens to a golden glow, scents and sounds seem to amplify and the
             landscape comes to life.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             In addition to the gentle mood of this time of day, it is often also
             the best time to observe wildlife in all its forms. As the heat
             dissipates, many birds and animals (large and small) who have
@@ -50,20 +50,20 @@ const Page = () => {
         </div>
 
         <div className="py-8">
-          <h3 className="text-4xl text-[#A87133]">Sundowners in nature</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <h3 className="text-4xl text-primary">Sundowners in nature</h3>
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             There’s something about the end of the day, as the sun starts to
             dip, when a magical atmosphere descends over the bush. The light
             softens to a golden glow, scents and sounds seem to amplify and the
             landscape comes to life.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             In addition to the gentle mood of this time of day, it is often also
             the best time to observe wildlife in all its forms. As the heat
             dissipates, many birds and animals (large and small) who have
             sheltered out of sight, gradually emerge – to drink, graze or hunt.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             There’s something about the end of the day, as the sun starts to
             dip, when a magical atmosphere descends over the bush. The light
             softens to a golden glow, scents and sounds seem to amplify and the
@@ -80,14 +80,14 @@ const Page = () => {
               />
             </div>
           </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             There’s something about the end of the day, as the sun starts to
             dip, when a magical atmosphere descends over the bush. The light
             softens to a golden glow, scents and sounds seem to amplify and the
             landscape comes to life.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             There’s something about the end of the day, as the sun starts to
             dip, when a magical atmosphere descends over the bush. The light
             softens to a golden glow, scents and sounds seem to amplify and the
@@ -96,16 +96,16 @@ const Page = () => {
         </div>
 
         <div className="mb-10 py-8">
-          <h3 className="text-4xl text-[#A87133]">
+          <h3 className="text-4xl text-primary">
             After sunset – the magic of twilight in the bush
           </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             There’s something about the end of the day, as the sun starts to
             dip, when a magical atmosphere descends over the bush. The light
             softens to a golden glow, scents and sounds seem to amplify and the
             landscape comes to life.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             In addition to the gentle mood of this time of day, it is often also
             the best time to observe wildlife in all its forms. As the heat
             dissipates, many birds and animals (large and small) who have
@@ -131,25 +131,25 @@ const Page = () => {
               />
             </div>
           </div>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             There’s something about the end of the day, as the sun starts to
             dip, when a magical atmosphere descends over the bush. The light
             softens to a golden glow, scents and sounds seem to amplify and the
             landscape comes to life.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             In addition to the gentle mood of this time of day, it is often also
             the best time to observe wildlife in all its forms. As the heat
             dissipates, many birds and animals (large and small) who have
             sheltered out of sight, gradually emerge – to drink, graze or hunt.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             In addition to the gentle mood of this time of day, it is often also
             the best time to observe wildlife in all its forms. As the heat
             dissipates, many birds and animals (large and small) who have
             sheltered out of sight, gradually emerge – to drink, graze or hunt.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 2xl:text-lg text-darker/85">
             In addition to the gentle mood of this time of day, it is often also
             the best time to observe wildlife in all its forms. As the heat
             dissipates, many birds and animals (large and small) who have

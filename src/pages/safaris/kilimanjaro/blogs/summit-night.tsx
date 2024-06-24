@@ -13,7 +13,7 @@ export default function Page() {
       <section className="mx-auto flex items-start justify-center lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
               adventure awaits during the enigmatic summit night. This is the
               moment that tests your endurance, spirit, and determination under
@@ -26,7 +26,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               The Midnight March: A Prelude to Triumph
             </h3>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Altitude and Sleep: </span>
                 The daunting elevations make rest elusive. By embarking at
@@ -52,7 +52,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               What to Expect When the World Sleeps
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Summit night is unlike any other part of your Kilimanjaro journey.
               The air is thinner, the cold more biting, and the path ahead
               illuminated only by moonlight and the beams of your headlamps.
@@ -71,7 +71,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               The Summit: A New Dawn
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               As you approach the summit, the night gives way to the first light
               of dawn, painting the glaciers and the vast plains below in hues
               of gold and pink. The sight of Uhuru Peak, bathed in the morning
@@ -93,7 +93,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Descending: A Journey Back to Earth
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               After the euphoria of the summit, the descent begins—a rapid
               return to the lower camps where oxygen is richer and the warmth of
               the sun thaws the chill of the night. This journey back down is a
@@ -103,7 +103,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Your Kilimanjaro Night with Tazama: A Symphony of Stars and Dreams
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Choosing Tazama for your Kilimanjaro climb means embracing the
               summit night with confidence, supported by a team dedicated to
               your success and comfort. Our approach to luxury in the wilderness
@@ -169,12 +169,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Private vs Group Trek</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Private vs Group Trek</p>
+            <p className="font-raleway text-sm">
               Chose which one is right for you, either group trek or a private
               one
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -188,12 +188,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Recovery Journey</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Recovery Journey</p>
+            <p className="font-raleway text-sm">
               Recovery Journey After climbing Kilimanjaro: How many days it
               takes to recover from climbing kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -207,12 +207,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Why Climb Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Why Climb Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Get to know more about the benefits you will get in climbing Mount
               Kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

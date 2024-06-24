@@ -11,7 +11,7 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Ascending the mighty Kilimanjaro is an adventure that leaves an
               indelible mark on your soul, not just for the breathtaking views
               or the exhilarating challenge but for the unwavering support and
@@ -25,7 +25,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Understanding the Tradition
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               In the realm of mountain climbing, the tipping ceremony is a
               revered tradition, much like the unwritten yet universally
               understood language of appreciation that spans continents from the
@@ -39,7 +39,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               The Guiding Principles of Tipping
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               While the act of tipping is infused with personal discretion and
               subjective experience, at Tazama, we provide guidance to ensure
               that your token of appreciation aligns with the customary
@@ -48,7 +48,7 @@ export default function Page() {
               acknowledgment of effort and excellence. Here are some factors to
               consider as you prepare for this significant moment:
             </p>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Group Dynamics: </span>
                 The size of your expedition group can influence the tipping
@@ -70,7 +70,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               A Personal Expression of Gratitude
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Tipping on Kilimanjaro goes beyond financial transactions; it's a
               celebration of the human spirit, of endurance, and of the bonds
               formed on the slopes of Africa's highest peak. While we suggest a
@@ -91,7 +91,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               The Tipping Ceremony: A Moment of Unity
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The tipping ceremony, typically held after your descent, is a
               poignant moment of unity and mutual respect. It's an occasion
               marked by speeches, songs, and sometimes, dance, where climbers
@@ -103,7 +103,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Your Kilimanjaro Adventure with Tazama
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               As you prepare to take on the challenge of Kilimanjaro with
               Tazama, know that you're not just embarking on a climb but
               becoming part of a tradition that honors the dignity, hard work,
@@ -168,12 +168,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Summit Night</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Summit Night</p>
+            <p className="font-raleway text-sm">
               As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
               adventure awaits during the enigmatic summit night.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -187,12 +187,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Recovery Journey</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Recovery Journey</p>
+            <p className="font-raleway text-sm">
               Recovery Journey After climbing Kilimanjaro: How many days it
               takes to recover from climbing kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -206,12 +206,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Why Climb Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Why Climb Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Get to know more about the benefits you will get in climbing Mount
               Kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

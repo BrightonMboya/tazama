@@ -44,7 +44,7 @@ export default function SafariCarousel() {
       opts={{
         align: "start",
       }}
-      className="w-full max-w-sm lg:max-w-none"
+      className="w-full max-w-5xl lg:max-w-none"
     >
       <CarouselPrevious />
       <CarouselContent>

@@ -5,7 +5,7 @@ export default function HeadSEO({
   keywords,
 }: {
   title: string;
-  keywords: string;
+  keywords?: string;
 }) {
   return (
     <Head>

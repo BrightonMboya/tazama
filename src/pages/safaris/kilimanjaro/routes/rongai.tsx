@@ -12,7 +12,7 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The Rongai Route offers a unique approach to conquering Mount
               Kilimanjaro, standing out with its tranquil paths and the
               distinction of being the only trail starting from the mountain's
@@ -24,7 +24,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Embrace the Quiet Adventure
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Rongai's gentle slopes make it a fantastic choice for trekkers who
               prefer a quieter journey. With fewer travelers, the path allows
               for a serene and intimate experience with nature, making every
@@ -33,7 +33,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Evaluating the Challenge
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               While Rongai presents a moderate challenge, it's highly favored by
               hikers who are comfortable with somewhat steeper paths. Its unique
               northern approach not only offers a chance to witness a higher
@@ -54,12 +54,12 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Journey Length
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Spanning approximately 76 kilometers from the Nalemuru Gate to the
               exit, the Rongai Route unfolds over 7 days, allowing ample time
               for acclimatization and exploration. The itinerary includes:
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Day 1: A scenic 8km walk through the rainforest from Nalemuru
               Gate.
               <br />
@@ -90,7 +90,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Your Path to the Summit with Tazama
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+            <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
               Choosing Tazama for your Rongai Route adventure ensures a journey
               marked by professional guidance, top-notch safety measures, and an
               unwavering commitment to environmental conservation. Our team's
@@ -100,13 +100,13 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               WHAT YOU WILL SEE ON RONGAI ROUTE
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+            <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
               On the Rongai Route, trekkers are treated to a distinct and serene
               journey up Mount Kilimanjaro, offering a blend of captivating
               landscapes and wildlife encounters that make this path truly
               unique. Here's what you'll see along the way:
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Rich Rainforest: </span>
               Starting from the Nalemuru Gate, the initial stretch of the Rongai
               Route takes you through a lush rainforest, home to a variety of
@@ -114,42 +114,42 @@ export default function Page() {
               elephants and buffaloes, making for an enchanting beginning to
               your trek.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Alpine Moorland: </span>
               As you ascend, the dense forest gives way to the open moorland,
               characterized by heather and grasses. This zone offers panoramic
               views of the Kenyan plains stretching out below, providing a
               stunning backdrop as you hike.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Mawenzi Tarn Camp: </span>This camp
               is set against the dramatic backdrop of Mawenzi, one of
               Kilimanjaro's volcanic cones. The rugged landscapes around Mawenzi
               Tarn are spectacular, with jagged peaks and a serene alpine lake
               that adds to the route's allure.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">The Saddle: </span>A wide, flat
               plateau connecting Mawenzi and Kibo, the saddle offers trekkers
               expansive views of the barren alpine desert landscape. This is a
               great place to spot unique alpine flora and experience the stark
               beauty of Kilimanjaro's high-altitude zones.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Kibo's Lunar Landscape: </span>
               As you approach Kibo, Kilimanjaro's main peak, the terrain takes
               on a lunar-like quality with its rocky and barren landscape. The
               stark beauty of this area, especially under the night sky as you
               make your summit attempt, is unforgettable.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Summit Views: </span> Reaching the
               summit of Kilimanjaro via the Rongai Route, you'll be rewarded
               with breathtaking views of the crater, the glacier, and the world
               below. Watching the sunrise from Uhuru Peak is an emotional and
               awe-inspiring experience that epitomizes the climax of your trek.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Varied Wildlife: </span>
               The Rongai Route's proximity to the Amboseli National Park in
               Kenya means trekkers have a higher chance of encountering
@@ -159,7 +159,7 @@ export default function Page() {
             <p className="mt-5 text-lg font-bold text-primary">
               Begin Your Kilimanjaro Journey with Tazama
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Embrace the road less traveled and experience Kilimanjaro like
               never before on the Rongai Route with Tazama. Prepare for a
               journey filled with breathtaking landscapes, wildlife encounters,
@@ -222,12 +222,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Machame Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Machame Route</p>
+            <p className="font-raleway text-sm">
               The Machame Route, affectionately known as the "Whiskey Route," is
               not just a path to the summit of Kilimanjaro—it's...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -241,12 +241,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Marangu Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Marangu Route</p>
+            <p className="font-raleway text-sm">
               While Marangu might be the most accessible route, it requires
               careful preparation...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

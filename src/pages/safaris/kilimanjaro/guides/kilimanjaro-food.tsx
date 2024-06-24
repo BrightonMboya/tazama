@@ -14,7 +14,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Kilimanjaro Cuisine
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Tazama ensures your journey to the summit of Mount Kilimanjaro is
               not only successful but also delightful, especially when it comes
               to nourishment. Recognizing the essential role that proper
@@ -22,7 +22,7 @@ export default function Page() {
               to provide you with meals that are not only energy-boosting but
               also appealing to the palate.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Embarking on a trek up Kilimanjaro means engaging in physically
               demanding activities for hours each day. The energy expenditure is
               immense, even more so due to the altitude. That's where Tazama's
@@ -43,7 +43,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Culinary Expertise at High Altitude
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Our culinary team, comprising seasoned chefs alongside our
               dedicated guides and porters, focuses on your well-being and
               satisfaction. They prepare meals that ensure you're well-fed,
@@ -55,13 +55,13 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               What's on the Menu?
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               From breakfast to dinner, every meal is thoughtfully crafted to
               provide a balanced diet rich in carbohydrates, proteins, and fats,
               essential for maintaining energy levels and supporting muscle
               recovery. Here's a glimpse into what you can expect:
             </p>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-lg text-darker/85">
               <li>
                 <span className="text-primary">Breakfast: </span> Start your day
                 with a hearty breakfast including porridge, eggs prepared to
@@ -86,7 +86,7 @@ export default function Page() {
                 altitude acclimatization
               </li>
             </ul>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Staying hydrated is crucial to mitigate the risks associated with
               high altitude. We emphasize regular water intake throughout the
               day, complemented by a variety of hot drinks to ensure you're
@@ -105,7 +105,7 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               Customized to Your Dietary Needs
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Whether you have specific dietary requirements or preferences,
               Tazama respects and accommodates them all. Inform us in advance,
               and our chefs will tailor the menu, ensuring you have the best
@@ -114,14 +114,14 @@ export default function Page() {
             <p className="mt-5 text-2xl font-bold text-primary">
               The Tazama Difference
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Choosing Tazama for your Kilimanjaro trek means opting for a
               journey where luxury, personalization, and safety converge. Our
               food, prepared with care and expertise, is just one aspect of the
               comprehensive support you receive, ensuring your trek is as
               enjoyable as it is triumphant.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               With Tazama, embark on your Kilimanjaro adventure with the
               confidence that every meal will be a delightful, energizing
               experience, meticulously planned to support your journey to the
@@ -184,12 +184,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Vaccinations</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Vaccinations</p>
+            <p className="font-raleway text-sm">
               Be sure you understand how an anti-malarial may affect your sleep,
               appetite and exposure to sun before you begin,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -203,12 +203,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Training for Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Training for Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

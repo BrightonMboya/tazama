@@ -18,7 +18,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Embracing the Private Tour Experience
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 For those seeking a more tailored adventure, Tazama offers
                 luxurious private tours. These excursions offer the ultimate
                 personalized experience, allowing climbers to set their pace,
@@ -31,7 +31,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 The Group Climb Advantage
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Group climbs on Kilimanjaro offer a unique blend of shared
                 challenge and collective triumph. They're not just about
                 reaching the summit; they're about the bonds formed on the way
@@ -44,7 +44,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Choosing Your Path with Tazama
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Whether you're drawn to the camaraderie of a group climb or the
                 bespoke experience of a private tour, Tazama is here to make
                 your Kilimanjaro dream a reality. We understand the importance
@@ -67,7 +67,7 @@ export default function Page() {
               <h3 className="mt-5 text-2xl font-bold text-primary">
                 Your Kilimanjaro Adventure Awaits
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-lg text-darker/85">
                 Climbing Kilimanjaro is an invitation to challenge yourself,
                 connect with nature, and become part of a community of
                 adventurers. Whether in the solidarity of a group or the
@@ -125,12 +125,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Recovery Journey</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Recovery Journey</p>
+              <p className="font-raleway text-sm">
                 Recovery Journey After climbing Kilimanjaro: How many days it
                 takes to recover from climbing kilimanjaro
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
@@ -144,12 +144,12 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">Preventing Injuries</p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-primary">Preventing Injuries</p>
+              <p className="font-raleway text-sm">
                 Learn how you can prevent common Injuries while climbing
                 Kilimanjaro.
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>
@@ -163,13 +163,13 @@ export default function Page() {
             </div>
 
             <div className="p-3">
-              <p className="font-now text-primary">
+              <p className="font-raleway text-primary">
                 Sunglasses for Kilimanjaro
               </p>
-              <p className="font-now text-sm">
+              <p className="font-raleway text-sm">
                 Protect your eyes against the harsh UV lights in the mountain.
               </p>
-              <Button className="font-now mt-5 text-lg text-white">
+              <Button className="font-raleway mt-5 text-lg text-white">
                 View More
               </Button>
             </div>

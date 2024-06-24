@@ -3,9 +3,9 @@ import HeadSEO from "~/components/ui/Head";
 
 export default function Page() {
   return (
-    <main className="font-now mt-[6rem]  pb-10 md:flex md:items-center md:justify-center">
+    <main className="font-raleway mt-[6rem]  pb-10 md:flex md:items-center md:justify-center">
       <>
-        <HeadSEO title="Tazama Africa and Safaris" />
+        <HeadSEO title="Tazama Africa and Safaris" keywords={""} />
         <section className="flex flex-col items-center md:flex-row  md:justify-center md:gap-[3rem] xl:gap-[6rem]">
           <div className="flex flex-col items-center md:w-[450px] md:items-start xl:w-[550px]">
             <h3 className="text-2xl md:text-4xl">

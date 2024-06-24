@@ -134,7 +134,7 @@ const PlanMyTripForm = (props: Props) => {
       )} */}
 
       {currentPage > 0 && (
-        <div className="font-now mt-5 space-x-5 text-white">
+        <div className="font-raleway mt-5 space-x-5 text-white">
           <Button
             disabled={currentPage <= 1}
             type="button"

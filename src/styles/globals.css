@@ -4,9 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  color: #4E351F;
+}
+
+@font-face {
+  font-family: Gallery;
+  src: url("../fonts/Gallery.ttf") format(ttf);
+}
+
+@font-face {
+  font-family: Amiora;
+  src: url("../fonts/Amiora.ttf") format(ttf);
+}
+
+@font-face {
+  font-family: Maguare;
+  src: url("../fonts/Maguare.ttf") format(ttf);
+}
+
 h1,
-h3 {
-  font-family: Mate;
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-serif {
+  font-family: Maguare;
+  color: rgb(118, 79, 36);
 }
 
 p,
@@ -25,6 +50,18 @@ body {
 
 .text-shadow {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75);
+}
+
+.font-gallery {
+  font-family: Gallery;
+}
+
+.font-amiora {
+  font-family: Amiora;
+}
+
+.font-maguare {
+  font-family: Maguare;
 }
 
 .x-scroll::-webkit-scrollbar {
@@ -66,6 +103,12 @@ body {
 
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-out;
+}
+
+@layer utilities {
+  .animation-paused {
+    animation-play-state: paused;
+  }
 }
 
 @layer base {

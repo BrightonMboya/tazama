@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/legacy/image";
 import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
@@ -8,14 +9,14 @@ import BlurImage from "~/components/ui/BlurImage";
 export default function Page() {
   return (
     <BlogLayout title="A journey to Africa's Highest Peak.">
-      <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
-        <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
+      <section className="mx-auto max-w-5xl mt-16 flex items-start lg:gap-10">
+        <div className="mx-auto lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <h3 className="text-4xl text-[#A87133]">
+            <h3 className="text-4xl text-primary">
               Reach the Summit of Kilimanjaro with Tazama: A Journey to Africa's
               Highest Peak
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Nestled in Northern Tanzania, Mount Kilimanjaro stands as Africa's
               tallest peak and the world's highest free-standing mountain,
               soaring to an impressive 5,895 meters. Every year, Kilimanjaro
@@ -23,7 +24,7 @@ export default function Page() {
               ambitious beginners, all drawn to the challenge of reaching its
               summit.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing Kilimanjaro with Tazama is an unforgettable adventure
               that combines personal achievement with the raw beauty of nature.
               The mountain offers a unique experience with its diverse
@@ -40,7 +41,7 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/lgh2fwz5va3kxih34jek.blurDataUrl`}
               />
             </div>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The journey to the top of Kilimanjaro is accessible to a wide
               range of climbers, including young adventurers over the age of 10
               and those in their 60s and 70s with a zest for life and adventure.
@@ -50,7 +51,7 @@ export default function Page() {
               your safety and success, making them your most valuable companions
               on this journey.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">
                 So, who can climb Kilimanjaro? {"  "}
               </span>
@@ -68,7 +69,7 @@ export default function Page() {
                 placeholder="blur"
               />
             </div>
-            <p className="mb-3 mt-5 text-lg text-[#757371] lg:mt-0">
+            <p className="mb-3 mt-5 text-lg text-darker/85 lg:mt-0">
               <span className="text-primary">Best Time to Climb: </span>
               Mount Kilimanjaro welcomes climbers year-round, offering the
               chance to summit in any season. For those who prefer drier
@@ -78,7 +79,7 @@ export default function Page() {
               factors, all of which Tazama is equipped to guide you through,
               ensuring a remarkable experience.
             </p>{" "}
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Ready to witness the world from the peak of Africa and fulfill a
               lifetime goal? Tazama is here to guide your journey to the summit
               of Kilimanjaro. Our commitment to safety, personalized service,
@@ -113,7 +114,7 @@ export default function Page() {
           </div>
         </section>
       </section>
-      <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
+      <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0 max-w-5xl">
         <Link
           className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
           href="/safaris/kilimanjaro/routes/lemosho"
@@ -140,12 +141,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Machame Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Machame Route</p>
+            <p className="font-raleway text-sm">
               The Machame Route, affectionately known as the "Whiskey Route," is
               not just a path to the summit of Kilimanjaro—it's...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -159,18 +160,18 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Marangu Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Marangu Route</p>
+            <p className="font-raleway text-sm">
               While Marangu might be the most accessible route, it requires
               careful preparation...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
         </Link>
       </section>
-      <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0  ">
+      <section className="mx-auto mt-5 flex w-full flex-col items-center  space-y-1  lg:flex-row  lg:items-start lg:space-x-[1%] lg:space-y-0 max-w-5xl">
         <Link
           className="mb-10 min-h-[300px] w-[350px] cursor-pointer bg-white shadow-md lg:w-[33%]"
           href="/safaris/kilimanjaro/routes/rongai"
@@ -197,12 +198,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Northern Circuit</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Northern Circuit</p>
+            <p className="font-raleway text-sm">
               The Northern Circuit boasts the highest success rate among all
               Kilimanjaro routes,...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -216,12 +217,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Umbwe Route</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Umbwe Route</p>
+            <p className="font-raleway text-sm">
               The Umbwe Route, known for its steep, direct climb to the summit
               of Mount Kilimanjaro...
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

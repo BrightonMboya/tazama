@@ -13,7 +13,7 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The adventure of Climbing Mount Kilimanjaro isn't just about
               reaching the peak; it's about the joyous journey you undertake
               with your new mountain family. At Tazama, we understand that the
@@ -23,7 +23,7 @@ export default function Page() {
               family, your cheerleaders, and the soul of your adventure
             </p>{" "}
             <h3 className="mt-5 text-2xl font-bold text-primary">Your Crew</h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing the highest mountain in Africa is a transformative
               experience, reshaping your view of the world and yourself. But
               what truly elevates this journey are the people you share it
@@ -36,7 +36,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               A Symphony of Joy and Togetherness
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               On Kilimanjaro, every day is a celebration, a testament to the
               human spirit's resilience and joy. Our guides and porters embody
               this spirit, turning the climb into a festive journey. With songs
@@ -50,7 +50,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Summit Celebrations: A Collective Triumph
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Reaching the summit of Kilimanjaro is a monumental achievement, a
               moment of triumph that calls for jubilant celebration. Who better
               to share this pinnacle of joy with than your mountain family? Our
@@ -72,7 +72,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               An All-Singing, All-Dancing Adventure
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               At Tazama, we believe that the essence of adventure lies in the
               connections we make and the experiences we share. Our Tanzanian
               team goes above and beyond to foster a sense of unity and
@@ -84,7 +84,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Join Our Jubilant Kilimanjaro Family
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Choosing Tazama for your Kilimanjaro climb means not just
               embarking on an epic journey to the Roof of Africa but also
               becoming part of a vibrant, joyful family. Our commitment to
@@ -147,12 +147,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Summit Night</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Summit Night</p>
+            <p className="font-raleway text-sm">
               As you prepare to conquer Mount Kilimanjaro, the pinnacle of your
               adventure awaits during the enigmatic summit night.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -166,12 +166,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Tipping Ceremony</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Tipping Ceremony</p>
+            <p className="font-raleway text-sm">
               Learn about the tipping culture in climbing the tallest mountain
               in Africa.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -185,12 +185,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Why Climb Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Why Climb Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Get to know more about the benefits you will get in climbing Mount
               Kilimanjaro
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

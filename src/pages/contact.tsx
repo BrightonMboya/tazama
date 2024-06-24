@@ -49,8 +49,8 @@ const ContactPage = () => {
         keywords={base_keywords}
       />
       <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact Us" />
-      <div className="mx-auto">
-        <div className="text-center text-[#757371]">
+      <div className="mx-auto mt-20">
+        <div className="text-center text-darker/85">
           <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-xl ">
             We'd love to hear from you. Simply fill in the form below or reach
             out directly to us through one of our contacts listed below.
@@ -151,7 +151,7 @@ const ContactPage = () => {
               onClick={() => {
                 posthog.capture("contact-form", { property: "Contact form" });
               }}
-              className=" w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+              className=" w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-primary"
             >
               Submit Form
             </button>

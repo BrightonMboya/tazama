@@ -39,9 +39,9 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[1rem]">
+      <div className="mx-auto mt-10 max-w-5xl px-4 pt-[1rem]">
         <div className="">
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             Embark on the Migration Safari, an extraordinary journey with Tazama
             Africa Safaris, to witness one of nature’s most awe-inspiring
             spectacles. The Great Migration, a monumental movement of over two
@@ -50,7 +50,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             wild African landscape.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             The Migration Safari offers an unparalleled opportunity to observe
             this majestic event. Each year, around 1.5 million wildebeest and
             200,000 zebras embark on an epic 1,800-mile circuit through the
@@ -59,7 +59,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             pursuit of sustenance, is one of the world’s most incredible natural
             wonders.
           </p>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             As the herds follow the rains, you’ll witness nature’s drama unfold.
             Predators, including lions, cheetahs, and crocodiles, lie in wait,
             turning the migration into a struggle for survival. Each stage of
@@ -88,9 +88,9 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4">
+      <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             Your safari will take you into the heart of the action. From
             comfortable camps strategically located to offer the best views of
             the migration, you'll witness the herds as they traverse the
@@ -105,7 +105,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             not just observing; you're part of the epic journey that is the
             Great Migration.
           </p>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 text-lg text-darker/85">
             Prepare to be awestruck by the sheer scale and beauty of this event.
             For more information or to book your Migration Safari, connect with
             us at Tazama Africa Safaris. Your front-row seat to one of the
@@ -113,11 +113,11 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </p>
         </div>
 
-        <h3 className="mt-5 text-4xl text-[#A87133]">Migration seasons</h3>
-        <p className="mt-5 text-xl text-[#A87133]">
+        <h3 className="mt-5 text-4xl text-primary">Migration seasons</h3>
+        <p className="mt-5 text-xl text-primary">
           RIVER CROSSING ITINERARY JULY - NOVEMBER
         </p>
-        <p className="mb-3 mt-5 text-lg text-[#757371]">
+        <p className="mb-3 mt-5 text-lg text-darker/85">
           The river crossings, considered by many the most exciting event of the
           Great Migration, usually start in July, depending on the rains. The
           herds can be found in the Northern Serengeti as well as in Kenya’s
@@ -127,10 +127,10 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           and covering long distances in a single day. By December the herds had
           arrived in Ndutu and began calving.
         </p>
-        <p className="mt-5 text-xl text-[#A87133]">
+        <p className="mt-5 text-xl text-primary">
           CALVING SEASON ITINERARY DECEMBER - MARCH
         </p>
-        <p className="mb-3 mt-5 text-lg text-[#757371]">
+        <p className="mb-3 mt-5 text-lg text-darker/85">
           The herds congregate on the short grass plains of the southern
           Serengeti and northernmost regions of the Ngorongoro Conservation
           Area. An estimated 500,000 calves are born during a two- to three-week

@@ -11,7 +11,7 @@ export default function Page() {
       <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
         <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Embarking on the challenge of Climbing Mount Kilimanjaro is more
               than just a mark on a bucket list; it's an expedition that could
               profoundly transform your outlook on life. Imagine standing under
@@ -24,7 +24,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               A Journey of Humility and Equality
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               The path to Kilimanjaro's summit is a great leveler. It strips
               away all pretenses, revealing the core of human endurance and
               spirit. Here, on these ancient trails, you learn a humbling truth:
@@ -35,7 +35,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               The Power of Support and Community
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing Kilimanjaro is a testament to the strength found in
               unity. The journey is intensely personal, yet it is the support
               from those around you—porters, guides, fellow climbers—that
@@ -47,7 +47,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Patience, Persistence, and the Slow March to Success
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Kilimanjaro demands patience. The slow, deliberate pace is a
               lesson in itself, teaching you the value of persistence and the
               strength of gradual progress. It's a metaphor for life's
@@ -69,7 +69,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Stepping Beyond Comfort to Embrace Adventure
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               To climb Kilimanjaro is to step boldly beyond the familiar
               confines of comfort, into a realm where adventure reigns. It's in
               this leap of faith that you discover the exhilaration of the
@@ -80,7 +80,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Finding Beauty in Every Direction
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               As you ascend, remember to pause, to breathe in the crisp mountain
               air, to witness the unfurling beauty of the world from this unique
               vantage point. Kilimanjaro teaches you to appreciate the journey
@@ -91,7 +91,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               A Changed Perspective
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Climbing Mount Kilimanjaro alters your perspective, not just on
               the mountain, but on life itself. It's a voyage that challenges,
               humbles, and ultimately, inspires profound change within. At
@@ -154,11 +154,11 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Sunglasses for Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Sunglasses for Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Protect your eyes against the harsh UV lights in the mountain.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -172,12 +172,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Preventing Injuries</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Preventing Injuries</p>
+            <p className="font-raleway text-sm">
               Learn how you can prevent common Injuries while climbing
               Kilimanjaro.
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -191,12 +191,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Private vs Group Trek</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Private vs Group Trek</p>
+            <p className="font-raleway text-sm">
               Chose which one is right for you, either group trek or a private
               one
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

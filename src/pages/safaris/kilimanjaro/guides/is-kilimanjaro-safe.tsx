@@ -16,7 +16,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Is Climbing Mt Kilimanjaro even safe?
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Embarking on a journey to conquer Mount Kilimanjaro brings with it
               a whirlwind of excitement, anticipation, and, for many, a hint of
               apprehension, particularly when it comes to safety. The paramount
@@ -30,7 +30,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Why Tazama Guarantees a Safe and Luxurious Kilimanjaro Experience
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary ">Expertise and Safety:</span>{" "}
               Climbing the world-renowned Kilimanjaro, standing majestically at
               5,895 meters, demands not just physical readiness but a
@@ -50,7 +50,7 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">
                 Luxury and Comfort on the Mountain:{" "}
               </span>
@@ -61,7 +61,7 @@ export default function Page() {
               ensuring a comfortable ascent without compromising the mountain's
               pristine beauty.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">
                 Personalization at Its Best:{" "}
               </span>
@@ -71,7 +71,7 @@ export default function Page() {
               to cater to your preferences, ensuring that your journey to the
               roof of Africa is as personalized as it is memorable.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">
                 Commitment to Responsible Travel:{" "}
               </span>
@@ -80,7 +80,7 @@ export default function Page() {
               ensures that your trek is not just an adventure but also a step
               towards sustainable travel.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               <span className="text-primary">Quick Emergency Services: </span>
               While we pride ourselves on our preventative measures and
               comprehensive health monitoring, we also offer peace of mind with
@@ -100,7 +100,7 @@ export default function Page() {
             <h3 className="mt-5 text-2xl font-bold text-primary">
               Your Kilimanjaro Journey with Confidence
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Choosing Tazama for your Kilimanjaro trek means opting for an
               experience that combines the thrill of adventure with the
               assurance of safety, the comfort of luxury, and the warmth of
@@ -109,7 +109,7 @@ export default function Page() {
               we invite you to take on Kilimanjaro with the confidence that
               you're in the best hands.
             </p>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-lg text-darker/85">
               Ready to conquer Kilimanjaro with the perfect blend of adventure,
               safety, and luxury? Contact Tazama today to discover how we can
               turn your dream of reaching the summit into a reality, ensuring a
@@ -171,13 +171,13 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Kilimanjaro Solo Climb</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Kilimanjaro Solo Climb</p>
+            <p className="font-raleway text-sm">
               Does Solo Climbing Mean You're Alone?...
               <br />
               <br />
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>
@@ -191,12 +191,12 @@ export default function Page() {
           </div>
 
           <div className="p-3">
-            <p className="font-now text-primary">Training for Kilimanjaro</p>
-            <p className="font-now text-sm">
+            <p className="font-raleway text-primary">Training for Kilimanjaro</p>
+            <p className="font-raleway text-sm">
               Climbing Mount Kilimanjaro is an intimate and bonding experience
               with your team, but privacy is paramount,
             </p>
-            <Button className="font-now mt-5 text-lg text-white">
+            <Button className="font-raleway mt-5 text-lg text-white">
               View More
             </Button>
           </div>

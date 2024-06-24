@@ -17,26 +17,26 @@ export const Footer = () => {
   return (
     <>
       {/* <NewsletterSignup /> */}
-      <footer className="border-t  border-t-[#E0DED9] px-8 py-10">
+      <footer className="border-t  border-t-[#E0DED9] px-8 py-10 bg-primary">
         {/* Container for footer content with responsive design for column and row layout */}
         <div className="flex-between flex flex-col items-center justify-between gap-y-4 lg:flex-row">
           {/* List container for footer links and copyright information */}
           <ul className="flex flex-col gap-2 text-center text-sm sm:flex-row sm:gap-4">
             {/* List item for copyright notice dynamically inserting the current year */}
             <li>
-              <p className="text-[#414141]">
+              <p className="text-[#E0DED9]">
                 All rights reserved&nbsp;&copy;&nbsp;{new Date().getFullYear()}{" "}
                 {applicationName}
               </p>
             </li>
             {/* List items for various footer links with hover effects */}
-            <li className="text-[#969492] hover:underline">
+            <li className="text-[#cdcbc6] hover:underline">
               <Link href="/terms">Terms & Conditions</Link>
             </li>
-            {/* <li className="text-[#969492] hover:underline">
+            {/* <li className="text-[#E0DED9] hover:underline">
               <Link href="/testimonials">Testimonials</Link>
             </li> */}
-            <li className="text-[#969492] hover:underline">
+            <li className="text-[#cdcbc6] hover:underline">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
