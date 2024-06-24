@@ -183,7 +183,7 @@ const Navbar = () => {
                           onClick={() => setNav(false)}
                           className="w-fit cursor-pointer pb-1 text-lg hover:underline"
                         >
-                          <h3 className="text-white">{subLink.title}</h3>
+                          <h3 className="text-white font-raleway font-light">{subLink.title}</h3>
                         </Link>
                       </span>
                     ))}
