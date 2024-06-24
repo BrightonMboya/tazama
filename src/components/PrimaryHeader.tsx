@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 type primaryHeader = {
-  title: string;
-  image: string;
-  subTitle?: string;
+  title: string | undefined;
+  image: string | undefined;
+  subTitle?: string | undefined;
 };
 
 const PrimaryHeader = (props: primaryHeader) => {

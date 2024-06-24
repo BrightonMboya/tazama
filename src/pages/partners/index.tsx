@@ -11,7 +11,7 @@ const index = () => {
             <HeadSEO title='Tazama Africa | Our Partners' keywords={base_keywords} />
             <PrimaryHeader image="/partners/partners-header.jpg" title="Our Partners" />
 
-            <section className='my-20 max-w-5xl mx-auto text-center'>
+            <section className='my-20 max-w-5xl mx-auto md:px-8 px-4 text-center'>
                 <h3 className='text-[2.5rem]'>Our Trusted Collaborators</h3>
                 <p className='px-4 mt-4'>
                     At <a href="/about-us" className='underline underline-offset-4'>Tazama Africa Safaris</a>, we pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer. Our partnerships are carefully selected to align with our commitment to quality, sustainability, and exceptional service. Here’s a look at some of our esteemed partners who help us create unforgettable adventures.

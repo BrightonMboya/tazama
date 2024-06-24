@@ -30,7 +30,7 @@ h4,
 h5,
 h6,
 .font-serif {
-  font-family: Maguare;
+  font-family: Amiora;
   color: rgb(118, 79, 36);
 }
 
@@ -41,6 +41,14 @@ textarea,
 button,
 ul {
   font-family: var(--font-raleway);
+}
+
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
 }
 
 body {
