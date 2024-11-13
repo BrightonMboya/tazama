@@ -118,6 +118,6 @@ const itenaries = [
   {
     link: '6-day-amboseli-maasai-mara-fly-in',
     title: '6 Day Amboseli-Maasai Mara Fly-in Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731328470/east-africa/kenya/6-day-amboselu-maasai-safari/_copyright_beverly_joubert_oldonyo_wildlife_kenya_5717_gr6dpt.webp'
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731328470/east-africa/kenya/6-day-amboselu-maasai-safari/_copyright_beverly_joubert_oldonyo_wildlife_kenya_5717_gr6dpt.webpada'
   },
 ]
