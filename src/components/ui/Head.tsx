@@ -3,11 +3,9 @@ import Head from "next/head";
 export default function HeadSEO({
   title,
   keywords,
-  description
 }: {
   title: string;
   keywords: string;
-  description?: string;
 }) {
   return (
     <Head>
@@ -18,7 +16,7 @@ export default function HeadSEO({
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta
         name="description"
-        content={description ? description :"Explore East Africa with custom-designed safaris and tours from Tazama Africa"}
+        content="Explore East Africa with custom-designed safaris and tours from Tazama Africa"
       />
       <link rel="shortcut icon" href="/assets/images/logos/favicon.ico" />
       {/* Open Graph stuff */}
@@ -35,7 +33,7 @@ export default function HeadSEO({
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content={description ? description : "Helping you design the safari of your dreams. Tazama Africa designs unique travel experiences throughout East Africa, giving you the trip of a lifetime."}
+        content="Helping you design the safari of your dreams. Tazama Africa designs unique travel experiences throughout East Africa, giving you the trip of a lifetime."
       />
 
       <meta name="twitter:title" content="Tazama Africa Tours and Safaris" />
@@ -51,7 +49,9 @@ export default function HeadSEO({
       />
       <meta
         name="description"
-        content={description ? description : "Helping you design the safari of your dreams. Tazama Africa designs unique travel experiences throughout East Africa, giving you the trip of a lifetime."}
+        content="Helping you design the safari of your dreams. Tazama Africa designs unique
+            travel experiences throughout East Africa, giving you the trip of a
+            lifetime."
       />
       <title>{title}</title>
       <script

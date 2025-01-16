@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
-/* eslint-disable react/no-unescaped-entities */
 import React, { ChangeEvent } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { Input } from "~/components/Form";
@@ -11,7 +9,6 @@ import { useRouter } from "next/router";
 import { Toaster } from "~/components/ui/toaster";
 import { useToast } from "~/hooks/useToast";
 import { ToastAction } from "~/components/ui/Toast";
-import TazamaContactUs from "~/components/email-template";
 
 const ContactPage = () => {
   const [email, setEmail] = React.useState<string>("");
