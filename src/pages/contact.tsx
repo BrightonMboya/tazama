@@ -11,15 +11,67 @@ import { useRouter } from "next/router";
 import { Toaster } from "~/components/ui/toaster";
 import { useToast } from "~/hooks/useToast";
 import { ToastAction } from "~/components/ui/Toast";
-import TazamaContactUs from "~/components/email-template";
+import { Textarea } from "~/components/ui/textarea";
 
 const ContactPage = () => {
   const [email, setEmail] = React.useState<string>("");
   const [fullNames, setFullNames] = React.useState("");
-
   const [message, setMessage] = React.useState<string>("");
+  
+  // Add validation states
+  const [errors, setErrors] = React.useState({
+    email: "",
+    fullNames: "",
+    message: "",
+  });
+  const [formValid, setFormValid] = React.useState(false);
+
   const router = useRouter();
   const { toast } = useToast();
+
+  // Validate form on input change
+  React.useEffect(() => {
+    validateForm();
+  }, [email, fullNames, message]);
+
+  const validateForm = () => {
+    const newErrors = {
+      email: "",
+      fullNames: "",
+      message: "",
+    };
+    let isValid = true;
+
+    // Validate email
+    if (!email) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Email is invalid";
+      isValid = false;
+    }
+
+    // Validate full names
+    if (!fullNames) {
+      newErrors.fullNames = "Full name is required";
+      isValid = false;
+    } else if (fullNames.length < 3) {
+      newErrors.fullNames = "Name must be at least 3 characters";
+      isValid = false;
+    }
+
+    // Validate message
+    if (!message) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    } else if (message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    setFormValid(isValid);
+  };
 
   const { isLoading, mutateAsync } = api.contactEmail.send.useMutation({
     onSuccess: () => {
@@ -36,23 +88,39 @@ const ContactPage = () => {
     },
   });
 
-  const onSubmit = (e: ChangeEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent page reload
+    
+    // Validate form before submission
+    validateForm();
+    
+    if (!formValid) {
+      toast({
+        variant: "destructive",
+        title: "Form validation failed",
+        description: "Please check the form for errors and try again",
+        duration: 3000,
+      });
+      return;
+    }
+
     mutateAsync({
-      email: email,
-      message: message,
-      fullNames: fullNames,
+      email,
+      message,
+      fullNames,
     });
   };
+
   return (
     <>
       <Toaster />
       <HeadSEO
         title="Contact Tazama Africa for your Dream Safari Experience"
-        keywords={base_keywords}
+        keywords={`${base_keywords}, Tanzania safari contact, book safari Tanzania, safari planning, Kilimanjaro trek booking, Tanzania travel inquiry, safari consultation, wildlife tour contact, African adventure planning, Tanzania tour operator, safari travel agent`}
+        description="Contact Tazama Africa Safari to plan your dream Tanzania safari or Kilimanjaro trek. Our expert team is ready to help you create a personalized adventure through Africa's most spectacular landscapes and wildlife experiences."
       />
       <PrimaryHeader image="contact.webp" title="Contact Us" />
-      <div className="mx-auto mt-36 max-sm:mt-28">
+      <div className="mx-auto mt-36 max-sm:mt-28 px-8">
         <div className="text-center">
           <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-5xl max-sm:text-3xl leading-[3.7rem] font-serif text-primary">
             We'd love to hear from you. Simply fill in the form below or reach
@@ -71,47 +139,60 @@ const ContactPage = () => {
           </p>
         </div>
 
-        <div className="mx-auto my-20 max-w-4xl px-4">
-          <h3 className="text-4xl text-primary">Contact Us</h3>
+        <div className="mx-auto my-14 max-w-2xl px-4 text-center">
+          <p className="text-lg">
+            Please fill in the form below to get in touch with us and our team will get back to you as soon as possible.
+          </p>
+        </div>
 
+        <div className="mx-auto my-20 max-w-4xl px-4">
           <form
-            // action="https://formsubmit.co/jaff@tazamaafricasafari.com"
-            method="POST"
             className="mx-auto mt-8 flex w-full flex-col gap-8"
             onSubmit={onSubmit}
           >
-            <Input
-              required
-              type="text"
-              name="fullName"
-              value={fullNames}
-              label="Full Names*"
-              placeholder="Enter your full Names"
-              onChange={(e) => setFullNames(e.target.value)}
-            />
+            <div className="flex flex-col gap-10 mt-2">
+              <div>
+                <Input
+                  required
+                  type="text"
+                  name="fullName"
+                  value={fullNames}
+                  label="Full Names*"
+                  placeholder=""
+                  onChange={(e) => setFullNames(e.target.value)}
+                />
+                {errors.fullNames && (
+                  <p className="text-red-500 text-sm mt-1">{errors.fullNames}</p>
+                )}
+              </div>
 
-            <Input
-              required
-              type="email"
-              name="email"
-              value={email}
-              label="Email Address*"
-              placeholder="Enter your email address"
-              onChange={(e) => setEmail(e.target.value)}
-            />
+              <div>
+                <Input
+                  required
+                  type="email"
+                  name="email"
+                  value={email}
+                  label="Email Address*"
+                  placeholder=""
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                )}
+              </div>
 
-            <div className="flex w-full flex-col gap-2">
-              <label htmlFor="message" className="text-[#484848]">
-                Message*
-              </label>
-              <textarea
-                className=" h-36 rounded-lg border-none px-4 py-3 shadow-sm placeholder:text-gray-300 focus:ring-[#A87133]"
-                placeholder="Write your message here"
-                required
-                name="Message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
+              <div>
+                <Textarea
+                  required
+                  name="message"
+                  value={message}
+                  label="Message*"
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                )}
+              </div>
             </div>
 
             {/* Hidden components necessary for submititng the form to the email */}
@@ -142,9 +223,9 @@ const ContactPage = () => {
               onClick={() => {
                 posthog.capture("contact-form", { property: "Contact form" });
               }}
-              className=" w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+              className={`w-fit rounded-lg ${isLoading ? "bg-primary/75" : "bg-primary"} px-4 py-2 text-white border hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300`}
             >
-              Submit Form
+              {isLoading ? "Loading..." : "Submit Form"}
             </button>
           </form>
         </div>

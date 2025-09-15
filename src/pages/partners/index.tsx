@@ -3,11 +3,16 @@ import PrimaryHeader from '../../components/PrimaryHeader'
 import HeadSEO from '../../components/ui/Head'
 import { base_keywords } from '../../lib/constants'
 import ContentSection from '~/components/ContentSection'
+import CallToAction from '~/components/CallToAction'
 
 const index = () => {
     return (
         <>
-            <HeadSEO title='Tazama Africa | Our Partners' keywords={base_keywords} />
+            <HeadSEO 
+                title='Tazama Africa | Our Partners and Collaborators' 
+                keywords={`${base_keywords}, Tanzania partnerships, Kafika House, Rustic Pathways, sustainable tourism partners, community support Tanzania, responsible travel collaborations, ethical tourism, social impact travel, disability support Tanzania, educational travel programs`}
+                description="Discover Tazama Africa Safari's trusted partners who help us deliver exceptional experiences while supporting local communities. Learn about our collaborations with Kafika House and Rustic Pathways that align with our commitment to quality and sustainability."
+            />
             <PrimaryHeader image="partners-header.jpg" title="Our Partners" />
 
             <section className='my-20 max-w-5xl mx-auto md:px-8 px-4 text-center'>
@@ -38,14 +43,11 @@ const index = () => {
                     actionTitle='More on Rustic Pathways' />
                 <br />
                 <br />
-                <ContentSection
-                    rank={0}
-                    image={'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720011400/partners/seed-bombs/seed-bombs-img1_ovlnro.jpg'}
-                    title={'Seedbombs Tanzania'} reverse={false}
-                    description={'Seedbombs Tanzania is an organization that brings people together to learn and engage directly with seeds and trees to promote a deeper appreciation for the natural world.'}
-                    action='/partners/seed-bombs-tanzania'
-                    actionTitle='More on Seed Bombs Tanzania' />
+                <br />
+                <br />
             </section>
+
+            <CallToAction />
         </>
     )
 }

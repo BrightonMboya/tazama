@@ -4,7 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { MdChevronLeft } from "react-icons/md";
 import Link from "next/link";
 
-import { PopupButton } from "@typeform/embed-react"
+import PopupForm from "./PopupForm";
 
 const navMainContent = [
   {
@@ -43,6 +43,10 @@ const navMainContent = [
 ];
 
 const navSubContent = [
+  {
+    title: "Our safari tours",
+    link: "/tours",
+  },
   {
     title: "FAQ",
     link: "/faq",
@@ -115,10 +119,8 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
-          <PopupButton id={"https://form.typeform.com/to/unyR7Ewo"} className="menu-trigger animate-float2 flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 max-sm:text-sm text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2">
-            Plan My Trip
-          </PopupButton>
-          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
+          <PopupForm />
+          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
           <AnimatePresence>
             {searchModal ? (
               <motion.div
@@ -323,7 +325,7 @@ const Navbar = () => {
                             <Link
                               href={subLink.link}
                               onClick={() => setNav(false)}
-                              className="w-fit cursor-pointer pb-1 md:text-lg hover:underline"
+                              className="w-fit cursor-pointer pb-1 md:text-lg hover:underline hover:underline-offset-4"
                             >
                               <h3 className="font-raleway">{subLink.title}</h3>
                             </Link>

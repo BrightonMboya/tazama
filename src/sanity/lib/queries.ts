@@ -54,3 +54,76 @@ export const POST_QUERY = groq`
     publishedAt
   }
 `;
+
+export const itineraryQueries = {
+  all: `*[_type == "itinerary"] | order(_createdAt desc) {
+    _id,
+    slug,
+    itineraryName,
+    subHeading,
+    price,
+    coverImg,
+    description,
+    itineraryType,
+    locationAndDuration,
+    includes,
+    excludes,
+    _createdAt
+  }`,
+
+  bySlug: `*[_type == "itinerary" && slug.current == $slug][0] {
+    _id,
+    slug,
+    itineraryName,
+    subHeading,
+    price,
+    coverImg,
+    description,
+    itineraryType,
+    locationAndDuration,
+    itineraryDetails[] {
+      day,
+      description,
+      mealPlan,
+      accommodation,
+      note,
+      accommodationGallery,
+      hotelDescription,
+      amenities
+    },
+    includes,
+    excludes,
+    _createdAt,
+    _updatedAt
+  }`,
+
+  byType: `*[_type == "itinerary" && itineraryType == $type] | order(_createdAt desc) {
+    _id,
+    slug,
+    itineraryName,
+    subHeading,
+    price,
+    coverImg,
+    description,
+    itineraryType,
+    locationAndDuration,
+    includes,
+    excludes,
+    _createdAt
+  }`,
+
+  featured: `*[_type == "itinerary"] | order(_createdAt desc)[0..5] {
+    _id,
+    slug,
+    itineraryName,
+    subHeading,
+    price,
+    coverImg,
+    description,
+    itineraryType,
+    locationAndDuration,
+    includes,
+    excludes,
+    _createdAt
+  }`,
+};
